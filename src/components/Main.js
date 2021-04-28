@@ -26,8 +26,8 @@ class Main extends React.Component {
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
         <article
-        id="intro"
-        className={`${this.props.article === 'intro' ? 'active' : ''} ${
+        id="event-services"
+        className={`${this.props.article === 'event-services' ? 'active' : ''} ${
           this.props.articleTimeout ? 'timeout' : ''
         }`}
         style={{ display: 'none' }}
@@ -37,8 +37,8 @@ class Main extends React.Component {
         </article>
       
         <article
-        id="work"
-        className={`${this.props.article === 'work' ? 'active' : ''} ${
+        id="media"
+        className={`${this.props.article === 'media' ? 'active' : ''} ${
           this.props.articleTimeout ? 'timeout' : ''
         }`}
         style={{ display: 'none' }}

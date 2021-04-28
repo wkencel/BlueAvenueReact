@@ -1,5 +1,5 @@
 import React from "react"
-
+import ImageGallery from './Instagram.js'
 class Media extends React.Component {
   render() {
     return (
