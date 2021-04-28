@@ -160,6 +160,20 @@ class ContactForm extends React.Component {
                 <input type="reset" value="Reset" />
               </li>
             </ul>
+            <br/>
+            <ul className="icons">
+            <li>
+              <a href="https://codebushi.com" className="icon fa-instagram">
+                <span className="label">Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://codebushi.com" className="icon fa-facebook">
+                <span className="label">Facebook</span>
+              </a>
+            </li>
+            <p> more icons here i.e. Wedding Wire, The Knot</p>
+          </ul>
           </form>
      </>
    )
