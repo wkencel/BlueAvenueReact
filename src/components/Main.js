@@ -1,8 +1,5 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
 import ContactForm from './Contact.js'
 import WhoWeAre from './WhoWeAre.js'
 import Media from './Media.js'
@@ -43,7 +40,7 @@ class Main extends React.Component {
         }`}
         style={{ display: 'none' }}
         >
-          <Media />
+        <Media />
           {close}
         </article>
       

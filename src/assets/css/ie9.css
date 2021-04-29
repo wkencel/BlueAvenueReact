@@ -33,3 +33,17 @@
 	#main article {
 		margin: 0 auto;
 	}
+
+  #first_column,
+  #second_column {
+    width: 100px;
+  }
+
+  #first_column {
+    float:left;
+    width:100px
+  }
+
+  #first_column {
+    float:right;
+  }

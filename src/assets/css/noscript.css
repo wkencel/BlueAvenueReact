@@ -10,3 +10,8 @@
 		opacity: 1;
 		margin: 4rem 0 0 0;
 	}
+
+   #first_column {
+    float:left;
+    width:100px
+  }
