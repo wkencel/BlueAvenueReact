@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import Syd1 from '../assets/images/syd4.png';
+import Syd1 from '../assets/images/syd1.png';
 // import Pam1 from '../assets/images/pam1.png'
 import Will1 from '../assets/images/WillK.headshot_1.png'
 
@@ -110,14 +110,14 @@ class WhoWeAre extends Component {
       </h1>
       <br/>
       <br/>
-      <img src={Syd1} alt="Sydney Driver" width='65%' />
+      <img src={Syd1} alt="Sydney Driver" width='280px' height='380'/>
       <h2>
        CEO - Sydney Driver
       </h2>
-      <p>Nothing is better than seeing people have an absolute blast And knowing you're the reason behind it</p>
+      <p>Possibly a quote here about something that describes what we believe in but also relates to our business</p>
       <img alt="" width='320px'/>
       <a href="https://willkencelhome.io">
-        <img src={Will1} alt="Will Kencel" width='60%'/>
+        <img src={Will1} alt="Will Kencel" width='320px'/>
       </a>
       <h2>
         CTO/COO - Will Kencel

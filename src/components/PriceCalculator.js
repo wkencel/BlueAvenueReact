@@ -1,16 +1,8 @@
 import React, { useState } from 'react';
 
-interface IUserValues {
-  receptionBandSize: number | string,
-  receptionLength: any,
-  cocktailBandSize: any,
-  ceremonyBandSize: any,
-  distanceFromNYC: any,
-}
-
 function Calculator() {
   // state to storage the values given by the user when filling the input fields
-  const [userValues, setUserValues] = useState<IUserValues>({
+  const [userValues, setUserValues] = useState({
     receptionBandSize: '',
     receptionLength: '',
     cocktailBandSize: '',
@@ -61,8 +53,7 @@ function Calculator() {
     const { receptionBandSize, receptionLength } = userValues;
     let actualError = '';
     // Validate if there are values
-    console.log("RECEPTION BAND SIZE AT CANCEL: ", receptionBandSize)
-    if (!receptionBandSize|| !receptionLength) {
+    if (!receptionBandSize || !receptionLength) {
       actualError = 'min of 6 person reception band required';
     }
     if (actualError) {
@@ -83,17 +74,17 @@ function Calculator() {
 
   // Calculation
   const calculateResults = ({ receptionBandSize, receptionLength, cocktailBandSize, ceremonyBandSize, distanceFromNYC }) => {
-    const bandSizeReception = receptionBandSize;
+    const bandSizeReception = Number(receptionBandSize);
     const lengthOfReception = Number(receptionLength);
     let costOfReception = (bandSizeReception === 6) ? 7500 : (bandSizeReception-6) * 650 + 7500
-    let cocktailHrCost: any = ''
-    let ceremonyCost: any = ''
-    let distanceCost: number = 0
-    let lodgingCost: any = ''
-    let totalCost: any = ''
+    let cocktailHrCost = ''
+    let ceremonyCost = ''
+    let distanceCost = 'N/A'
+    let lodgingCost = ''
+    let totalCost = ''
       // distance cost
-    if (distanceFromNYC !== 0) {
-      distanceFromNYC= Number(distanceFromNYC)
+    if (distanceFromNYC !== '') {
+      distanceFromNYC = Number(distanceFromNYC)
       console.log('distance form NYC', distanceFromNYC)
       if (distanceFromNYC >= 3){
         distanceCost = distanceFromNYC * 25 * (bandSizeReception + 1)
@@ -110,7 +101,7 @@ function Calculator() {
       }
     }
 console.log('distancecost', distanceCost)
-    if (distanceFromNYC === ''){distanceFromNYC = 0}
+    if (distanceFromNYC == ''){distanceFromNYC = 0}
     
       // lodging cost
     if (distanceFromNYC > 2) {
@@ -135,11 +126,12 @@ console.log('distancecost', distanceCost)
 
     console.log('distance from city', distanceFromNYC)
 
-    // total cost`
+    // total cost
     let costDistance = distanceCost
     if (typeof distanceCost === 'string'){costDistance = 0}
     let costLodging = Number(lodgingCost)
-    totalCost = costOfReception + costLodging + Number(costDistance) + cocktailHrCost + Number(ceremonyCost) 
+    totalCost = costOfReception + costLodging + Number(costDistance) + cocktailHrCost + ceremonyCost 
+
     // formatting for the user
     let receptionResult = `$${costOfReception} for a ${bandSizeReception} person band for ${lengthOfReception} hours`
     
@@ -170,7 +162,7 @@ console.log('distancecost', distanceCost)
   // Clear input fields
   const clearFields = () => {
     setUserValues({
-      receptionBandSize: 0,
+      receptionBandSize: '',
       receptionLength: '',
       cocktailBandSize: '',
       ceremonyBandSize: '',
@@ -255,7 +247,7 @@ console.log('distancecost', distanceCost)
                   <select 
                   name="ceremony-band-size" 
                   id="ceremony-band-size"
-                  value={userValues.ceremonyBandSize}
+                  value={userValues.CeremonyBandSize}
                   onChange={handleCeremonyInputChange}
                   >
                     <option value="" > </option>

@@ -4,25 +4,14 @@
   "version": "1.0.0",
   "author": "Hunter Chang",
   "dependencies": {
-    "@material-ui/core": "^4.11.4",
-    "baseui": "^9.113.0",
-    "dotenv": "^8.2.0",
-    "emailjs-com": "^2.6.4",
-    "fs": "^0.0.1-security",
     "gatsby": "^2.19.5",
-    "gatsby-image": "^3.4.0",
     "gatsby-plugin-manifest": "^2.2.38",
     "gatsby-plugin-react-helmet": "^3.1.21",
     "gatsby-plugin-sass": "^2.1.27",
-    "gatsby-remark-embed-video": "^3.1.1",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1",
-    "react-social-icons": "^5.3.0",
-    "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^2.0.3",
-    "theme-ui": "^0.8.4"
+    "react-helmet": "^5.2.1"
   },
   "keywords": [
     "gatsby"

@@ -1,7 +1,7 @@
 import React from "react"
 import EmailJS from './ContactUs.js'
-// import { Link } from 'gatsby';
-// import Calculator from './PriceCalculator'
+import { Link } from 'gatsby';
+import Calculator from './PriceCalculator'
 import PriceCalculator from './PriceCalculator'
 import PurchaseRequest from './PurchaseRequest'
 
@@ -24,45 +24,48 @@ class ContactForm extends React.Component {
   }
   render() {
     return (
-      <>
+     <>
       <div>{this.state.error}</div>
-      <a href="https://calendly.com/blueavenuegroove/intro-meeting"> Set up a time to meet with one of our product specialists</a>
+      
+      <nav>
+        <ul>
+          <h4>See how much it costs</h4>
+          <li>
+            <button
+            id="price-button"
+            onClick={() => {showCalculator()
+            }}
+          >
+            Price Calculator
+          </button>
+          </li>
+          <br/>
+          <div id="price-calculator" style={{'display': 'none'}}>
+            <PriceCalculator />
+          </div>
+          <br/>
+          <h4>Make your booking</h4>
+          <li>
+            <button
+            id="purchase-request-button"
+            onClick={() => {showPurchaseRequest()
+            }}
+          >
+            Purchase Request
+          </button>
+          </li>
+        </ul>
+      </nav>
+      <div id="purchase-request" style={{'display': 'none'}}>
+        <PurchaseRequest />
+      </div>
+      
+      
+      <a  href="https://calendly.com/blueavenuegroove/intro-meeting"> Set up a time with one of our product specialists</a>
       <br></br><br/>
-        <p>or send us an email</p>
+      <p>or send us an email</p>
       <ul className="icons">
-        <EmailJS />
-        <nav>
-          <ul>
-            <h4>See how much it costs</h4>
-            <li>
-              <button
-                id="price-button"
-                onClick={() => {showCalculator()
-                }}
-              >
-                Price Calculator
-              </button>
-            </li>
-            <br/>
-            <div id="price-calculator" style={{'display': 'none'}}>
-              <PriceCalculator />
-            </div>
-            <br/>
-            <h4>Make your booking</h4>
-            <li>
-              <button
-                id="purchase-request-button"
-                onClick={() => {showPurchaseRequest()
-                }}
-              >
-              Purchase Request
-              </button>
-            </li>
-          </ul>
-        </nav>
-        <div id="purchase-request" style={{'display': 'none'}}>
-          <PurchaseRequest />
-        </div>
+      <EmailJS />
         <li>
           <a href="https://www.instagram.com/blueavenuegroove/" className="icon fa-instagram">
             <span className="label">Instagram</span>
