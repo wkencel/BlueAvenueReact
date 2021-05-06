@@ -71,28 +71,28 @@ export default function ContactUs(props) {
             </ul>
           </form>
           <nav>
-      <ul>
-        <li>
-          <button
-            id="price-button"
-            onClick={() => {showCalculator()
-            }}
-          >
-            Price Calculator
-          </button>
-        </li>
+            <ul>
+              <li>
+                <button
+                  id="price-button"
+                  onClick={() => {showCalculator()
+                  }}
+                >
+                  Price Calculator
+                </button>
+              </li>
 
-        <li>
-        </li>
-        <button
-          id="price-button"
-          onClick={() => {
-          }}
-        >
-        <Link width='100px' to="/PriceCalculator">gatsby link for the price calculator</Link>
-        </button>
-      </ul>
-    </nav>
+              <li>
+              </li>
+              <button
+                id="price-button"
+                onClick={() => {
+                }}
+              >
+              <Link width='100px' to="/PriceCalculator">gatsby link for the price calculator</Link>
+              </button>
+            </ul>
+          </nav>
           <div id="price-calculator">
             <PriceCalculator />
           </div>

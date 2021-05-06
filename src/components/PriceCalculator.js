@@ -131,14 +131,27 @@ console.log('distancecost', distanceCost)
     if (typeof distanceCost === 'string'){costDistance = 0}
     let costLodging = Number(lodgingCost)
     totalCost = costOfReception + costLodging + Number(costDistance) + cocktailHrCost + ceremonyCost 
+
+    // formatting for the user
+    let receptionResult = `$${costOfReception} for a ${bandSizeReception} person band for ${lengthOfReception} hours`
+    
+    let cocktailHrResult = (cocktailHrCost === '') ? '' : `$${cocktailHrCost} for a ${cocktailBandSize} person band`
+
+    let ceremonyResult = (ceremonyCost === '') ? '' : `$${ceremonyCost} for a ${ceremonyBandSize} person ensemble & sound`
+
+    let distanceResult = (distanceFromNYC === 0) ? 'N/A' : `$${distanceCost} for ${distanceFromNYC} hours away`
+
+    let lodgingResult = (lodgingCost === '') ? '' : `$${lodgingCost} for housing the ${bandSizeReception} band and engineer`
+
+    let totalResult = `$${totalCost}`
       // Set up results to the state to be displayed to the user
       setResults({
-        receptionCost: costOfReception,
-        cocktailBandCost: cocktailHrCost,
-        ceremonyBandCost: ceremonyCost,
-        distanceCost: distanceCost,
-        lodgingCost: lodgingCost,
-        totalCost: totalCost,
+        receptionCost: receptionResult,
+        cocktailBandCost: cocktailHrResult,
+        ceremonyBandCost: ceremonyResult,
+        distanceCost: distanceResult,
+        lodgingCost: lodgingResult,
+        totalCost: totalResult,
         distanceFromCity: distanceFromNYC,
         isResult: true,
       });
@@ -176,39 +189,40 @@ console.log('distancecost', distanceCost)
         {/* Display the error when it exists */}
         <p className='error'>{error}</p>
         <form onSubmit={handleSubmitValues} >
-          <div>
-              <text>reception: </text>
-              <select 
-              name="ReceptionBandSize" 
-              value={userValues.receptionBandSize}
-              onChange={handleReceptionBandInputChange}
-              >
-                <option value=""> </option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-              </select>
-              <text> piece band for a </text>
-              <select 
-              name="reception-length" 
-              id="reception-length"
-              value={userValues.receptionLength}
-              onChange={handleReceptionLengthInputChange}
-              >
-                <option value="" > </option>
-                <option value="4" >4</option>
-                <option value="3">3</option>
-                <option value="2">2</option>
-              </select>
-              <text> hour reception</text>
+        
+        {/* ternary operator manages when the calculator and results will be displayed to the user */}
+        {!results.isResult ? (
+          //   Form to collect data from the user
+          <div className='form-items'>
+            <div className='reception-inputs'>
+                <text>reception: </text>
+                <select 
+                name="ReceptionBandSize" 
+                value={userValues.receptionBandSize}
+                onChange={handleReceptionBandInputChange}
+                >
+                  <option value=""> </option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+                <text> piece band for a </text>
+                <select 
+                name="reception-length" 
+                id="reception-length"
+                value={userValues.receptionLength}
+                onChange={handleReceptionLengthInputChange}
+                >
+                  <option value="" > </option>
+                  <option value="4" >4</option>
+                  <option value="3">3</option>
+                  <option value="2">2</option>
+                </select>
+                <text> hour reception</text>
               </div>
-              
-          {/* ternary operator manages when the calculator and results will be displayed to the user */}
-          {!results.isResult ? (
-            //   Form to collect data from the user
-            <div className='form-items'>
+
               <div className='cocktail-hour' >
               <br/>
                 <label id='label'>cocktail hour band size </label>
@@ -276,7 +290,7 @@ console.log('distancecost', distanceCost)
                 <br /> Reception Package: {results.receptionCost}
                 <br /> Cocktail Hr: {results.cocktailBandCost}
                 <br /> Ceremony: {results.ceremonyBandCost}
-                <br /> Travel: {results.distanceCost} for {results.distanceFromCity} hours away
+                <br /> Travel: {results.distanceCost}
                 <br /> Lodging: {results.lodgingCost}
                 <br /> Total: {results.totalCost}
               </h4>
