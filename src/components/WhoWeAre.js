@@ -1,9 +1,9 @@
-import React from "react"
+import React, {Component} from "react"
 import Syd1 from '../assets/images/syd1.png';
-import Sami1 from '../assets/images/Sami1.png'
+// import Pam1 from '../assets/images/pam1.png'
 import Will1 from '../assets/images/WillK.headshot_1.png'
 
-class WhoWeAre extends React.Component {
+class WhoWeAre extends Component {
   render() {
     return (
       <>
@@ -14,7 +14,7 @@ class WhoWeAre extends React.Component {
         Company Culture, Goals, etc.
       </h3>
       <p>
-        imagine a lengthy section here, possibly two paragraphs of about 150-250 word
+        imagine a section here, possibly two paragraphs of about 150-250 word
       </p>
       <br/>
       <br/>
@@ -28,11 +28,11 @@ class WhoWeAre extends React.Component {
        CEO - Sydney Driver
       </h2>
       <p>Possibly a quote here about something that describes what we believe in but also relates to our business</p>
-      <img src={Sami1} alt="Sami Stevens" width='320px'/>
+      <img alt="" width='320px'/>
       <h2>
-        COO/CFO - Sami Stevens
+        COO - TBD
       </h2>
-      <p>Something about sami and here solo stuff here</p>
+      <p>Something about about COO's experience in industry </p>
       <a href="https://willkencelhome.io">
         <img src={Will1} alt="Will Kencel" width='320px'/>
       </a>

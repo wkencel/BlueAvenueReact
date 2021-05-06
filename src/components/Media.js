@@ -1,5 +1,5 @@
 import React from "react"
-import ImageGallery from './Instagram.js'
+// import ImageGallery from './Instagram.js'
 import JonDancing from '../assets/images/JonDancing.jpeg'
 import SamiAndPhil from '../assets/images/SamiPhilwmanhattan.jpeg'
 import Pam from '../assets/images/Pam.jpeg'
@@ -21,6 +21,7 @@ class Media extends React.Component {
         <div id="first_column">
           <iframe
           width="100%"
+          height='400px'
           src="https://www.youtube.com/embed/Na7bKp9VVRE"
           title="test"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
