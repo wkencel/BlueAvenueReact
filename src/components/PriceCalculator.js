@@ -105,7 +105,7 @@ console.log('distancecost', distanceCost)
     
       // lodging cost
     if (distanceFromNYC > 2) {
-      lodgingCost = (receptionBandSize > 7) ? 500 : 725
+      lodgingCost = (receptionBandSize <= 7) ? 500 : 725
     }
 
     if (ceremonyBandSize) {

@@ -53,6 +53,15 @@ const Header = props => (
             Contact
           </button>
         </li>
+        <li>
+        <button
+          onClick={() => {
+            props.onOpenArticle('reviews')
+          }}
+        >
+          Reviews
+        </button>
+      </li>
       </ul>
     </nav>
   </header>

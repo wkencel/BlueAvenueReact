@@ -20,18 +20,7 @@ class EventServices extends React.Component {
         <br/>
         <br/>
         <p>
-        should we be up front about our pricing and what are the ways in which we can do that for the best user experience.  Tesla does this and it changed the game, people love it!
-        </p>
-        <ul>
-        <li>
-        fill out form
-        </li>
-        <li>
-        pdf link to our pricing
-        </li>
-        </ul>
-        <p>
-        if we do a form later we can work in travel as select options
+        Go to our Contact Page to find out about pricing and booking!
         </p>
         <a href='https://blueavepricing2022.s3.amazonaws.com/WhatWeOffer.2022.pdf' >
           Link to our pricing for 2022

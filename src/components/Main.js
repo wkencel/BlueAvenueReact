@@ -4,6 +4,7 @@ import ContactForm from './Contact.js'
 import WhoWeAre from './WhoWeAre.js'
 import Media from './Media.js'
 import EventServices from './EventServices.js'
+import Reviews from './Reviews.js'
 
 class Main extends React.Component {
   render() {
@@ -66,6 +67,18 @@ class Main extends React.Component {
           <ContactForm />
           {close}
         </article>
+
+        <article
+        id="contact"
+        className={`${this.props.article === 'reviews' ? 'active' : ''} ${
+          this.props.articleTimeout ? 'timeout' : ''
+        }`}
+        style={{ display: 'none' }}
+        >
+        <h2 className="major">Reviews</h2>
+        <Reviews />
+        {close}
+      </article>
       </div>
     )
   }

@@ -9,7 +9,7 @@ let templateId = process.env.YOUR_TEMPLATE_ID
 let userId = process.env.YOUR_USER_ID
 
 
-export default function ContactUs(props) {
+export default function PurchaseRequest(props) {
   function sendEmail(event) {
     event.preventDefault()
 
@@ -47,11 +47,42 @@ export default function ContactUs(props) {
             <div className="field half">
               <input
               control={Input}
-              label="Subject"
-              name="subject"
-              placeholder="Write your subject..."
+              label="Name"
+              name="name"
+              placeholder="Name"
               type="text"
               required
+              />
+            </div>
+            <div className="field half first">
+              <input
+              control={Input}
+              label="VenueName"
+              name="venueName"
+              placeholder="venue name"
+              type="text"
+              required
+              />
+            </div>
+            <div className="field half">
+            <p style={{'float': 'left', 'margin-top':0, 'margin-bottom': 0}}>start time :   </p>
+              <input
+              control={Input}
+              label="Time"
+              name="time"
+              placeholder="Time"
+              type="time"
+              required
+              />
+            </div>
+            <div className="field half first">
+              <input
+                control={Input}
+                label="Time"
+                name="location"
+                placeholder="location yrd"
+                type="time"
+                required
               />
             </div>
             <Form.Field
@@ -65,13 +96,19 @@ export default function ContactUs(props) {
               <li>
                 <input type="submit" value="Send Message" className="special" />
               </li>
-              <li>
-                <input type="reset" value="Reset" />
-              </li>
             </ul>
           </form>
         </Grid.Column>
       </Grid>
 
   )
+}
+
+function showCalculator() {
+  var x = document.getElementById("price-calculator")
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 }

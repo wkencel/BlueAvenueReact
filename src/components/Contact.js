@@ -2,6 +2,8 @@ import React from "react"
 import EmailJS from './ContactUs.js'
 import { Link } from 'gatsby';
 import Calculator from './PriceCalculator'
+import PriceCalculator from './PriceCalculator'
+import PurchaseRequest from './PurchaseRequest'
 
 class ContactForm extends React.Component {
   constructor(props) {
@@ -24,11 +26,18 @@ class ContactForm extends React.Component {
     return (
      <>
       <div>{this.state.error}</div>
+      
       <nav>
         <ul>
           <h4>See how much it costs</h4>
           <li>
-            <Link to="/PriceCalculator">Price Calculator</Link>
+            <button
+            id="price-button"
+            onClick={() => {showCalculator()
+            }}
+          >
+            Price Calculator
+          </button>
           </li>
           <br/>
           <h4>Make your booking</h4>
@@ -37,6 +46,9 @@ class ContactForm extends React.Component {
           </li>
         </ul>
       </nav>
+      <div id="price-calculator" style={{'display': 'none'}}>
+        <PriceCalculator />
+      </div>
       
       
       <a  href="https://calendly.com/blueavenuegroove/intro-meeting"> Set up a time with one of our product specialists</a>
@@ -55,10 +67,21 @@ class ContactForm extends React.Component {
           </a>
         </li>
         <p> more icons here i.e. Wedding Wire, The Knot</p>
+        <p>purchase request</p>
+        <PurchaseRequest />
       </ul>
      </>
     )
   }
 }
+function showCalculator() {
+  var x = document.getElementById("price-calculator")
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
 
 export default ContactForm
