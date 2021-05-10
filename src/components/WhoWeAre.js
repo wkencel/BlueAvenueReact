@@ -10,18 +10,17 @@ class WhoWeAre extends Component {
       <h2 className="major">Who We Are</h2>
       <span className="image main">
       </span>
-      <h3>
-        Company Culture, Goals, etc.
-      </h3>
       <p>
-        We believe in weddings without the cheese.  We believe in music as expression that connects us together.  It’s brought each of us from different walks of life to make up the family we have in Blue Ave Groove today.
+        We believe in weddings without the cheese.  We believe in music as a form of expression that connects us together.  It’s brought each of us from different walks of life to make up the family we have in Blue Ave Groove today.
       </p>
       <p>
-        Like anything we do, we strive to not go through the motions but give you part of us in each song.  We’re building a better version of what it means to be a “wedding band” filled with music from the soul bringing friends and family together for the experience of a lifetime.      
+        Like anything we do, we strive not to “go through the motions” with each song, but to give you part of us.  We’re building a better version of what it means to be a “wedding band”: filled with music from the soul, bringing friends and family together for the experience of a lifetime.      
       </p>
       <br/>
       <h3> 
-        See what the band's been up to
+        <u>
+          See what the band's been up to
+        </u>
       </h3>
       <br/>
       <h4>J Hoard's latest</h4>
@@ -88,11 +87,11 @@ class WhoWeAre extends Component {
       <br/>
       <br/>
       <br/>
-      <h4>Ben the Professor building a vibe</h4>
+      <h4>Ben, Professor of Sound, building a vibe w/ his fiance, Caroline</h4>
       <iframe
           width="100%"
           height='400px'
-          src="https://www.youtube.com/embed/mYppUeJVRj8"
+          src="https://www.youtube.com/embed/bUxmcNQR6pg"
           title="test"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           frameBorder="0"
@@ -123,7 +122,7 @@ class WhoWeAre extends Component {
       <h2>
         CTO/COO - Will Kencel
       </h2>
-      <p>Original founder and bassist.  Now full time software engineer at Microsoft working on user facing technologies.   Guiding Blue Avenue's user experience into the next decade</p>
+      <p>Original founder and bassist. Guiding Blue Avenue into the next decade by integrating tech to create an inicredible user experience</p>
       </>
     )
   }

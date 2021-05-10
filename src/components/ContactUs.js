@@ -3,10 +3,10 @@ import PriceCalculator from './PriceCalculator'
 import emailjs from "emailjs-com"
 import {  Form, Input,  TextArea, Grid } from "semantic-ui-react"
 import { Link } from 'gatsby';
-require('dotenv').config();
-let serviceId = process.env.YOUR_SERVICE_ID
-let templateId = process.env.YOUR_TEMPLATE_ID
-let userId = process.env.YOUR_USER_ID
+// require('dotenv').config();
+// let serviceId = process.env.YOUR_SERVICE_ID_CONTACT
+// let templateId = process.env.YOUR_TEMPLATE_ID_CONTACT
+// let userId = process.env.YOUR_USER_ID_CONTACT
 
 
 export default function ContactUs(props) {
@@ -15,10 +15,10 @@ export default function ContactUs(props) {
 
     emailjs
       .sendForm(
-        serviceId,
-        templateId,
+        'service_qvsrtil',
+        'template_we9ajhb',
         event.target,
-        userId
+        'user_OrrMkaU8MTAiz3JrnRlxo'
       )
       .then(
         result => {

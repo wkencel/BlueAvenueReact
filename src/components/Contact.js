@@ -40,14 +40,24 @@ class ContactForm extends React.Component {
           </button>
           </li>
           <br/>
+          <div id="price-calculator" style={{'display': 'none'}}>
+            <PriceCalculator />
+          </div>
+          <br/>
           <h4>Make your booking</h4>
           <li>
-            <Link to="/PriceCalculator">Purchase Request</Link>
+            <button
+            id="purchase-request-button"
+            onClick={() => {showPurchaseRequest()
+            }}
+          >
+            Purchase Request
+          </button>
           </li>
         </ul>
       </nav>
-      <div id="price-calculator" style={{'display': 'none'}}>
-        <PriceCalculator />
+      <div id="purchase-request" style={{'display': 'none'}}>
+        <PurchaseRequest />
       </div>
       
       
@@ -57,18 +67,15 @@ class ContactForm extends React.Component {
       <ul className="icons">
       <EmailJS />
         <li>
-          <a href="https://codebushi.com" className="icon fa-instagram">
+          <a href="https://www.instagram.com/blueavenuegroove/" className="icon fa-instagram">
             <span className="label">Instagram</span>
           </a>
         </li>
         <li>
-          <a href="https://codebushi.com" className="icon fa-facebook">
+          <a href="https://www.facebook.com/BlueAvenueGroove/" className="icon fa-facebook">
             <span className="label">Facebook</span>
           </a>
         </li>
-        <p> more icons here i.e. Wedding Wire, The Knot</p>
-        <p>purchase request</p>
-        <PurchaseRequest />
       </ul>
      </>
     )
@@ -76,6 +83,15 @@ class ContactForm extends React.Component {
 }
 function showCalculator() {
   var x = document.getElementById("price-calculator")
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function showPurchaseRequest() {
+  var x = document.getElementById("purchase-request")
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
