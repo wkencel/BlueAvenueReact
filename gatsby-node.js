@@ -5,3 +5,12 @@
  */
 
 // You can delete this file if you're not using it
+
+// gatsby-node.js
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    node: {
+      fs: 'empty'
+    }
+  })
+}

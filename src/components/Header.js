@@ -5,7 +5,7 @@ import Buildings from '../assets/images/buildings2.png'
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
   <div className="logo">
-  <img src={Buildings} width='200%' style={{'margin-top':'-55%', 'margin-left':'-50%'}}></img>
+  <img src={Buildings} alt="NY wedding band Motown R&B Soul" width='200%' style={{'margin-top':'-55%', 'margin-left':'-50%'}}></img>
       
     </div>
     <div className="content">

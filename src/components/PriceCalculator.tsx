@@ -2,30 +2,41 @@ import React, { useState } from 'react';
 
 interface IUserValues {
   receptionBandSize: number | string,
-  receptionLength: any,
-  cocktailBandSize: any,
-  ceremonyBandSize: any,
-  distanceFromNYC: any,
+  receptionLength: number,
+  cocktailBandSize: number,
+  ceremonyBandSize: number,
+  distanceFromNYC: number,
+}
+
+interface IResults {
+  receptionCost: number | string,
+  cocktailBandCost: number | string,
+  ceremonyBandCost: number | string,
+  distanceCost: number | string,
+  lodgingCost: number | string,
+  totalCost: number,
+  distanceFromCity: number,
+  isResult: boolean,
 }
 
 function Calculator() {
   // state to storage the values given by the user when filling the input fields
   const [userValues, setUserValues] = useState<IUserValues>({
-    receptionBandSize: '',
-    receptionLength: '',
-    cocktailBandSize: '',
-    ceremonyBandSize: '',
-    distanceFromNYC: '',
+    receptionBandSize: 0,
+    receptionLength: 0,
+    cocktailBandSize: 0,
+    ceremonyBandSize: 0,
+    distanceFromNYC: 0,
   });
 
   // state to storage the results of the calculation
-  const [results, setResults] = useState({
-    receptionCost: '',
-    cocktailBandCost: '',
-    ceremonyBandCost: '',
-    distanceCost: 'N/A',
-    lodgingCost: '',
-    totalCost: '',
+  const [results, setResults] = useState<IResults>({
+    receptionCost: 0,
+    cocktailBandCost: 0,
+    ceremonyBandCost: 0,
+    distanceCost: 0,
+    lodgingCost: 0,
+    totalCost: 0,
     distanceFromCity: 0,
     isResult: false,
   });
@@ -62,7 +73,7 @@ function Calculator() {
     let actualError = '';
     // Validate if there are values
     console.log("RECEPTION BAND SIZE AT CANCEL: ", receptionBandSize)
-    if (!receptionBandSize|| !receptionLength) {
+    if (receptionBandSize === 0 || receptionLength === 0) {
       actualError = 'min of 6 person reception band required';
     }
     if (actualError) {
@@ -71,7 +82,9 @@ function Calculator() {
     }
     return true;
   };
-
+  if (!isValid) {
+    console.log('error')
+  }
   // Handle the data submited - validate inputs and send it as a parameter to the function that calculates the loan
   const handleSubmitValues = (e) => {
     e.preventDefault();
@@ -86,14 +99,13 @@ function Calculator() {
     const bandSizeReception = receptionBandSize;
     const lengthOfReception = Number(receptionLength);
     let costOfReception = (bandSizeReception === 6) ? 7500 : (bandSizeReception-6) * 650 + 7500
-    let cocktailHrCost: any = ''
-    let ceremonyCost: any = ''
-    let distanceCost: number = 0
-    let lodgingCost: any = ''
-    let totalCost: any = ''
+    let cocktailHrCost: number = 0;
+    let ceremonyCost: number = 0;
+    let distanceCost: number = 0;
+    let lodgingCost: number = 0;
+    let totalCost: number = 0;
       // distance cost
     if (distanceFromNYC !== 0) {
-      distanceFromNYC= Number(distanceFromNYC)
       console.log('distance form NYC', distanceFromNYC)
       if (distanceFromNYC >= 3){
         distanceCost = distanceFromNYC * 25 * (bandSizeReception + 1)
@@ -117,13 +129,9 @@ console.log('distancecost', distanceCost)
       lodgingCost = (receptionBandSize <= 7) ? 500 : 725
     }
 
-    if (ceremonyBandSize) {
-     ceremonyCost = Number(ceremonyBandSize) * 175 + 225
-    }
+     ceremonyCost = ceremonyBandSize * 175 + 225
 
-    if (cocktailBandSize) {
-      cocktailHrCost = Number(cocktailBandSize) * 125 + 50
-     }
+      cocktailHrCost = cocktailBandSize * 125 + 50
       
     if (lengthOfReception === 3) {
       costOfReception = costOfReception * .95
@@ -138,20 +146,20 @@ console.log('distancecost', distanceCost)
     // total cost`
     let costDistance = distanceCost
     if (typeof distanceCost === 'string'){costDistance = 0}
-    let costLodging = Number(lodgingCost)
-    totalCost = costOfReception + costLodging + Number(costDistance) + cocktailHrCost + Number(ceremonyCost) 
+    let costLodging = lodgingCost
+    totalCost = costOfReception + costLodging + Number(costDistance) + cocktailHrCost + ceremonyCost
     // formatting for the user
     let receptionResult = `$${costOfReception} for a ${bandSizeReception} person band for ${lengthOfReception} hours`
     
-    let cocktailHrResult = (cocktailHrCost === '') ? '' : `$${cocktailHrCost} for a ${cocktailBandSize} person band`
+    let cocktailHrResult = (cocktailHrCost === 0) ? '' : `$${cocktailHrCost} for a ${cocktailBandSize} person band`
 
-    let ceremonyResult = (ceremonyCost === '') ? '' : `$${ceremonyCost} for a ${ceremonyBandSize} person ensemble & sound`
+    let ceremonyResult = (ceremonyCost === 0) ? '' : `$${ceremonyCost} for a ${ceremonyBandSize} person ensemble & sound`
 
     let distanceResult = (distanceFromNYC === 0) ? 'N/A' : `$${distanceCost} for ${distanceFromNYC} hours away`
 
-    let lodgingResult = (lodgingCost === '') ? '' : `$${lodgingCost} for housing the ${bandSizeReception} band and engineer`
+    let lodgingResult = (lodgingCost === 0) ? '' : `$${lodgingCost} for housing the ${bandSizeReception} band and engineer`
 
-    let totalResult = `$${totalCost}`
+    let totalResult = totalCost
       // Set up results to the state to be displayed to the user
       setResults({
         receptionCost: receptionResult,
@@ -171,20 +179,20 @@ console.log('distancecost', distanceCost)
   const clearFields = () => {
     setUserValues({
       receptionBandSize: 0,
-      receptionLength: '',
-      cocktailBandSize: '',
-      ceremonyBandSize: '',
-      distanceFromNYC: '',
+      receptionLength: 0,
+      cocktailBandSize: 0,
+      ceremonyBandSize: 0,
+      distanceFromNYC: 0,
     });
 
     setResults({
-      receptionCost: '',
-      cocktailBandCost: '',
-      ceremonyBandCost: '',
-      distanceCost: 'N/A',
+      receptionCost: 0,
+      cocktailBandCost: 0,
+      ceremonyBandCost: 0,
+      distanceCost: 0,
       distanceFromCity: 0,
-      lodgingCost: '',
-      totalCost: '',
+      lodgingCost: 0,
+      totalCost: 0,
       isResult: false,
     });
   };
@@ -295,7 +303,7 @@ console.log('distancecost', distanceCost)
             //   Form to display the results to the user
             <div className='form-items'>
               <h4>
-                <br /> Reception Package: {results.receptionCost}
+                <br /> Reception Package: ${results.receptionCost}
                 <br /> Cocktail Hr: {results.cocktailBandCost}
                 <br /> Ceremony: {results.ceremonyBandCost}
                 <br /> Travel: {results.distanceCost}

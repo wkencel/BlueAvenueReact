@@ -1,8 +1,8 @@
 import React from "react"
-import PriceCalculator from './PriceCalculator'
+// import PriceCalculator from './PriceCalculator'
 import emailjs from "emailjs-com"
 import {  Form, Input,  TextArea, Grid } from "semantic-ui-react"
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 // require('dotenv').config();
 // let serviceId = process.env.YOUR_SERVICE_ID_CONTACT
 // let templateId = process.env.YOUR_TEMPLATE_ID_CONTACT
