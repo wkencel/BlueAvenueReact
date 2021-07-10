@@ -1,9 +1,6 @@
 import React, {Component} from "react"
-// import Syd1 from '../assets/images/syd1.png';
-// import Pam1 from '../assets/images/pam1.png'
-// import Will1 from '../assets/images/WillK.headshot_1.png'
 /**
- * 
+ *
  * -Elizabeth K. 12/23/2019
  * - Shana C 10/6/2019
  * 11/26/2018 by Ben T
@@ -11,12 +8,12 @@ import React, {Component} from "react"
  */
 
 function Reviews(props){
-    return (
-      <>
+  return (
+    <>
       <h3>
-      <u>
-      See what past couples have said
-      </u>
+        <u>
+          See what past couples have said
+        </u>
       </h3>
       <p><i>This band was truly what a 5 star review is made of, they were "The best ever" I cannot describe the energy, talent, and absolutely incredible music that Blue Avenue Groove brought to our wedding day."</i></p>
       <p>-Melissa M</p>
@@ -86,7 +83,7 @@ function Reviews(props){
       <p>-Jessica F</p>
       <p><i>We absolutely loved having Blue Avenue Groove play our ceremony, cocktail reception, and reception. They were amazing and helped us think through every detail. They learned all of the music that we needed them to, were professional and most importantly - kept the crowd dancing! They even mixed in some songs that we weren't expecting but that the crowd loved. A+ all around -- we wish that we were getting married again this weekend so that we could hear Blue Avenue Groove play again!</i></p>
       <p>-Shana</p>
-      <p><i>My husband and I wanted our wedding day to feel like the best party ever, and Blue Avenue Groove made that happen for us. We knew they would be a great addition to our wedding, but we were totally floored by the standard to which they performed. They provided a jazzy saxophone and keyboard duo for cocktail hour, then an 8 piece band for the reception. (Don't skimp on the brass!) Jon and Sami's vocals blew everyone away and got the party started! We received so many compliments and inquiries from our guests, wondering who these talented, beautiful musicians were and where we found them. Thank you to Will and the band for bringing funk, soul and fun to our wedding day!</i></p>
+      <p><i>My husband and I wanted our wedding day to feel like the best party ever, and Blue Avenue Groove made that happen for us. We knew they would be a great addition to our wedding, but we were totally floored by the standard to which they performed. They provided a jazzy saxophone and keyboard duo for cocktail hour, then an 8 piece band for the reception. Don't skimp on the brass! Jon and Sami's vocals blew everyone away and got the party started! We received so many compliments and inquiries from our guests, wondering who these talented, beautiful musicians were and where we found them. Thank you to Will and the band for bringing funk, soul and fun to our wedding day!</i></p>
       <p>-Erica</p>
       <p><i>Blue avenue groove played our summer camp wedding, and boy did they bring the party! EVERYONE was up dancing, and many guests came up to me specifically to remark on how great the band was. They are extremely talented people and they sounded amazing. They also were very helpful and flexible when, during the reception, we found out we had given the caterers and the band different schedules and conflicting information. They communicated really well with my groom and I, and everything went smoothly despite our mistake. 100% recommend them.</i></p>
       <p>-Astrid V.</p>
@@ -95,14 +92,18 @@ function Reviews(props){
       <p><i>"Where did you find your band?!"  That will be the refrain after your wedding if you go with Will and Blue Avenue Groove. I know, because that is all my wife and I have been hearing from our guests. Blue Avenue Groove were consummate professionals, easy to work with, and extremely talented to boot. They had the whole party rocking, and everyone danced their socks off. I honestly cannot recommend them more. We have a friend who is getting married next year, and they have already reached out to get Blue Avenue Groove's contact information because they loved them so much. Make your life easy; just pick Blue Avenue Groove to be your band and enjoy the party! Thank you so much to Will and his team of incredibly talented performers!</i></p>
       <p>-Peter W.</p>
       <br/>
-      <h3><u>Check out more reviews: </u></h3>
+      <h3>
+        <u>
+          Check out more reviews:
+        </u>
+      </h3>
       <a href="https://www.weddingwire.com/reviews/blue-avenue-groove-brooklyn/0da4ea28bbbcfffe.html"><button>On Wedding Wire</button></a>
       <br/>
       <br/>
       <a href="https://www.theknot.com/marketplace/blue-avenue-groove-brooklyn-ny-964870"><button>On The Knot</button></a>
-      </>
-      )
-    }
-    
-    
-    export default Reviews
+    </>
+  )
+}
+
+
+export default Reviews
