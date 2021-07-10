@@ -1,6 +1,6 @@
 import React from "react"
 import PriceCalculator from './PriceCalculator'
-import emailjs from "emailjs-com"
+import emailjs from "emailjs-com";
 import { Input, TextField } from '@material-ui/core';
 import {  Form,   TextArea, Grid } from "semantic-ui-react"
 import PropTypes from "prop-types";
