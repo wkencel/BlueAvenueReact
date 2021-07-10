@@ -76,12 +76,12 @@ function Calculator() {
   const calculateResults = ({ receptionBandSize, receptionLength, cocktailBandSize, ceremonyBandSize, distanceFromNYC }) => {
     const bandSizeReception = Number(receptionBandSize);
     const lengthOfReception = Number(receptionLength);
-    let costOfReception = (bandSizeReception === 6) ? 7500 : (bandSizeReception-6) * 650 + 7500
-    let cocktailHrCost = ''
-    let ceremonyCost = ''
-    let distanceCost = 'N/A'
-    let lodgingCost = ''
-    let totalCost = ''
+    let costOfReception = (bandSizeReception === 6) ? 7500 : (bandSizeReception-6) * 650 + 7500;
+    let cocktailHrCost = '';
+    let ceremonyCost = '';
+    let distanceCost = 'N/A';
+    let lodgingCost = '';
+    let totalCost = '';
       // distance cost
     if (distanceFromNYC !== '') {
       distanceFromNYC = Number(distanceFromNYC)
@@ -92,7 +92,7 @@ function Calculator() {
       if (distanceFromNYC > 2 && distanceFromNYC < 3){
         distanceCost = distanceFromNYC * 35 * (bandSizeReception + 1)
         console.log('here', distanceFromNYC, 'the equation', distanceFromNYC * 15 * (bandSizeReception + 1))
-      } 
+      }
       if (distanceFromNYC <= 2 && distanceFromNYC > 1){
         distanceCost = distanceFromNYC * 45 * (bandSizeReception + 1)
       }
@@ -130,8 +130,8 @@ console.log('distancecost', distanceCost)
     let costDistance = distanceCost
     if (typeof distanceCost === 'string'){costDistance = 0}
     let costLodging = Number(lodgingCost)
-    totalCost = costOfReception + costLodging + Number(costDistance) + cocktailHrCost + ceremonyCost 
-
+    totalCost = Number(costOfReception) + costLodging + Number(costDistance) + Number(cocktailHrCost) + Number(ceremonyCost) 
+    console.log("hope this works TOTAL COST: ", totalCost)
     // formatting for the user
     let receptionResult = `$${costOfReception} for a ${bandSizeReception} person band for ${lengthOfReception} hours`
     
