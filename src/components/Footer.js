@@ -16,7 +16,7 @@ const Footer = (props) => (
     <img src={CoupleChoice2020} 
       alt="NY Wedding band award" 
       width='80px'
-      style={{'margin-left':10}}
+      style={{'marginLeft':10}}
     />
     </footer>
 )

@@ -93,7 +93,7 @@ function PurchaseRequest(props) {
               />
             </div>
             <div className="field half first">
-              <p style={{"font-size":"24px"}}>Date: </p>
+              <p style={{"fontSize":"24px"}}>Date: </p>
               <TextField
                 control={Input}
                 name="date-purchase-request"
@@ -108,7 +108,7 @@ function PurchaseRequest(props) {
             <div id='reception-purchase-request'>
               <h4>Reception: </h4>
               <div className="field half">
-                <p style={{'float': 'left', 'margin-top':0, 'margin-bottom': 0}}>start time &nbsp;&nbsp;</p>
+                <p style={{'float': 'left', 'marginTop':0, 'marginBottom': 0}}>start time &nbsp;&nbsp;</p>
                 <TextField
                 control={Input}
                   className="time-fields"
@@ -121,7 +121,7 @@ function PurchaseRequest(props) {
                 />
               </div>
               <div className="field half" style={{'float':'left'}}>
-                <p style={{'float':'left', 'margin-top':0, 'margin-bottom': 0}}>end time &nbsp;&nbsp;</p>
+                <p style={{'float':'left', 'marginTop':0, 'marginBottom': 0}}>end time &nbsp;&nbsp;</p>
                 <TextField
                 control={Input}
                   className="time-fields"
@@ -142,7 +142,7 @@ function PurchaseRequest(props) {
               <div id='cocktail-purchase-request'>
                 <h4>Cocktail Hr (60 min): </h4>
                 <div className="field half">
-                  <p style={{'float': 'left', 'margin-top':0, 'margin-bottom': 0}}>start time &nbsp;&nbsp;</p>
+                  <p style={{'float': 'left', 'marginTop':0, 'marginBottom': 0}}>start time &nbsp;&nbsp;</p>
                   <TextField
                   control={Input}
                     className="time-fields"
@@ -155,7 +155,7 @@ function PurchaseRequest(props) {
                   />
                 </div>
                 <div className="field half" style={{'float':'left'}}>
-                  <p style={{'float':'left', 'margin-top':0, 'margin-bottom': 0}}>end time &nbsp;&nbsp;</p>
+                  <p style={{'float':'left', 'marginTop':0, 'marginBottom': 0}}>end time &nbsp;&nbsp;</p>
                   <TextField
                   control={Input}
                     className="time-fields"
@@ -171,7 +171,7 @@ function PurchaseRequest(props) {
               <div id='ceremony-purchase-request'>
                 <h4>Ceremony (30 min): </h4>
                 <div className="field half">
-                  <p style={{'float': 'left', 'margin-top':0, 'margin-bottom': 0}}>start time &nbsp;&nbsp;</p>
+                  <p style={{'float': 'left', 'marginTop':0, 'marginBottom': 0}}>start time &nbsp;&nbsp;</p>
                   <TextField 
                   control={Input}
                   name="ceremony-start-time"
@@ -184,7 +184,7 @@ function PurchaseRequest(props) {
                   />
                 </div>
                 <div className="field half" style={{'float':'left'}}>
-                  <p style={{'float':'left', 'margin-top':0, 'margin-bottom': 0}}>end time &nbsp;&nbsp;</p>
+                  <p style={{'float':'left', 'marginTop':0, 'marginBottom': 0}}>end time &nbsp;&nbsp;</p>
                   <TextField 
                   control={Input}
                   name="ceremony-end-time"
