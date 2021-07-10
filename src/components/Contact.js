@@ -1,7 +1,7 @@
 import React from "react"
 import EmailJS from './ContactUs.js'
-import { Link } from 'gatsby';
-import Calculator from './PriceCalculator'
+// import { Link } from 'gatsby';
+// import Calculator from './PriceCalculator'
 import PriceCalculator from './PriceCalculator'
 import PurchaseRequest from './PurchaseRequest'
 
@@ -82,7 +82,7 @@ class ContactForm extends React.Component {
   }
 }
 function showCalculator() {
-  var x = document.getElementById("price-calculator")
+  let x = document.getElementById("price-calculator")
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
@@ -91,7 +91,7 @@ function showCalculator() {
 }
 
 function showPurchaseRequest() {
-  var x = document.getElementById("purchase-request")
+  let x = document.getElementById("purchase-request")
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
