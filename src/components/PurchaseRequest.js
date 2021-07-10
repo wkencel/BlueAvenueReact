@@ -82,7 +82,7 @@ function PurchaseRequest(props) {
                 required
               />
             </div>
-            <div className="field half first">
+            <div className="field half">
               <input
                 control={Input}
                 label="Location"
