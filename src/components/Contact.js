@@ -27,9 +27,14 @@ class ContactForm extends React.Component {
      <>
       <div>{this.state.error}</div>
       
+      <a  href="https://calendly.com/blueavenuegroove/intro-meeting"> Click Here to Schedule a Meeting</a>
+      <br></br><br/>
+      <p>or send us an email</p>
+      <ul className="icons">
+      <EmailJS />
       <nav>
         <ul>
-          <h4>See how much it costs</h4>
+          <h3>See how much it costs</h3>
           <li>
             <button
             id="price-button"
@@ -44,7 +49,7 @@ class ContactForm extends React.Component {
             <PriceCalculator />
           </div>
           <br/>
-          <h4>Make your booking</h4>
+          <h3>Make your booking</h3>
           <li>
             <button
             id="purchase-request-button"
@@ -61,11 +66,6 @@ class ContactForm extends React.Component {
       </div>
       
       
-      <a  href="https://calendly.com/blueavenuegroove/intro-meeting"> Set up a time with one of our product specialists</a>
-      <br></br><br/>
-      <p>or send us an email</p>
-      <ul className="icons">
-      <EmailJS />
         <li>
           <a href="https://www.instagram.com/blueavenuegroove/" className="icon fa-instagram">
             <span className="label">Instagram</span>
