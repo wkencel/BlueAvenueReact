@@ -101,7 +101,7 @@ function PriceCalculator() {
       }
     }
 console.log('distancecost', distanceCost)
-    if (distanceFromNYC == ''){distanceFromNYC = 0}
+    if (distanceFromNYC === ''){distanceFromNYC = 0}
     
       // lodging cost
     if (distanceFromNYC > 2) {

@@ -207,7 +207,7 @@ function PurchaseRequest(props) {
               Please include any other helpful info or customizations..."
               required
               />
-              <div style={{'text-align':'center'}}>
+              <div style={{'textAlign':'center'}}>
                 <li>
                   <input type="submit" value="Submit Purchase Request" className="special" />
                 </li>
