@@ -1,4 +1,4 @@
-import React, {Component} from "react"
+import React from "react"
 /**
  *
  * -Elizabeth K. 12/23/2019
