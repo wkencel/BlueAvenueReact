@@ -52,7 +52,7 @@ class Main extends React.Component {
         }`}
         style={{ display: 'none' }}
         >
-          <WhoWeAre />
+        <WhoWeAre />
           {close}
         </article>
       
