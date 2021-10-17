@@ -124,7 +124,7 @@ class WhoWeAre extends Component {
       <h2>
         COO - Pam Steebler
       </h2>
-      <p></p>
+      <p>Dedicated to providing the best user experience from the time you inquire to the time we make your wedding a blast</p>
       <img alt="Will Kencel" width='320px'/>
       <a href="https://willkencelhome.io">
         <img src={Will1} alt="Will Kencel" width='320px'/>
