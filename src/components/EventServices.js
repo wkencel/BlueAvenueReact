@@ -10,10 +10,10 @@ class EventServices extends React.Component {
         <h3> Reception - base package</h3>
         <ul>
           <li>
-            6 - 12 piece band (4 hrs w/ two 20 min breaks)
+            6 - 12 piece band (4 hrs w/ two breaks)
               <li>
                 starts 2 vocals, guitar, keys, bass, drums
-                  <li>additions include tenor sax, trumpet, alto sax, trombone</li>
+                  <li>additions include vocalists, tenor sax, trumpet, alto sax, trombone</li>
               </li>
           </li>
           <li>Pro audio set up with AV Engineer</li>
