@@ -85,13 +85,14 @@ function Calculator() {
       // distance cost
     if (distanceFromNYC !== '') {
       distanceFromNYC = Number(distanceFromNYC)
-      console.log('distance form NYC', distanceFromNYC)
-      if (distanceFromNYC >= 3){
-        distanceCost = distanceFromNYC * 25 * (bandSizeReception + 1)
+      if (distanceFromNYC >= 4){
+        distanceCost = distanceFromNYC * 40 * (bandSizeReception + 1)
+      }
+      if (distanceFromNYC >= 3 && distanceFromNYC < 4){
+        distanceCost = distanceFromNYC * 35 * (bandSizeReception + 1)
       } 
       if (distanceFromNYC > 2 && distanceFromNYC < 3){
         distanceCost = distanceFromNYC * 35 * (bandSizeReception + 1)
-        console.log('here', distanceFromNYC, 'the equation', distanceFromNYC * 15 * (bandSizeReception + 1))
       }
       if (distanceFromNYC <= 2 && distanceFromNYC > 1){
         distanceCost = distanceFromNYC * 45 * (bandSizeReception + 1)
@@ -105,7 +106,7 @@ console.log('distancecost', distanceCost)
     
       // lodging cost
     if (distanceFromNYC > 2) {
-      lodgingCost = (receptionBandSize <= 7) ? 500 : 725
+      lodgingCost = (receptionBandSize <= 7) ? 700 : 900
     }
 
     if (ceremonyBandSize) {

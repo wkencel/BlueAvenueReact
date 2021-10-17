@@ -1,7 +1,9 @@
 import React, {Component} from "react"
-import Syd1 from '../assets/images/syd1.png';
+import Syd4 from '../assets/images/syd4.png';
 // import Pam1 from '../assets/images/pam1.png'
 import Will1 from '../assets/images/WillK.headshot_1.png'
+import Pam1 from '../assets/images/pam1.png'
+
 
 class WhoWeAre extends Component {
   render() {
@@ -17,7 +19,7 @@ class WhoWeAre extends Component {
         Like anything we do, we strive not to “go through the motions” with each song, but to give you part of us.  We’re building a better version of what it means to be a “wedding band”: filled with music from the soul, bringing friends and family together for the experience of a lifetime.      
       </p>
       <br/>
-      <h3> 
+      <h3>
         <u>
           See what the band's been up to
         </u>
@@ -110,19 +112,28 @@ class WhoWeAre extends Component {
       </h1>
       <br/>
       <br/>
-      <img src={Syd1} alt="Sydney Driver" width='280px' height='380'/>
+      <img src={Syd4} alt="Sydney Driver" width='340px' height='340'/>
       <h2>
        CEO - Sydney Driver
       </h2>
-      <p>Possibly a quote here about something that describes what we believe in but also relates to our business</p>
-      <img alt="" width='320px'/>
+      <p>Nothing's better than watching people have an amazing time and knowing you're the reason behind it</p>
+      <img alt="Will Kencel" width='320px'/>
+      <a href="https://willkencelhome.io">
+        <img src={Pam1} alt="Pam Steebler" width='320px'/>
+      </a>
+      <h2>
+        COO - Pam Steebler
+      </h2>
+      <p></p>
+      <img alt="Will Kencel" width='320px'/>
       <a href="https://willkencelhome.io">
         <img src={Will1} alt="Will Kencel" width='320px'/>
       </a>
       <h2>
         CTO/COO - Will Kencel
       </h2>
-      <p>Original founder and bassist. Guiding Blue Avenue into the next decade by integrating tech to create an inicredible user experience</p>
+      <p>Original founder and bassist. Guiding Blue Avenue into the next decade by integrating tech to create an incredible user experience</p>
+
       </>
     )
   }

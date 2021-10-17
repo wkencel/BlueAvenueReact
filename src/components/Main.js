@@ -41,7 +41,7 @@ class Main extends React.Component {
         }`}
         style={{ display: 'none' }}
         >
-        <Media />
+          <Media />
           {close}
         </article>
       
