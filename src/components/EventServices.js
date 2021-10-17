@@ -80,7 +80,7 @@ class EventServices extends React.Component {
         <br></br>
         <br/>
         <h3>-Dates are going fast-</h3>
-        <h4>Inquiry about dates or schedule a meeting before yours does too!</h4>
+        <h4>Inquiry about your date today!</h4>
         <br/>
         <br/>
         <p>
