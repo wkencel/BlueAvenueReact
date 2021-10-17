@@ -25,11 +25,11 @@ class WhoWeAre extends Component {
         </u>
       </h3>
       <br/>
-      <h4>J Hoard's latest</h4>
+      <h4>Smooth Vibes from Bk with Sami</h4>
       <iframe
           width="100%"
           height='400px'
-          src="https://www.youtube.com/embed/9molxoqHp-M"
+          src="https://www.youtube.com/embed/pM75HyKUNEc"
           title="test"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           frameBorder="0"
@@ -41,11 +41,11 @@ class WhoWeAre extends Component {
       <br/>
       <br/>
       <br/>
-      <h4>Smooth Vibes from Bk with Sami</h4>
+      <h4>J Hoard's latest</h4>
       <iframe
           width="100%"
           height='400px'
-          src="https://www.youtube.com/embed/pM75HyKUNEc"
+          src="https://www.youtube.com/embed/9molxoqHp-M"
           title="test"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           frameBorder="0"
@@ -117,8 +117,8 @@ class WhoWeAre extends Component {
        CEO - Sydney Driver
       </h2>
       <p>Nothing's better than watching people have an amazing time and knowing you're the reason behind it</p>
-      <img alt="Will Kencel" width='320px'/>
-      <a href="https://willkencelhome.io">
+      <img alt="Pam Steebler" width='320px'/>
+      <a>
         <img src={Pam1} alt="Pam Steebler" width='320px'/>
       </a>
       <h2>

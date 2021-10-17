@@ -55,7 +55,7 @@ class Main extends React.Component {
         <WhoWeAre />
           {close}
         </article>
-      
+
         <article
           id="contact"
           className={`${this.props.article === 'contact' ? 'active' : ''} ${
@@ -69,7 +69,7 @@ class Main extends React.Component {
         </article>
 
         <article
-        id="contact"
+        id="reviews"
         className={`${this.props.article === 'reviews' ? 'active' : ''} ${
           this.props.articleTimeout ? 'timeout' : ''
         }`}

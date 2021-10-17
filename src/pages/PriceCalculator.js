@@ -66,10 +66,10 @@ function PriceCalculator() {
   // Handle the data submited - validate inputs and send it as a parameter to the function that calculates the loan
   const handleSubmitValues = (e) => {
     e.preventDefault();
-    // if (isValid()) {
+    if (isValid()) {
       setError('');
       calculateResults(userValues);
-    // }
+    }
   };
 
   // Calculation
