@@ -13,7 +13,7 @@ const Header = props => (
         <h1>Blue Avenue Groove</h1>
 
         <p>
-          Bringing people together{' '}
+          Bringing people together
         </p>
       </div>
     </div>
