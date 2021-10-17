@@ -30,12 +30,12 @@ class EventServices extends React.Component {
                 Small PA and 1 hr of background music
               </li>
               <li>
-                Options: 
+                Options:
                   <li> 1 piece - solo keys or keys/voice
                     <li>Solo keys - jazz/soft/background music</li>
                     <li>Female vocals/keys - Regina Spektor/Carole King mixed with soft soulful jazz</li>
                   </li>
-                  <li> 2 piece - vocals/keys, vocals/guitar, sax/keys
+                  <li> 2 piece (recommended) - vocals/keys, vocals/guitar, sax/keys
                     <li>vocals/keys - jazz ballads, soft pop</li>
                     <li>vocals/guitar - less jazz oriented, more folk/indie</li>
                     <li>sax/keys - jazz standards</li>
