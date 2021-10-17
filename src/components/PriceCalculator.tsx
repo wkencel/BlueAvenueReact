@@ -299,7 +299,7 @@ console.log('distancecost', distanceCost)
                 <br /> Cocktail Hr: {results.cocktailBandCost}
                 <br /> Ceremony: {results.ceremonyBandCost}
                 <br /> Travel: {results.distanceCost}
-                <br /> Lodging: {results.lodgingCost}
+                <br /> Lodging (estimate): {results.lodgingCost}
                 <br /> Total: {results.totalCost}
               </h4>
               {/* Button to clear fields */}
