@@ -4,14 +4,12 @@ import Buildings from '../assets/images/buildings2.png'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
-  <div className="logo">
-  <img src={Buildings} alt="blue avenue groove logo" width='200%' style={{'marginTop':'-55%', 'marginLeft':'-50%'}}></img>
-
+    <div className="logo">
+      <img src={Buildings} alt="blue avenue groove logo" width='200%' style={{'marginTop':'-55%', 'marginLeft':'-50%'}}></img>
     </div>
     <div className="content">
       <div className="inner">
         <h1>Blue Avenue Groove</h1>
-
         <p>
           Bringing people together
         </p>
