@@ -79,16 +79,16 @@ class EventServices extends React.Component {
         </a>
         <br></br>
         <br/>
-        <h3>-list of booked dates coming soon-</h3>
-        <h4>until then, please inquiry about dates directly</h4>
+        <h3>-Dates are going fast-</h3>
+        <h4>Inquiry about dates or schedule a meeting before yours does too!</h4>
         <br/>
         <br/>
         <p>
-        Go to our Contact Page to find out about pricing and booking!
+        Please visit our Contact Page to find out about pricing and booking!
         </p>
       </>
     )
   }
 }
-  
+
   export default EventServices

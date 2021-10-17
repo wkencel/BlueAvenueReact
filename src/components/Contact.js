@@ -34,6 +34,7 @@ class ContactForm extends React.Component {
       <EmailJS />
       <nav>
         <ul>
+        <p>---------------------------------------------------------------------------------------------------------------</p>
           <h3>See how much it costs</h3>
           <li>
             <button
@@ -49,6 +50,7 @@ class ContactForm extends React.Component {
             <PriceCalculator />
           </div>
           <br/>
+          <p>---------------------------------------------------------------------------------------------------------------</p>
           <h3>Make your booking</h3>
           <li>
             <button
