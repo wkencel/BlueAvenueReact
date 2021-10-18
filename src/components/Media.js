@@ -52,6 +52,7 @@ export default function Media() {
         <br>
         </br>
         <br />
+        <p>Can't find what you're looking for? Reach out to see if we have it in our archives</p>
         <h3>
           Snaps from our shows
         </h3>

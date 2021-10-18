@@ -66,8 +66,7 @@ class ContactForm extends React.Component {
       <div id="purchase-request" style={{'display': 'none'}}>
         <PurchaseRequest />
       </div>
-      
-      
+
         <li>
           <a href="https://www.instagram.com/blueavenuegroove/" className="icon fa-instagram">
             <span className="label">Instagram</span>
