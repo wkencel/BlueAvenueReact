@@ -12,11 +12,11 @@ class EventServices extends React.Component {
           <li>
             6 - 12 piece band (4 hrs w/ two breaks)
               <li>
-                starts 2 vocals, guitar, keys, bass, drums
+                bands start with 2 vocals, guitar, keys, bass, drums
                   <li>additions include vocalists, tenor sax, trumpet, alto sax, trombone</li>
               </li>
           </li>
-          <li>Pro audio set up with AV Engineer</li>
+          <li>Pro audio set up with AV/Sound Engineer</li>
           <li>3 song requests (most often 1st dance & parents' dances)</li>
           <li>Announcing dances, cake cutting & other info during reception (aka MC)</li>
           <li>Specialities include: Funk, Soul, Pop, R&B, Rock</li>
@@ -41,7 +41,7 @@ class EventServices extends React.Component {
                     <li>sax/keys - jazz standards</li>
                   </li>
                   <li> 3 piece - vocals/sax/keys, sax/keys/drums, sax/keys/bass
-                    <li>FAV JAZZ COMBO : vocals/sax/keys - high caliber soulful jazz, great chemistry between female vox & sax</li>
+                    <li>BEST JAZZ COMBO : vocals/sax/keys - high caliber soulful jazz</li>
                     <li>sax/keys/drums - Instrumental jazz standards, NYC jazz scene vibe</li>
                     <li>sax/keys/bass - Instrumental jazz standards, NYC jazz scene vibe</li>
                   </li>
@@ -77,15 +77,13 @@ class EventServices extends React.Component {
         <a href='https://docs.google.com/spreadsheets/d/1U4fJlgAtdRjQKzBbRz1U-c0-5hjIY9OVANt_CEp53YM/edit?usp=sharing'>
           <button>Repertoire</button>
         </a>
-        <br></br>
+        <br/>
         <br/>
         <h3>-Dates are going fast-</h3>
         <h4>Inquiry about your date today!</h4>
         <br/>
         <br/>
-        <p>
-        Please visit our Contact Page to find out about pricing and booking!
-        </p>
+        <p>Please visit our Contact Page to find out about pricing and booking!</p>
       </>
     )
   }
