@@ -88,11 +88,11 @@ function PriceCalculator() {
       console.log('distance form NYC', distanceFromNYC)
       if (distanceFromNYC >= 3){
         distanceCost = distanceFromNYC * 25 * (bandSizeReception + 1)
-      } 
+      }
       if (distanceFromNYC > 2 && distanceFromNYC < 3){
         distanceCost = distanceFromNYC * 35 * (bandSizeReception + 1)
         console.log('here', distanceFromNYC, 'the equation', distanceFromNYC * 15 * (bandSizeReception + 1))
-      } 
+      }
       if (distanceFromNYC <= 2 && distanceFromNYC > 1){
         distanceCost = distanceFromNYC * 45 * (bandSizeReception + 1)
       }
@@ -102,7 +102,7 @@ function PriceCalculator() {
     }
 console.log('distancecost', distanceCost)
     if (distanceFromNYC === ''){distanceFromNYC = 0}
-    
+
       // lodging cost
     if (distanceFromNYC > 2) {
       lodgingCost = (receptionBandSize > 7) ? 500 : 725
@@ -115,7 +115,7 @@ console.log('distancecost', distanceCost)
     if (cocktailBandSize) {
       cocktailHrCost = Number(cocktailBandSize) * 125 + 50
      }
-      
+
     if (lengthOfReception === 3) {
       costOfReception = costOfReception * .95
     }
@@ -170,7 +170,7 @@ console.log('distancecost', distanceCost)
 
   return (
     <div className='calculator'>
-    
+
       <div className='form' >
         <h1>Price Calculator</h1>
         {/* Display the error when it exists */}
@@ -178,10 +178,10 @@ console.log('distancecost', distanceCost)
         <form onSubmit={handleSubmitValues} >
           <div>
               <text>reception: </text>
-              <select 
-              name="ReceptionBandSize" 
+              <select
+              name="ReceptionBandSize"
               value={userValues.receptionBandSize}
-              onChange={handleReceptionBandInputChange}
+              onBlur={handleReceptionBandInputChange}
               >
                 <option value=""> </option>
                 <option value="6">6</option>
@@ -191,11 +191,11 @@ console.log('distancecost', distanceCost)
                 <option value="10">10</option>
               </select>
               <text> piece band for a </text>
-              <select 
-              name="reception-length" 
+              <select
+              name="reception-length"
               id="reception-length"
               value={userValues.receptionLength}
-              onChange={handleReceptionLengthInputChange}
+              onBlur={handleReceptionLengthInputChange}
               >
                 <option value="" > </option>
                 <option value="4" >4</option>
@@ -204,21 +204,21 @@ console.log('distancecost', distanceCost)
               </select>
               <text> hour reception</text>
               </div>
-              
+
           {/* ternary operator manages when the calculator and results will be displayed to the user */}
           {!results.isResult ? (
             //   Form to collect data from the user
             <div className='form-items'>
               <div className='cocktail-hour' >
               <br/>
-                
+
                 <label id='label'>cocktail hour band size </label>
-                
-              <select 
-              name="cocktail-band-size" 
+
+              <select
+              name="cocktail-band-size"
               id="cocktail-band-size"
               value={userValues.cocktailBandSize}
-              onChange={handleCocktailBandInputChange}
+              onBlur={handleCocktailBandInputChange}
               >
                 <option value="" > </option>
                 <option value="4" >4</option>
@@ -229,14 +229,14 @@ console.log('distancecost', distanceCost)
 
                 <div className='ceremony' >
                   <br/>
-                  
+
                   <label id='label'>ceremony band size </label>
-                  
-                  <select 
-                  name="ceremony-band-size" 
+
+                  <select
+                  name="ceremony-band-size"
                   id="ceremony-band-size"
                   value={userValues.CeremonyBandSize}
-                  onChange={handleCeremonyInputChange}
+                  onBlur={handleCeremonyInputChange}
                   >
                     <option value="" > </option>
                     <option value="1">1</option>
@@ -248,12 +248,12 @@ console.log('distancecost', distanceCost)
                 <div className='distance' >
                   <br/>
                   <label id='label'>distance from NYC (in hrs) : </label>
-                  
-                  <select 
-                  name="distance-from-NYC" 
+
+                  <select
+                  name="distance-from-NYC"
                   id="distance-from-NYC"
                   value={userValues.distanceFromNYC}
-                  onChange={handleDistanceInputChange}
+                  onBlur={handleDistanceInputChange}
                   >
                     <option value="" >N/A</option>
                     <option value=".5">.5</option>
