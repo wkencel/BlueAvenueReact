@@ -49,13 +49,10 @@ export default function Media() {
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen />
-        <br>
-        </br>
-        <br />
+        <br/>
+        <br/>
         <p>Can't find what you're looking for? Reach out to see if we have it in our archives</p>
-        <h3>
-          Snaps from our shows
-        </h3>
+        <h3>Snaps from our shows</h3>
         <br/>
           <img src={JonDancing} alt="J Hoard" width='100%'/>
         <br/>
