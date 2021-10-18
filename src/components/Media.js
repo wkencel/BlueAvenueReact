@@ -16,39 +16,41 @@ export default function Media() {
       <div>
       <div id="first_column">
         <iframe
-        width="100%"
-        height='400px'
-        src="https://www.youtube.com/embed/Na7bKp9VVRE"
-        title="test"
-        allow="accelerometer; autoPlay; encrypted-media; gyroscope; picture-in-picture"
-        frameBorder="0"
-        webkitallowfullscreen="true"
-        mozallowfullscreen="true"
-        allowFullScreen
-        autoPlay
+          width="100%"
+          height='400px'
+          src="https://www.youtube.com/embed/Na7bKp9VVRE"
+          title="test"
+          allow="accelerometer; autoPlay; encrypted-media; gyroscope; picture-in-picture"
+          frameBorder="0"
+          webkitallowfullscreen="true"
+          mozallowfullscreen="true"
+          allowFullScreen
+          autoPlay
         />
       </div>
       <br/>
       <div id="second_column">
         <iframe
-        width="100%"
-        height='400px'
-        src="https://www.youtube.com/embed/EMkF_DONCSk"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen />
+          width="100%"
+          height='400px'
+          src="https://www.youtube.com/embed/EMkF_DONCSk"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
       </div>
       <br/>
       <div id="third_column">
         <iframe
-        width="100%"
-        height='400px'
-        src="https://www.youtube.com/embed/jw4zzH1DVM0"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen />
+          width="100%"
+          height='400px'
+          src="https://www.youtube.com/embed/jw4zzH1DVM0"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
         <br/>
         <br/>
         <p>Can't find what you're looking for? Reach out to see if we have it in our archives</p>
