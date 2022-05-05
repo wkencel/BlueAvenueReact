@@ -73,10 +73,9 @@ class EventServices extends React.Component {
               </li>
           </li>
         </ul>
-
-        <a href='https://docs.google.com/spreadsheets/d/1U4fJlgAtdRjQKzBbRz1U-c0-5hjIY9OVANt_CEp53YM/edit?usp=sharing'>
-          <button>Repertoire</button>
-        </a>
+        // <a href='https://docs.google.com/spreadsheets/d/1U4fJlgAtdRjQKzBbRz1U-c0-5hjIY9OVANt_CEp53YM/edit?usp=sharing'>
+        //   <button>Repertoire</button>
+        // </a>
         <br/>
         <br/>
         <h3>-Dates are going fast-</h3>

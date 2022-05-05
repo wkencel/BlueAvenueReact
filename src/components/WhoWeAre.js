@@ -107,33 +107,29 @@ class WhoWeAre extends Component {
       <br/>
       <br/>
       <br/>
-      <h1> 
+      <h1>
         Leadership
       </h1>
       <br/>
       <br/>
-      <img src={Syd4} alt="Sydney Driver" width='340px' height='340'/>
-      <h2>
-       CEO - Sydney Driver
-      </h2>
-      <p>Nothing's better than watching people have an amazing time and knowing you're the reason behind it</p>
-      <img alt="Pam Steebler" width='320px'/>
-      <a>
+      <div className="Pam">
+        <a>
         <img src={Pam1} alt="Pam Steebler" width='320px'/>
-      </a>
-      <h2>
+        </a>
+        <h2>
         COO - Pam Steebler
-      </h2>
-      <p>Dedicated to providing the best user experience from the time you inquire to the time we make your wedding a blast</p>
-      <img alt="Will Kencel" width='320px'/>
-      <a href="https://willkencelhome.io">
+        </h2>
+        <p>Dedicated to providing the best user experience from the time you inquire to the time we make your wedding a blast</p>
+      </div>
+      <div className="Will">
+        <a href="https://willkencelhome.io">
         <img src={Will1} alt="Will Kencel" width='320px'/>
-      </a>
-      <h2>
-        CTO/COO - Will Kencel
-      </h2>
-      <p>Original founder and bassist. Guiding Blue Avenue into the next decade by integrating tech to create an incredible user experience</p>
-
+        </a>
+        <h2>
+        CTO - Will Kencel
+        </h2>
+        <p>Original founder and bassist. Guiding Blue Avenue into the next decade by integrating tech to create an incredible user experience</p>
+      </div>
       </>
     )
   }
