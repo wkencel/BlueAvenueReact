@@ -11,9 +11,9 @@ class EventServices extends React.Component {
         <ul>
           <li>
             6 - 12 piece band (4 hrs w/ two breaks)
-              <li>
+              <li style={{"marginLeft":16}}>
                 bands start with 2 vocals, guitar, keys, bass, drums
-                  <li>additions include vocalists, tenor sax, trumpet, alto sax, trombone</li>
+                  <li style={{"marginLeft":16}}>additions include vocalists, tenor sax, trumpet, alto sax, trombone</li>
               </li>
           </li>
           <li>Pro audio set up with AV/Sound Engineer</li>
@@ -26,28 +26,28 @@ class EventServices extends React.Component {
         <ul>
           <li>
             1 - 4 piece band
-              <li>
+              <li style={{"marginLeft":16}}>
                 Small PA and 1 hr of background music
               </li>
-              <li>
+              <li style={{"marginLeft":16}}>
                 Options:
-                  <li> 1 piece - solo keys or keys/voice
-                    <li>Solo keys - jazz/soft/background music</li>
-                    <li>Female vocals/keys - Regina Spektor/Carole King mixed with soft soulful jazz</li>
+                  <li style={{"marginLeft":16}}> 1 piece - solo keys or keys/voice
+                    <li style={{"marginLeft":16}}>Solo keys - jazz/soft/background music</li>
+                    <li style={{"marginLeft":16}}>Female vocals/keys - Regina Spektor/Carole King mixed with soft soulful jazz</li>
                   </li>
-                  <li> 2 piece (recommended) - vocals/keys, vocals/guitar, sax/keys
-                    <li>vocals/keys - jazz ballads, soft pop</li>
-                    <li>vocals/guitar - less jazz oriented, more folk/indie</li>
-                    <li>sax/keys - jazz standards</li>
+                  <li style={{"marginLeft":16}}> 2 piece (recommended) - vocals/keys, vocals/guitar, sax/keys
+                    <li style={{"marginLeft":16}}>vocals/keys - jazz ballads, soft pop</li>
+                    <li style={{"marginLeft":16}}>vocals/guitar - less jazz oriented, more folk/indie</li>
+                    <li style={{"marginLeft":16}}>sax/keys - jazz standards</li>
                   </li>
-                  <li> 3 piece - vocals/sax/keys, sax/keys/drums, sax/keys/bass
-                    <li>BEST JAZZ COMBO : vocals/sax/keys - high caliber soulful jazz</li>
-                    <li>sax/keys/drums - Instrumental jazz standards, NYC jazz scene vibe</li>
-                    <li>sax/keys/bass - Instrumental jazz standards, NYC jazz scene vibe</li>
+                  <li style={{"marginLeft":16}}> 3 piece - vocals/sax/keys, sax/keys/drums, sax/keys/bass
+                    <li style={{"marginLeft":16}}>BEST JAZZ COMBO : vocals/sax/keys - high caliber soulful jazz</li>
+                    <li style={{"marginLeft":16}}>sax/keys/drums - Instrumental jazz standards, NYC jazz scene vibe</li>
+                    <li style={{"marginLeft":16}}>sax/keys/bass - Instrumental jazz standards, NYC jazz scene vibe</li>
                   </li>
-                  <li> 4 piece - vocals/guitar/bass/drums, vocals/keys/bass/drums
-                    <li>vocals/guitar/bass/drums - indie/folk i.e. The Band, The Beatles</li>
-                    <li>vocals/keys/bass/drums - softer jazz oriented quartet</li>
+                  <li style={{"marginLeft":16}}> 4 piece - vocals/guitar/bass/drums, vocals/keys/bass/drums
+                    <li style={{"marginLeft":16}}>vocals/guitar/bass/drums - indie/folk i.e. The Band, The Beatles</li>
+                    <li style={{"marginLeft":16}}>vocals/keys/bass/drums - softer jazz oriented quartet</li>
                   </li>
               </li>
           </li>
@@ -57,25 +57,22 @@ class EventServices extends React.Component {
         <ul>
           <li>
             1 - 2 piece ensemble
-              <li>
+              <li style={{"marginLeft":16}}>
                 Mid-size PA and live music for 30 min ceremony
               </li>
-              <li>
+              <li style={{"marginLeft":16}}>
                 Options
-                  <li> 1 piece - solo keys or solo guitar
-                    <li>Solo keys - traditional i.e bridal march</li>
-                    <li>Solo guitar - less traditional i.e. Van Morrison, Beatles instrumentals</li>
+                  <li style={{"marginLeft":16}}> 1 piece - solo keys or solo guitar
+                    <li style={{"marginLeft":16}}>Solo keys - traditional i.e bridal march</li>
+                    <li style={{"marginLeft":16}}>Solo guitar - less traditional i.e. Van Morrison, Beatles instrumentals</li>
                   </li>
-                  <li> 2 piece - vocals/keys, vocals/guitar
-                    <li>vocals/keys - traditional leaning but with the added effect of a vocalist</li>
-                    <li>vocals/guitar - folk/indie with the added effect of a vocalist</li>
+                  <li style={{"marginLeft":16}}> 2 piece - vocals/keys, vocals/guitar
+                    <li style={{"marginLeft":16}}>vocals/keys - traditional leaning but with the added effect of a vocalist</li>
+                    <li style={{"marginLeft":16}}>vocals/guitar - folk/indie with the added effect of a vocalist</li>
                   </li>
               </li>
           </li>
         </ul>
-        // <a href='https://docs.google.com/spreadsheets/d/1U4fJlgAtdRjQKzBbRz1U-c0-5hjIY9OVANt_CEp53YM/edit?usp=sharing'>
-        //   <button>Repertoire</button>
-        // </a>
         <br/>
         <br/>
         <h3>-Dates are going fast-</h3>
