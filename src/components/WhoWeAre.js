@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import Syd4 from '../assets/images/syd4.png';
 // import Pam1 from '../assets/images/pam1.png'
 import Will1 from '../assets/images/WillK.headshot_1.png'
 import Pam1 from '../assets/images/pam1.png'
@@ -30,22 +29,6 @@ class WhoWeAre extends Component {
           width="100%"
           height='400px'
           src="https://www.youtube.com/embed/pM75HyKUNEc"
-          title="test"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          frameBorder="0"
-          webkitallowfullscreen="true"
-          mozallowfullscreen="true"
-          allowFullScreen
-          autoplay
-          />
-      <br/>
-      <br/>
-      <br/>
-      <h4>J Hoard's latest</h4>
-      <iframe
-          width="100%"
-          height='400px'
-          src="https://www.youtube.com/embed/9molxoqHp-M"
           title="test"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           frameBorder="0"
@@ -112,10 +95,8 @@ class WhoWeAre extends Component {
       </h1>
       <br/>
       <br/>
-      <div className="Pam">
-        <a>
+      <div className="Pam" style={{"marginBottom": 32}}>
         <img src={Pam1} alt="Pam Steebler" width='320px'/>
-        </a>
         <h2>
         COO - Pam Steebler
         </h2>
