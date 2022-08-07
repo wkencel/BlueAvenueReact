@@ -13,7 +13,7 @@ class EventServices extends React.Component {
             6 - 12 piece band (4 hrs w/ two breaks)
               <li style={{"marginLeft":16}}>
                 bands start with 2 vocals, guitar, keys, bass, drums
-                  <li style={{"marginLeft":16}}>additions include vocalists, tenor sax, trumpet, alto sax, trombone</li>
+                <li style={{"marginLeft":16}}>additions include vocalists, tenor sax, trumpet, alto sax, trombone</li>
               </li>
           </li>
           <li>Pro audio set up with AV/Sound Engineer</li>
