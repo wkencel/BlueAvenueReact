@@ -1,12 +1,10 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
 import ContactForm from './Contact.js'
 import WhoWeAre from './WhoWeAre.js'
 import Media from './Media.js'
 import EventServices from './EventServices.js'
+import Reviews from './Reviews.js'
 
 class Main extends React.Component {
   render() {
@@ -26,8 +24,8 @@ class Main extends React.Component {
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
         <article
-        id="intro"
-        className={`${this.props.article === 'intro' ? 'active' : ''} ${
+        id="event-services"
+        className={`${this.props.article === 'event-services' ? 'active' : ''} ${
           this.props.articleTimeout ? 'timeout' : ''
         }`}
         style={{ display: 'none' }}
@@ -37,8 +35,8 @@ class Main extends React.Component {
         </article>
       
         <article
-        id="work"
-        className={`${this.props.article === 'work' ? 'active' : ''} ${
+        id="media"
+        className={`${this.props.article === 'media' ? 'active' : ''} ${
           this.props.articleTimeout ? 'timeout' : ''
         }`}
         style={{ display: 'none' }}
@@ -54,7 +52,7 @@ class Main extends React.Component {
         }`}
         style={{ display: 'none' }}
         >
-          <WhoWeAre />
+        <WhoWeAre />
           {close}
         </article>
       
@@ -69,6 +67,18 @@ class Main extends React.Component {
           <ContactForm />
           {close}
         </article>
+
+        <article
+        id="contact"
+        className={`${this.props.article === 'reviews' ? 'active' : ''} ${
+          this.props.articleTimeout ? 'timeout' : ''
+        }`}
+        style={{ display: 'none' }}
+        >
+        <h2 className="major">Reviews</h2>
+        <Reviews />
+        {close}
+      </article>
       </div>
     )
   }
