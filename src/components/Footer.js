@@ -1,9 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import CoupleChoice2018 from '../assets/images/wwcoupleschoice2018.png'
+import CoupleChoice2020 from '../assets/images/wwcoupleschoice2020.png'
+const { SocialIcon } = require('react-social-icons');
 const Footer = (props) => (
     <footer id="footer" style={props.timeout ? {display: 'none'} : {}}>
-        <p className="copyright">&copy; Gatsby Starter - Dimension. Design: <a href="https://html5up.net">HTML5 UP</a>. Built with: <a href="https://www.gatsbyjs.org/">Gatsby.js</a></p>
+    <SocialIcon url="https://www.instagram.com/blueavenuegroove/" bgColor='lightBlue' fgColor="darkRed"/>
+    <br/>
+    <br/>
+    <img src={CoupleChoice2018} 
+      alt="NY Wedding band award" 
+      width='80px'
+
+    />
+    <img src={CoupleChoice2020} 
+      alt="NY Wedding band award" 
+      width='80px'
+      style={{'marginLeft':10}}
+    />
     </footer>
 )
 
