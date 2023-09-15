@@ -1,12 +1,12 @@
-# gatsby-starter-dimension
+# gatsby-starter-dimension - Blue Ave Groove
 
-**This is a starter for Gatsby.js V2.**
+**This is a customized version of the starter for Gatsby.js V2.**
 
 **The older V1 version of this starter can be found on the v1 branch:**
 
 Gatsby.js V2 starter based on the Dimension site template used for Blue Avenue Groove homesite
 
-## Preview
+## Preview of original starter
 
 https://gatsby-dimension.surge.sh/
 
