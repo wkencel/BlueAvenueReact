@@ -10,10 +10,10 @@ Gatsby.js V2 starter based on the Dimension site template used for Blue Avenue G
 
 https://gatsby-dimension.surge.sh/
 
-## Installation
+## how to run
+1. `nvm use 14.15.4` to use proper node version
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-<br/>
-`gatsby new gatsby-starter-dimension https://github.com/codebushi/gatsby-starter-dimension`
+2. run `yarn` to install proper dependencies
 
-Run `gatsby develop` in the terminal to start the dev site.
+3. run `yarn develop` to run develop mode
+
