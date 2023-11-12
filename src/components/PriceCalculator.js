@@ -98,11 +98,11 @@ console.log('distancecost', distanceCost)
     }
 
     if (ceremonyBandSize) {
-     ceremonyCost = Number(ceremonyBandSize) * 175 + 225
+     ceremonyCost = Number(ceremonyBandSize) * 300 + 300
     }
 
     if (cocktailBandSize) {
-      cocktailHrCost = Number(cocktailBandSize) * 125 + 50
+      cocktailHrCost = Number(cocktailBandSize) * 300 + 300
      }
       
     if (lengthOfReception === 3) {
