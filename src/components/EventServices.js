@@ -11,7 +11,7 @@ class EventServices extends React.Component {
         <h3> Reception - base package</h3>
         <ul>
           <li>
-            6 - 12 piece band (4 hrs w/ two 20 min breaks)
+            6 - 12 piece band (4 hours of the highest quality music in NYC)
               <li>
                 starts 2 vocals, guitar, keys, bass, drums
                   <li>additions include tenor sax, trumpet, alto sax, trombone</li>
@@ -20,7 +20,7 @@ class EventServices extends React.Component {
           <li>Pro audio set up with AV Engineer</li>
           <li>3 song requests (most often 1st dance & parents' dances)</li>
           <li>Announcing dances, cake cutting & other info during reception (aka MC)</li>
-          <li>Specialities include: Funk, Soul, Pop, R&B, Rock</li>
+          <li>Specialities include: Funk, Soul, Pop/Top 40, R&B, Rock</li>
         </ul>
         <img src={BandPhoto} alt="Blue Ave full band photo" width='100%'/>
         <h4> Cocktail hr </h4>

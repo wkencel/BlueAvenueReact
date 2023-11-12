@@ -1,7 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
 import {  Form, Input,  TextArea, Grid } from "semantic-ui-react";
-import { Link } from 'gatsby';
 // require('dotenv').config();
 // let serviceId = process.env.YOUR_SERVICE_ID_CONTACT
 // let templateId = process.env.YOUR_TEMPLATE_ID_CONTACT
@@ -22,7 +21,7 @@ export default function ContactUs(props) {
       .then(
         result => {
           console.log(result.text)
-          alert('thank you for submitting your request.  Looking forward to creating the experience of a lifetime!')
+          alert('thank you for submitting your request.  Looking forward to creating the experience of a lifetime for you and your guests!')
         },
         error => {
           console.log(error.text)

@@ -2,6 +2,11 @@ import React, {Component} from "react"
 // import Pam1 from '../assets/images/pam1.png'
 import Will1 from '../assets/images/WillK.headshot_1.png'
 import Pam1 from '../assets/images/pam1.png'
+import loadable from '@loadable/component';
+
+// const ImageGallery = loadable(() => import('./Instagram.js')); // If you decide to use it in the future just uncomment this line.
+const LightYouTubeEmbed = loadable(() => import('../components/YoutubeLiteComponent'));
+
 
 
 class WhoWeAre extends Component {
@@ -24,68 +29,23 @@ class WhoWeAre extends Component {
         </u>
       </h3>
       <br/>
-      <h4>Smooth Vibes from Bk with Sami</h4>
-      <iframe
-          width="100%"
-          height='400px'
-          src="https://www.youtube.com/embed/pM75HyKUNEc"
-          title="test"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          frameBorder="0"
-          webkitallowfullscreen="true"
-          mozallowfullscreen="true"
-          allowFullScreen
-          autoplay
-          />
+        <h4>Smooth Vibes from Bk with Sami</h4>
+        < LightYouTubeEmbed id="pM75HyKUNEc" />
       <br/>
       <br/>
       <br/>
-      <h4>Live from Phil's apartment</h4>
-      <iframe
-          width="100%"
-          height='400px'
-          src="https://www.youtube.com/embed/OxSzSZQMfPA"
-          title="test"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          frameBorder="0"
-          webkitallowfullscreen="true"
-          mozallowfullscreen="true"
-          allowFullScreen
-          autoplay
-          />
+        <h4>Live from Phil's apartment</h4>
+        < LightYouTubeEmbed id="OxSzSZQMfPA" />
       <br/>
       <br/>
       <br/>
-      <h4>From the Beat Lab with Syd</h4>
-      <iframe
-          width="100%"
-          height='400px'
-          src="https://www.youtube.com/embed/3FNJFJpK1CU"
-          title="test"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          frameBorder="0"
-          webkitallowfullscreen="true"
-          mozallowfullscreen="true"
-          allowFullScreen
-          autoplay
-          />
+        <h4>From the Beat Lab with Syd</h4>
+        < LightYouTubeEmbed id="3FNJFJpK1CU" />
       <br/>
       <br/>
       <br/>
-      <h4>Ben, Professor of Sound, building a vibe w/ his fiance, Caroline</h4>
-      <iframe
-          width="100%"
-          height='400px'
-          src="https://www.youtube.com/embed/bUxmcNQR6pg"
-          title="test"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          frameBorder="0"
-          webkitallowfullscreen="true"
-          mozallowfullscreen="true"
-          allowFullScreen
-          autoplay
-          />
-
+        <h4>Ben, Professor of Sound, building a vibe w/ his fiance, Caroline</h4>
+        < LightYouTubeEmbed id="bUxmcNQR6pg" />
       <br/>
       <br/>
       <br/>
