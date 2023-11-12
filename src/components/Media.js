@@ -1,6 +1,4 @@
 import React from "react";
-// import ImageGallery from './Instagram.js'
-// import JonDancing from '../assets/images/JonDancing.jpeg';
 import SamiAndPhil from '../assets/images/SamiPhilwmanhattan.jpeg';
 import Pam from '../assets/images/Pam.jpeg';
 import GirlDancing from '../assets/weddingPhotos/Leibel-Band-10.jpg';
