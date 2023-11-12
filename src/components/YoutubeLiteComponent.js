@@ -1,12 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { globalContext } from '../context/context';
 
 export default function LightYouTubeEmbed({ id }) {
     const [videoPlayed, setVideoPlayed] = useState(false);
 
     const videoSrc = `https://www.youtube.com/embed/${id}?autoplay=1`;
 
+    const { stopPlay, setStopPlay } = useContext(globalContext);
+    setStopPlay(false)
+
     const handleClick = () => {
         setVideoPlayed(true);
+        setStopPlay(!stopPlay)
     };
 
     return (
@@ -17,13 +22,13 @@ export default function LightYouTubeEmbed({ id }) {
                 />
             }
 
-            {videoPlayed ? (
+            {videoPlayed && !stopPlay ? (
                 <iframe
                     width="100%"
                     height="100%"
                     src={videoSrc}
                     title="Video"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
                     frameBorder="0"
                     allowFullScreen
                 />
