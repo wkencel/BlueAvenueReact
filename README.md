@@ -1,6 +1,6 @@
 # Blue Avenue Groove Homesite
 
-**This is the homesite for Blue Avenue Groove - built in Gatsby on React**
+**This is the homesite for Blue Avenue Groove - built with Gatsby and React**
 
 
 ## how to run
