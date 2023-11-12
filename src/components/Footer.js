@@ -14,22 +14,22 @@ const Footer = (props) => (
     <br/>
     <img src={CoupleChoice2018} 
       alt="NY Wedding band award 2018" 
-      width='20%'
+      width='80px'
 
     />
     <img src={CoupleChoice2020} 
       alt="NY Wedding band award 2020" 
-      width='20%'
+      width='80px'
       style={{'marginLeft':10}}
     />
     <img src={CoupleChoice2021} 
       alt="NY Wedding band award 2021" 
-      width='20%'
+      width='80px'
       style={{'marginLeft':10}}
     />
     <img src={CoupleChoice2022} 
       alt="NY Wedding band award 2022" 
-      width='20%'
+      width='80px'
       style={{'marginLeft':10}}
     />
     </footer>
