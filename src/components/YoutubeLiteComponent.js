@@ -25,7 +25,7 @@ export default function LightYouTubeEmbed({ id }) {
             {videoPlayed && !stopPlay ? (
                 <iframe
                     width="100%"
-                    height="100%"
+                    height="300px"
                     src={videoSrc}
                     title="Video"
                     allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
