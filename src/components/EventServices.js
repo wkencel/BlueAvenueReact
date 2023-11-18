@@ -1,5 +1,5 @@
 import React from "react"
-import BandPhoto from '../assets/images/weddingPhotos/BlueAvenueCCphoto.jpg';
+import BandPhoto from '../assets/images/weddingPhotos/BlueAvenueCCphoto.webp';
 
 class EventServices extends React.Component {
   render() {

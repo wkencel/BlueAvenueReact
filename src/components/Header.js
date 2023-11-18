@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import Buildings from '../assets/images/buildings2.png'
+import Buildings from '../assets/images/buildings2.webp'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
