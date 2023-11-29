@@ -1,15 +1,21 @@
 import PropTypes from 'prop-types'
-import React, { useContext } from 'react'
-import ContactForm from './Contact.js'
-import WhoWeAre from './WhoWeAre.js'
-import Media from './Media.js'
-import EventServices from './EventServices.js'
-import Reviews from './Reviews.js'
+import React, { useContext, Suspense, lazy } from 'react'
+// import ContactForm from './Contact.js'
+// import WhoWeAre from './WhoWeAre.js'
+// import Media from './Media.js'
+// import EventServices from './EventServices.js'
+// import Reviews from './Reviews.js'
 import { globalContext } from "../context/context"
+const Media = lazy(() => import('./Media.js'));
+const EventServices = lazy(() => import('./EventServices.js'));
+const ContactForm = lazy(() => import('./ContactForm.js'));
+const WhoWeAre = lazy(() => import('./WhoWeAre.js'));
+const Reviews = lazy(() => import('./Reviews.js'));
+
 
 function Main({ article, articleTimeout, onCloseArticle, timeout, setWrapperRef }) {
 
-  const { setStopPlay, stopPlay } = useContext(globalContext);
+  const { setStopPlay } = useContext(globalContext);
   let close = (
     <div
       className="close"
@@ -33,7 +39,9 @@ function Main({ article, articleTimeout, onCloseArticle, timeout, setWrapperRef 
         }`}
         style={{ display: 'none' }}
       >
-        <EventServices />
+        <Suspense fallback={<div>Loading...</div>}>
+          <EventServices />
+        </Suspense>
         {close}
       </article>
     
@@ -44,7 +52,9 @@ function Main({ article, articleTimeout, onCloseArticle, timeout, setWrapperRef 
           }`}
           style={{ display: 'none' }}
       >
-        <Media />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Media />
+        </Suspense>
         {close}
       </article>
     
@@ -55,7 +65,9 @@ function Main({ article, articleTimeout, onCloseArticle, timeout, setWrapperRef 
         }`}
         style={{ display: 'none' }}
       >
-        <WhoWeAre />
+        <Suspense fallback={<div>Loading...</div>}>
+          <WhoWeAre />
+        </Suspense>
         {close}
       </article>
     
@@ -67,7 +79,9 @@ function Main({ article, articleTimeout, onCloseArticle, timeout, setWrapperRef 
         style={{ display: 'none' }}
       >
         <h2 className="major">Contact</h2>
-        <ContactForm />
+        <Suspense fallback={<div>Loading...</div>}>
+          <ContactForm />
+        </Suspense>
         {close}
       </article>
 
@@ -79,7 +93,9 @@ function Main({ article, articleTimeout, onCloseArticle, timeout, setWrapperRef 
         style={{ display: 'none' }}
       >
         <h2 className="major">Reviews</h2>
-        <Reviews />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Reviews />
+        </Suspense>
         {close}
       </article>
     </div>
