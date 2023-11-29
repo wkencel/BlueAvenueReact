@@ -1,8 +1,8 @@
-import React from "react"
-import BandPhoto from '../assets/images/weddingPhotos/BlueAvenueCCphoto.webp';
+import React, { Component } from "react"
+import BandPhoto from '../optimized-images/BlueAvenueCCphoto.webp';
 import { Link } from "gatsby";
 
-class EventServices extends React.Component {
+class EventServices extends Component {
   render() {
     return (
       <>
@@ -25,7 +25,7 @@ class EventServices extends React.Component {
           <li>Announcing dances, cake cutting & other info during reception (aka MC)</li>
           <li>Specialities include: Funk, Soul, Pop/Top 40, R&B, Rock</li>
         </ul>
-        <img src={BandPhoto} alt="Blue Ave full band photo" width='100%'/>
+        <img src={BandPhoto} alt="Blue Ave full band" width='100%'/>
         <h4> Cocktail hr </h4>
         <ul>
           <li>

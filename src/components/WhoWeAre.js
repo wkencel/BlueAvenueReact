@@ -1,6 +1,6 @@
 import React, {Component} from "react"
-import Will1 from '../assets/images/WillK.headshot_1.webp'
-import Pam1 from '../assets/images/pam1.webp'
+import Will1 from '../optimized-images/WillK.headshot_1.webp'
+import Pam1 from '../optimized-images/pam1.webp'
 import loadable from '@loadable/component';
 
 // const ImageGallery = loadable(() => import('./Instagram.js')); // If you decide to use it in the future just uncomment this line.

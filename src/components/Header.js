@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import Buildings from '../assets/images/buildings2.webp'
+import Buildings from '../optimized-images/buildings2.webp'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
   <div className="logo">
-  <img src={Buildings} width='200%' style={{'marginTop':'-55%', 'marginLeft':'-50%'}} alt="Blue Avenue Groove logo NYC"></img>
+  <img src={Buildings} width='200%' style={{'marginTop':'-55%', 'marginLeft':'-50%'}} alt="Blue Avenue Groove logo NYC"/>
       
     </div>
     <div className="content">
