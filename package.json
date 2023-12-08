@@ -6,24 +6,27 @@
   "dependencies": {
     "@loadable/component": "^5.15.3",
     "@material-ui/core": "^4.12.4",
-    "cloudinary": "^1.41.0",
     "dotenv": "^16.3.1",
     "emailjs-com": "^3.2.0",
-    "gatsby": "^2.19.5",
-    "gatsby-plugin-manifest": "^2.2.38",
-    "gatsby-plugin-react-helmet": "^3.1.21",
-    "gatsby-plugin-sass": "^2.1.27",
+    "gatsby": "^5.12.11",
+    "gatsby-plugin-image": "^3.12.3",
+    "gatsby-plugin-manifest": "^5.12.3",
+    "gatsby-plugin-offline": "^6.12.3",
+    "gatsby-plugin-react-helmet": "^6.12.0",
+    "gatsby-plugin-sass": "^6.12.3",
+    "gatsby-plugin-sharp": "^5.12.3",
     "gatsby-source-filesystem": "^5.12.1",
     "gatsby-transformer-cloudinary": "^4.5.0",
-    "node-sass": "^4.13.1",
+    "gatsby-transformer-sharp": "^5.12.3",
+    "imagemin-cli": "^7.0.0",
     "prop-types": "^15.8.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1",
-    "react-router-dom": "^6.20.0",
-    "react-social-icons": "^5.15.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-helmet": "^6.1.0",
+    "react-social-icons": "^6.7.0",
+    "sass": "^1.69.5",
     "semantic-ui-react": "^2.1.4",
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.2"
   },
   "keywords": [
     "gatsby"
@@ -34,12 +37,16 @@
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "depcheck": "depcheck"
+    "depcheck": "depcheck",
+    "optimize-images": "npx imagemin src/assets/images/wwCouplesChoiceImages/* --out-dir=src/optimized-images"
   },
   "devDependencies": {
     "depcheck": "^1.4.7",
-    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.31",
-    "prettier": "^1.19.1"
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.32",
+    "imagemin": "^8.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "prettier": "^3.1.0"
   },
   "repository": {
     "type": "git",
