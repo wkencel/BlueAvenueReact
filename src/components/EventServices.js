@@ -1,6 +1,5 @@
 import React, { Component } from "react"
-import BandPhoto from '../optimized-images/BlueAvenueCCphoto.webp';
-import { Link } from "gatsby";
+import BandPhoto from '../optimized-images/BlueAvenueCCphoto.webp'
 
 class EventServices extends Component {
   render() {
@@ -8,8 +7,6 @@ class EventServices extends Component {
       <>
         <h2 className="major">Event Services</h2>
         <br/>
-        <Link to="/nycweddings">NYC Weddings</Link>
-        <Link to="/brooklynweddings">Brooklyn Weddings</Link>
         <h2>What we offer</h2>
         <h3> Reception - base package</h3>
         <ul>
