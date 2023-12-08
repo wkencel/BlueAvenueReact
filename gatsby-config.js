@@ -10,6 +10,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-offline',
     // {
     //   resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
     //   options: {
@@ -48,16 +49,6 @@ module.exports = {
     },
     // Add additional folders as needed...
 
-    // Now configure the gatsby-transformer-cloudinary plugin
-    {
-      resolve: `gatsby-transformer-cloudinary`,
-      options: {
-        cloudName: "djsncrph0",
-        apiKey: "558942998321635",
-        apiSecret: "YTEJEtzU8bPu4UYKjFwCEy0ChHQ",
-        uploadFolder: 'gatsby-cloudinary',
-      },
-    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -71,5 +62,8 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
   ],
 }
