@@ -49,19 +49,19 @@ function PriceCalculator() {
     setUserValues({ ...userValues, distanceFromNYC: event.target.value });
 
   // Manage validations and error messages
-  const isValid = () => {
-    const { receptionBandSize, receptionLength } = userValues;
-    let actualError = '';
-    // Validate if there are values
-    if (!receptionBandSize || !receptionLength) {
-      actualError = 'min of 6 person reception band required';
-    }
-    if (actualError) {
-      setError(actualError);
-      return false;
-    }
-    return true;
-  };
+  // const isValid = () => {
+  //   const { receptionBandSize, receptionLength } = userValues;
+  //   let actualError = '';
+  //   // Validate if there are values
+  //   if (!receptionBandSize || !receptionLength) {
+  //     actualError = 'min of 6 person reception band required';
+  //   }
+  //   if (actualError) {
+  //     setError(actualError);
+  //     return false;
+  //   }
+  //   return true;
+  // };
 
   // Handle the data submited - validate inputs and send it as a parameter to the function that calculates the loan
   const handleSubmitValues = (e) => {
