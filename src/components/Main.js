@@ -8,7 +8,7 @@ import React, { useContext, Suspense, lazy } from 'react'
 import { globalContext } from "../context/context"
 const Media = lazy(() => import('./Media.js'));
 const EventServices = lazy(() => import('./EventServices.js'));
-const ContactForm = lazy(() => import('./ContactForm.js'));
+const ContactForm = lazy(() => import('./Contact.js'));
 const WhoWeAre = lazy(() => import('./WhoWeAre.js'));
 const Reviews = lazy(() => import('./Reviews.js'));
 

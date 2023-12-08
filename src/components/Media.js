@@ -1,8 +1,8 @@
 import React from "react";
 import SamiAndPhil from '../optimized-images/SamiPhilwmanhattan.webp';
 import Pam from '../optimized-images/Pam.webp';
-import GirlDancing from '../optimized-images/weddingPhotos/Leibel-Band-10.webp';
-import OldGuy from '../optimized-images/weddingPhotos/Liebel.oldguydancing.webp';
+import GirlDancing from '../optimized-images/Leibel-Band-10.webp';
+import OldGuy from '../optimized-images/Liebel.oldguydancing.webp';
 import loadable from '@loadable/component';
 
 // const ImageGallery = loadable(() => import('./Instagram.js')); // If you decide to use it in the future just uncomment this line.
