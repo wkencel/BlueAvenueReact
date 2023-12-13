@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://blueavemusic.io/</loc>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://blueavemusic.io/events</loc>
+    </url>
+    <url>
+        <loc>https://blueavemusic.io/media</loc>
+    </url>
+    <url>
+        <loc>https://blueavemusic.io/people</loc>
+    </url>
+    <url>
+        <loc>https://blueavemusic.io/contact</loc>
+    </url>
+    <url>
+        <loc>https://blueavemusic.io/reviews</loc>
+    </url>
+    <url>
+        <loc>https://blueavemusic.io/wedding-bands-nyc/</loc>
+    </url>
+    <url>
+        <loc>https://blueavemusic.io/brooklyn-wedding-bands/</loc>
+    </url>
+</urlset>
