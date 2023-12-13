@@ -4,13 +4,14 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: 'Blue Avenue Groove Wedding band site',
-    author: 'Will Kencel',
-    description: 'NY wedding band - serving NYC, hudson valley with amazing wedding entertainment',
+    title: "Top Live Wedding Bands New York City | Blue Avenue Groove ",
+    author: "Will Kencel",
+    description:
+      "NY wedding band - serving NYC, hudson valley with amazing wedding entertainment",
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-offline',
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-offline",
     // {
     //   resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
     //   options: {
@@ -52,18 +53,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
-        start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
-        display: 'minimal-ui',
-        icon: 'src/images/building-icon.webp', // This path is relative to the root of the site.
+        name: "gatsby-starter-default",
+        short_name: "starter",
+        start_url: "/",
+        background_color: "#663399",
+        theme_color: "#663399",
+        display: "minimal-ui",
+        icon: "src/images/building-icon.webp", // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-sass',
+    "gatsby-plugin-sass",
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
   ],
-}
+};
