@@ -181,3 +181,22 @@
 	.align-right {
 		text-align: right;
 	}
+
+// Add this to your _typography.scss
+
+	ul.list-dash {
+		list-style-type: none;
+		padding-left: 0;
+  
+	li {
+	  padding-left: 1.5rem; // Increase indent to your liking
+	  
+	  &::before {
+		content: "—\00a0"; // Using em dash followed by a non-breaking space
+		font-weight: bold; // You can set the font weight to make the dash thicker
+		display: inline-block;
+		margin-left: -1.5rem; // Adjust this value to align the dash with the content appropriately
+		width: 1.5rem; // Same value as the padding-left for alignment
+	  }
+	}
+  }
