@@ -111,7 +111,6 @@ function PurchaseRequest(props) {
                 <p style={{'float': 'left', 'marginTop':0, 'marginBottom': 0}}>start time &nbsp;&nbsp;</p>
                 <TextField
                 control={Input}
-                  className="time-fields"
                   name="reception-start-time"
                   type="time"
                   className={classes.root}
@@ -124,7 +123,6 @@ function PurchaseRequest(props) {
                 <p style={{'float':'left', 'marginTop':0, 'marginBottom': 0}}>end time &nbsp;&nbsp;</p>
                 <TextField
                 control={Input}
-                  className="time-fields"
                   name="reception-end-time"
                   type="time"
                   className={classes.root}
@@ -145,7 +143,6 @@ function PurchaseRequest(props) {
                   <p style={{'float': 'left', 'marginTop':0, 'marginBottom': 0}}>start time &nbsp;&nbsp;</p>
                   <TextField
                   control={Input}
-                    className="time-fields"
                     name="cocktail-start-time"
                     type="time"
                     className={classes.root}
@@ -158,7 +155,6 @@ function PurchaseRequest(props) {
                   <p style={{'float':'left', 'marginTop':0, 'marginBottom': 0}}>end time &nbsp;&nbsp;</p>
                   <TextField
                   control={Input}
-                    className="time-fields"
                     name="cocktail-end-time"
                     type="time"
                     className={classes.root}
