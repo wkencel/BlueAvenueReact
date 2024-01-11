@@ -4,7 +4,7 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: "Top Live Wedding Bands New York City | Blue Avenue Groove ",
+    title: "Top Live Wedding Bands | Blue Avenue Groove ",
     author: "Will Kencel",
     description:
       "NY wedding band - serving NYC, hudson valley with amazing wedding entertainment",

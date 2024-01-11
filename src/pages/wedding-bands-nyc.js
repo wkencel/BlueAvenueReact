@@ -1,10 +1,13 @@
 import React from "react";
 import Layout from '../components/layout'; // Assuming you have a Layout component
+import ContactUs from "../components/ContactUs";
+import { Link } from "gatsby";
+import NYCWeddingPic from "../assets/images/weddingPhotos/nyc-wedding-reception-3.jpg";
 
 const NYCWeddings = () => {
   return (
     <>
-      <Layout>
+      <Layout location="nyc">
         <h1>Blue Avenue Groove Music</h1>
         <div style={{ "margin-left": "2%" }}>
           <h2>The Most Unforgettable Live Wedding Band in NYC</h2>
@@ -15,6 +18,18 @@ const NYCWeddings = () => {
             your wedding day into an unforgettable celebration.
           </p>
         </div>
+        <br />
+        <img
+          src={NYCWeddingPic}
+          alt="NYC Wedding Band"
+          width="95%"
+          style={{
+            display: "block",
+            margin: "0 auto", // Centers the image by setting equal margins on both sides
+            borderRadius: "10px",
+          }}
+        />
+        <br />
         <br />
         <h2>About Blue Avenue Groove, your NYC Wedding Band</h2>
         <div style={{ "margin-left": "2%" }}>
@@ -133,7 +148,7 @@ const NYCWeddings = () => {
           best of live wedding music in NYC.
         </p>
         <h3>Send us a message to Book</h3>
-        <ContactForm />
+        <ContactUs />
         <Link to="/" style={{ fontSize: "24px" }}>
           Home
         </Link>

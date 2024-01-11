@@ -1,10 +1,14 @@
 import React from "react";
 import Layout from '../components/layout'; // Assuming you have a Layout component
+import ContactUs from '../components/ContactUs';
+import { Link } from "gatsby";
+import BrooklynWeddingPic1 from '../assets/images/weddingPhotos/nyc-wedding-reception-1.jpeg';
+import BrooklynWeddingPic2 from '../assets/images/weddingPhotos/nyc-wedding-reception-2.jpeg';
 
 const BrooklynWeddings = () => {
   return (
     <>
-      <Layout>
+      <Layout location={"brooklyn"} style={{ align: "2%" }}>
         <h1>Blue Avenue Music</h1>
         <div style={{ "margin-left": "2%" }}>
           <h2>The Most Unforgettable Live Wedding Band in Brooklyn</h2>
@@ -14,6 +18,17 @@ const BrooklynWeddings = () => {
             your special day in one of New York's most vibrant boroughs.
           </p>
         </div>
+        <img
+          src={BrooklynWeddingPic1}
+          alt="Brooklyn Wedding Band"
+          width="90%"
+          style={{
+            display: "block",
+            margin: "0 auto", // Centers the image by setting equal margins on both sides
+            borderRadius: "10px",
+          }}
+        />
+        <br />
         <br />
         <h2>About Your Brooklyn Wedding Band: Blue Avenue Groove</h2>
         <div style={{ "margin-left": "2%" }}>
@@ -31,6 +46,17 @@ const BrooklynWeddings = () => {
             with the soul of Brooklyn.
           </p>
         </div>
+        <img
+          src={BrooklynWeddingPic2}
+          alt="Brooklyn Rooftop Wedding"
+          width="90%"
+          style={{
+            display: "block", // Makes the image block-level
+            margin: "0 auto", // Centers the image by setting equal margins on both sides
+            borderRadius: "10px",
+          }}
+        />
+        <br />
         <br />
         <h2>Our Services</h2>
         <div style={{ "margin-left": "2%" }}>
@@ -110,7 +136,7 @@ const BrooklynWeddings = () => {
           Brooklyn.
         </p>
         <h3>Send us a message to Book</h3>
-        <ContactForm />
+        <ContactUs />
         <Link to="/" style={{ fontSize: "24px" }}>
           Home
         </Link>
