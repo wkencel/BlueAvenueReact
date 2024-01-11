@@ -18,7 +18,7 @@ export default function LightYouTubeEmbed({ id }) {
         <div onClick={handleClick} style={{ width: '100%', height: '100%', position: 'relative', cursor: 'pointer' }}>
             {!videoPlayed &&
                 <img src={`https://img.youtube.com/vi/${id}/sddefault.jpg`} alt="thumbnail" 
-                     style={{ width: '100%', height: '100%' }}
+                     style={{ width: '100%', height: '100%', borderRadius: "10px"  }}
                 />
             }
 

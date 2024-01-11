@@ -6,7 +6,7 @@ class EventServices extends Component {
     return (
       <>
         <h2 className="major">Event Services</h2>
-        <img src={BrideAndGroom} alt="Happy Bride and Groom" width="100%" />
+        <img src={BrideAndGroom} alt="Happy Bride and Groom" width="100%" style={{borderRadius: "10px"}} />
         <br />
         <br />
         <h2 className="major">What we offer</h2>
@@ -96,11 +96,12 @@ class EventServices extends Component {
                 </li>
               </li>
               <li>
-                Options
-                  <li> 1 piece - solo keys or solo guitar
-                    <li>Solo keys - traditional i.e bridal march</li>
-                    <li>Solo guitar - less traditional i.e. Van Morrison, Beatles instrumentals</li>
-                  </li>
+                {" "}
+                2 piece - vocals/keys, vocals/guitar
+                <li>
+                  vocals/keys - traditional leaning but with the added effect of
+                  a vocalist
+                </li>
                 <li>
                   vocals/guitar - folk/indie with the added effect of a vocalist
                 </li>

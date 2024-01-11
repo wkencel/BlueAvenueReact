@@ -2,6 +2,7 @@ import React, {Component} from "react"
 import Will1 from '../optimized-images/WillK.headshot_1.webp'
 import Pam1 from '../optimized-images/pam1.webp'
 import loadable from '@loadable/component';
+import BandPhoto from "../optimized-images/BlueAvenueCCphoto.webp";
 
 // const ImageGallery = loadable(() => import('./Instagram.js')); // If you decide to use it in the future just uncomment this line.
 const LightYouTubeEmbed = loadable(() => import('../components/YoutubeLiteComponent'));
@@ -21,6 +22,8 @@ class WhoWeAre extends Component {
       <p>
         Like anything we do, we strive not to “go through the motions” with each song, but to give you part of us.  We’re building a better version of what it means to be a “wedding band”: filled with music from the soul, bringing friends and family together for the experience of a lifetime.      
       </p>
+      <img src={BandPhoto} alt="Blue Avenue Groove" width="100%" style={{borderRadius: "10px"}}/>
+      <br/>
       <br/>
       <h3>
         <u>
