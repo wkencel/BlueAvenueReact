@@ -172,7 +172,7 @@ console.log('distancecost', distanceCost)
 
   return (
     <div className='calculator'>
-    
+    <br />
       <div className='form' >
         <h1>Price Calculator</h1>
         {/* Display the error when it exists */}
