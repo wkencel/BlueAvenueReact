@@ -269,6 +269,7 @@ console.log('distancecost', distanceCost)
                     <option value="5">5</option>
                   </select>
                 </div>
+                <br/>
 
                 <input type='submit' className='button' />
               </div>
