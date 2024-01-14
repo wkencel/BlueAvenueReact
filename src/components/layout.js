@@ -11,14 +11,14 @@ const Layout = ({ children, location }) => {
   let titleAdd;
 
   if (location && location.pathname === '/') {
-    titleAdd = "| New York City"
+    titleAdd = "New York City - Blue Avenue Groove";
     content = (
       <div>
         {children}
       </div>
     )
   } else if (location === "brooklyn") {
-    titleAdd = "| Brooklyn";
+    titleAdd = "Brooklyn - Blue Avenue Groove";
     content = (
       <div id="wrapper" className="page">
         <div>
@@ -27,7 +27,7 @@ const Layout = ({ children, location }) => {
       </div>
     );
   } else if (location === "nyc") {
-    titleAdd = "| New York City";
+    titleAdd = "New York City - Blue Avenue Groove";
     content = (
       <div id="wrapper" className="page">
         <div>
