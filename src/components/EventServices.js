@@ -1,122 +1,65 @@
 import React, { Component } from "react"
 import BrideAndGroom from '../optimized-images/Leibel-Band-2.webp'
-
+import { Link } from "gatsby"
+import ContactUs from "./ContactUs"
 class EventServices extends Component {
   render() {
     return (
       <>
-        <h2 className="major">Event Services</h2>
-        <img src={BrideAndGroom} alt="Happy Bride and Groom" width="100%" style={{borderRadius: "10px"}} />
-        <br />
-        <br />
-        <h2 className="major">What we offer</h2>
-        <h3> Reception - base package</h3>
-        <ul className="list-dash">
-          <li>
-            6 - 12 piece band (4 hours of the highest quality music in NYC)
-            <li>
-              starts 2 vocals, guitar, keys, bass, drums
-              <li>additions include tenor sax, trumpet, alto sax, trombone</li>
-            </li>
-          </li>
-          <li>Pro audio set up with AV Engineer</li>
-          <li>3 song requests (most often 1st dance & parents' dances)</li>
-          <li>
-            Announcing dances, cake cutting & other info during reception (aka
-            MC)
-          </li>
-          <li>Specialties include: Funk, Soul, Pop/Top 40, R&B, Rock</li>
-        </ul>
-        <h4> Cocktail hr </h4>
-        <ul className="list-dash">
-          <li>
-            1 - 4 piece band
-            <li>Small PA and 1 hr of background music</li>
-            <li>
-              Options:
-              <li>
-                {" "}
-                1 piece - solo keys or keys/voice
-                <li>Solo keys - jazz/soft/background music</li>
-                <li>
-                  Female vocals/keys - Regina Spektor/Carole King mixed with
-                  soft soulful jazz
-                </li>
-              </li>
-              <li>
-                {" "}
-                2 piece - vocals/keys, vocals/guitar, sax/keys
-                <li>vocals/keys - jazz ballads, soft pop</li>
-                <li>vocals/guitar - less jazz oriented, more folk/indie</li>
-                <li>sax/keys - jazz standards</li>
-              </li>
-              <li>
-                {" "}
-                3 piece - vocals/sax/keys, sax/keys/drums, sax/keys/bass
-                <li>
-                  FAV JAZZ COMBO : vocals/sax/keys - high caliber soulful jazz,
-                  great chemistry between female vox & sax
-                </li>
-                <li>
-                  sax/keys/drums - Instrumental jazz standards, NYC jazz scene
-                  vibe
-                </li>
-                <li>
-                  sax/keys/bass - Instrumental jazz standards, NYC jazz scene
-                  vibe
-                </li>
-              </li>
-              <li>
-                {" "}
-                4 piece - vocals/guitar/bass/drums, vocals/keys/bass/drums
-                <li>
-                  vocals/guitar/bass/drums - indie/folk i.e. The Band, The
-                  Beatles
-                </li>
-                <li>vocals/keys/bass/drums - softer jazz oriented quartet</li>
-              </li>
-            </li>
-          </li>
-        </ul>
-
-        <h4> Ceremony </h4>
-        <ul className="list-dash">
-          <li>
-            1 - 2 piece ensemble
-            <li>Mid-size PA and live music for 30 min ceremony</li>
-            <li>
-              Options
-              <li>
-                {" "}
-                1 piece - solo keys or solo guitar
-                <li>Solo keys - traditional i.e bridal march</li>
-                <li>
-                  Solo guitar - less traditional i.e. Van Morrison, Beatles
-                  instrumentals
-                </li>
-              </li>
-              <li>
-                {" "}
-                2 piece - vocals/keys, vocals/guitar
-                <li>
-                  vocals/keys - traditional leaning but with the added effect of
-                  a vocalist
-                </li>
-                <li>
-                  vocals/guitar - folk/indie with the added effect of a vocalist
-                </li>
-              </li>
-            </li>
-          </li>
-        </ul>
-
+        <h2 className="major">
+          <Link to="/wedding-event-services">Event Services</Link>
+        </h2>
+        <p>
+          Elevate your wedding experience with our band's comprehensive music
+          offerings, meticulously crafted to cater to each key moment of your
+          special day. From the exchange of vows to the final dance, we provide
+          complete entertainment solutions.
+        </p>
+        <img
+          src={BrideAndGroom}
+          alt="Happy Bride and Groom"
+          width="100%"
+          style={{ borderRadius: "10px" }}
+        />
+        <p>
+          Our Reception Package sets the stage for an unforgettable evening,
+          complete with event liability insurance for peace of mind, a premium
+          sound system for crystal clear audio and a professional sound engineer
+          to ensure perfect acoustics. Included in this package are a dedicated
+          toast microphone, expert MC services to facilitate the evening's
+          events, and four hours of captivating music, personalized with three
+          song requests of your choosing.
+        </p>
+        <p>
+          In addition to all those offerings, we bring ambiance to your cocktail
+          hour with versatile ensembles that create the perfect background for
+          mingling and celebrating. Our skilled musicians are adept at setting
+          the mood with an array of styles suited to your taste. For your
+          ceremony, we offer an intimate and bespoke music experience with
+          options ranging from solo instrumental performances to lovely duets.
+          Whether you prefer traditional melodies or a more contemporary
+          soundtrack, our musicians will provide a harmonious backdrop for the
+          moment you say "I do."
+        </p>
+        <p>
+          From the first note of your ceremony to the joyful soundtrack of your
+          reception, let our band complete the magic of your wedding day with
+          our impeccable event services.
+        </p>
+        <h4>Find out more about our wedding offerings here</h4>
+        <h2 className="major">
+          <Link to="/wedding-event-services" style={{ color: "#0099FF" }}>
+            Wedding Event Services
+          </Link>
+        </h2>
+        <h4>Click here for a list of some of the songs we cover</h4>
         <a href="https://docs.google.com/spreadsheets/d/1U4fJlgAtdRjQKzBbRz1U-c0-5hjIY9OVANt_CEp53YM/edit?usp=sharing">
           <button>Repertoire</button>
         </a>
         <br></br>
         <br />
-        <h3>-list of booked dates coming soon-</h3>
-        <h4>until then, please inquiry about dates directly</h4>
+        <h4>Inquiry about dates here</h4>
+        <ContactUs />
         <br />
         <br />
         <p>Go to our Contact Page to find out about pricing and booking!</p>
