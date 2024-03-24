@@ -45,6 +45,9 @@ const Footer = (props) => (
         &nbsp;&nbsp;&nbsp;&nbsp;
         <Link to="/brooklyn-wedding-bands">Brooklyn Weddings</Link>
       </div>
+      <div>
+        <Link to="/blog">Find more wedding info on our Blog</Link>
+      </div>
     </footer>
 )
 

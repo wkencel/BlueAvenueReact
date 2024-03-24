@@ -30,53 +30,53 @@ function Main({ article, articleTimeout, onCloseArticle, timeout, setWrapperRef 
     <div
       ref={setWrapperRef}
       id="main"
-      style={timeout ? { display: 'flex' } : { display: 'none' }}
+      style={timeout ? { display: "flex" } : { display: "none" }}
     >
       <article
         id="event-services"
-        className={`${article === 'event-services' ? 'active' : ''} ${
-          articleTimeout ? 'timeout' : ''
+        className={`${article === "event-services" ? "active" : ""} ${
+          articleTimeout ? "timeout" : ""
         }`}
-        style={{ display: 'none' }}
+        style={{ display: "none" }}
       >
         <Suspense fallback={<div>Loading...</div>}>
           <EventServices />
         </Suspense>
         {close}
       </article>
-    
+
       <article
-          id="media"
-          className={`${article === 'media' ? 'active' : ''} ${
-            articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
+        id="media"
+        className={`${article === "media" ? "active" : ""} ${
+          articleTimeout ? "timeout" : ""
+        }`}
+        style={{ display: "none" }}
       >
         <Suspense fallback={<div>Loading...</div>}>
           <Media />
         </Suspense>
         {close}
       </article>
-    
+
       <article
         id="about"
-        className={`${article === 'about' ? 'active' : ''} ${
-          articleTimeout ? 'timeout' : ''
+        className={`${article === "about" ? "active" : ""} ${
+          articleTimeout ? "timeout" : ""
         }`}
-        style={{ display: 'none' }}
+        style={{ display: "none" }}
       >
         <Suspense fallback={<div>Loading...</div>}>
           <WhoWeAre />
         </Suspense>
         {close}
       </article>
-    
+
       <article
         id="contact"
-        className={`${article === 'contact' ? 'active' : ''} ${
-          articleTimeout ? 'timeout' : ''
+        className={`${article === "contact" ? "active" : ""} ${
+          articleTimeout ? "timeout" : ""
         }`}
-        style={{ display: 'none' }}
+        style={{ display: "none" }}
       >
         <h2 className="major">Contact</h2>
         <Suspense fallback={<div>Loading...</div>}>
@@ -87,8 +87,8 @@ function Main({ article, articleTimeout, onCloseArticle, timeout, setWrapperRef 
 
       <article
         id="contact"
-        className={`${article === 'reviews' ? 'active' : ''} ${
-          articleTimeout ? 'timeout' : ''
+        className={`${article === "reviews" ? "active" : ""} ${
+          articleTimeout ? "timeout" : ""
         }`}
         style={{ display: 'none' }}
       >
