@@ -59,10 +59,10 @@ export default function Media() {
           Snaps from our shows
         </h3>
         <br/>
-          <img src={GirlDancing} alt="Pam" width='100%' style={{borderRadius: "10px"}}/>
+          <img src={GirlDancing} alt="Girl Dancing at NYC wedding" width='100%' style={{borderRadius: "10px"}}/>
         <br/>
         <br/>
-          <img src={OldGuy} alt="Pam" width='100%' style={{borderRadius: "10px"}}/>
+          <img src={OldGuy} alt="Guy dancing at NYC wedding" width='100%' style={{borderRadius: "10px"}}/>
         <br/>
         <br/>
           <img src={SamiAndPhil} alt="Sami Stevens and Phil Faconti" width='100%' style={{borderRadius: "10px"}}/>
