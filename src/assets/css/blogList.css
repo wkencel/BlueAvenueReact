@@ -1,0 +1,25 @@
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 900px;
+  }
+  
+  .blog-item {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .blog-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .blog-link {
+    font-size: 18px;
+    color: #0066cc;
+    text-decoration: none;
+  }
