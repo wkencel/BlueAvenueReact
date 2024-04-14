@@ -1,25 +1,35 @@
 .blog-list {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    max-width: 900px;
-  }
-  
-  .blog-item {
-    border-bottom: 1px solid #eee;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.blog-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin: 20px;
+}
   
   .blog-image {
     width: 100%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
+    padding-right: 35px;
   }
   
   .blog-link {
-    font-size: 18px;
-    color: #0066cc;
+    font-size: 26px;
+    font-weight: 550;
+    color: #B2BEC3;
     text-decoration: none;
+    margin-left: 40px;
+    margin-bottom: 20px;
   }
