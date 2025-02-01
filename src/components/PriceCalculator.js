@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "../assets/css/styles.css";
 
 function PriceCalculator() {
   // state to storage the values given by the user when filling the input fields
@@ -85,7 +86,9 @@ function PriceCalculator() {
       // distance cost
     if (distanceFromNYC !== '') {
       distanceFromNYC = Number(distanceFromNYC)
-      if (distanceFromNYC > 1){
+      if (distanceFromNYC >= 2.5) {
+        distanceCost = distanceFromNYC * 100 * (bandSizeReception + 1);
+      } else if (distanceFromNYC > 1){
         distanceCost = distanceFromNYC * 75 * (bandSizeReception + 1)
       }
     }
@@ -94,7 +97,7 @@ console.log('distancecost', distanceCost)
     
       // lodging cost
     if (distanceFromNYC > 2) {
-      lodgingCost = (receptionBandSize <= 7) ? 750 : 1000
+      lodgingCost = (receptionBandSize <= 7) ? 900 : 1150
     }
 
     if (ceremonyBandSize) {
@@ -171,24 +174,31 @@ console.log('distancecost', distanceCost)
   };
 
   return (
-    <div className='calculator'>
-    <br />
-      <div className='form' >
-        <h1>Price Calculator</h1>
+    <div className="calculator">
+      <br />
+      <div className="form">
+        <h1 className="price-calculate-heading">Price Calculator</h1>
         {/* Display the error when it exists */}
-        <p className='error'>{error}</p>
-        <form onSubmit={handleSubmitValues} >
-        
-        {/* ternary operator manages when the calculator and results will be displayed to the user */}
-        {!results.isResult ? (
-          //   Form to collect data from the user
-          <div className='form-items'>
-            <div className='reception-inputs'>
-                <text>reception: </text>
-                <select 
-                name="ReceptionBandSize" 
-                value={userValues.receptionBandSize}
-                onChange={handleReceptionBandInputChange}
+        <p className="error">{error}</p>
+        <form onSubmit={handleSubmitValues}>
+          {/* ternary operator manages when the calculator and results will be displayed to the user */}
+          {!results.isResult ? (
+            //   Form to collect data from the user
+            <div className="form-items">
+              <div
+                className="reception-inputs"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <text className="larger-text-bold">reception: </text>
+                <select
+                  className="small-dropdown"
+                  name="ReceptionBandSize"
+                  value={userValues.receptionBandSize}
+                  onChange={handleReceptionBandInputChange}
                 >
                   <option value=""> </option>
                   <option value="6">6</option>
@@ -197,85 +207,86 @@ console.log('distancecost', distanceCost)
                   <option value="9">9</option>
                   <option value="10">10</option>
                 </select>
-                <text> piece band for a </text>
-                <select 
-                name="reception-length" 
-                id="reception-length"
-                value={userValues.receptionLength}
-                onChange={handleReceptionLengthInputChange}
+                <text className="larger-text"> piece band for a </text>
+                <select
+                  name="reception-length"
+                  className="small-dropdown"
+                  id="reception-length"
+                  value={userValues.receptionLength}
+                  onChange={handleReceptionLengthInputChange}
                 >
-                  <option value="" > </option>
-                  <option value="4" >4</option>
+                  <option value=""> </option>
+                  <option value="4">4</option>
                   <option value="3">3</option>
                   <option value="2">2</option>
                 </select>
-                <text> hour reception</text>
+                <text className="larger-text"> hour reception</text>
               </div>
 
-              <div className='cocktail-hour' >
-              <br/>
-                <label id='label'>cocktail hour band size </label>
-                
-              <select 
-              name="cocktail-band-size" 
-              id="cocktail-band-size"
-              value={userValues.cocktailBandSize}
-              onChange={handleCocktailBandInputChange}
-              >
-                <option value="" > </option>
-                <option value="4" >4</option>
-                <option value="3">3</option>
-                <option value="2">2</option>
-              </select>
+              <div className="cocktail-hour">
+                <br />
+                <label id="label">cocktail hour band size </label>
+
+                <select
+                  name="cocktail-band-size"
+                  id="cocktail-band-size"
+                  value={userValues.cocktailBandSize}
+                  onChange={handleCocktailBandInputChange}
+                >
+                  <option value=""> </option>
+                  <option value="4">4</option>
+                  <option value="3">3</option>
+                  <option value="2">2</option>
+                </select>
               </div>
 
-                <div className='ceremony' >
-                  <br/>
-                  <label id='label'>ceremony band size </label>
-                  
-                  <select 
-                  name="ceremony-band-size" 
+              <div className="ceremony">
+                <br />
+                <label id="label">ceremony band size </label>
+
+                <select
+                  name="ceremony-band-size"
                   id="ceremony-band-size"
                   value={userValues.CeremonyBandSize}
                   onChange={handleCeremonyInputChange}
-                  >
-                    <option value="" > </option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                  </select>
-                </div>
+                >
+                  <option value=""> </option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
 
-                <div className='distance' >
-                  <br/>
-                  <label id='label'>distance from NYC (in hrs) : </label>
-                  
-                  <select 
-                  name="distance-from-NYC" 
+              <div className="distance">
+                <br />
+                <label id="label">distance from NYC (in hrs) : </label>
+
+                <select
+                  name="distance-from-NYC"
                   id="distance-from-NYC"
                   value={userValues.distanceFromNYC}
                   onChange={handleDistanceInputChange}
-                  >
-                    <option value="" >N/A</option>
-                    <option value=".5">.5</option>
-                    <option value="1">1</option>
-                    <option value="1.5">1.5</option>
-                    <option value="2">2</option>
-                    <option value="2.5">2.5</option>
-                    <option value="3">3</option>
-                    <option value="3.5">3.5</option>
-                    <option value="4">4</option>
-                    <option value="4.5">4.5</option>
-                    <option value="5">5</option>
-                  </select>
-                </div>
-                <br/>
-
-                <input type='submit' className='button' />
+                >
+                  <option value="">N/A</option>
+                  <option value=".5">.5</option>
+                  <option value="1">1</option>
+                  <option value="1.5">1.5</option>
+                  <option value="2">2</option>
+                  <option value="2.5">2.5</option>
+                  <option value="3">3</option>
+                  <option value="3.5">3.5</option>
+                  <option value="4">4</option>
+                  <option value="4.5">4.5</option>
+                  <option value="5">5</option>
+                </select>
               </div>
+              <br />
+
+              <input type="submit" className="button" />
+            </div>
           ) : (
             //   Form to display the results to the user
-            <div className='form-items'>
+            <div className="form-items">
               <h4>
                 <br /> Reception Package: {results.receptionCost}
                 <br /> Cocktail Hr: {results.cocktailBandCost}
@@ -286,15 +297,18 @@ console.log('distancecost', distanceCost)
               </h4>
               {/* Button to clear fields */}
               <input
-                className='button'
-                value='Calculate again'
-                type='button'
+                className="button"
+                value="Calculate again"
+                type="button"
                 onClick={clearFields}
               />
             </div>
           )}
         </form>
       </div>
+      <p style={{ fontStyle: "italic", color: "gray" }}>
+        * This is an estimate, destination pricing may vary.
+      </p>
     </div>
   );
 }
