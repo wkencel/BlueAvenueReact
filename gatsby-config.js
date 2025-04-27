@@ -4,10 +4,17 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: "Top Live Wedding Bands ",
+    title: "Top Live Wedding Bands in NYC | Blue Avenue Groove",
     author: "Will Kencel",
-    description:
-      "NY wedding band - serving NYC, hudson valley with amazing wedding entertainment",
+    description: "Premier NYC wedding band serving Manhattan, Brooklyn and Hudson Valley with exceptional live music entertainment for weddings and corporate events",
+    siteUrl: "https://www.blueavenuegroove.com", // Add your URL - critical for SEO
+    social: {
+      twitter: "@blueavegroove",
+      instagram: "@blueavenuegroove",
+    },
+    keywords: "wedding band, NYC wedding music, live wedding entertainment, corporate events, brooklyn wedding band",
+    location: "New York, NY",
+    image: "/images/blue-avenue-groove-share.jpg", // This will be used as default social sharing image
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -66,5 +73,26 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/sitemap.xml`,
+        excludes: [`/404`, `/404.html`],
+      }
+    },
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: 'https://www.blueavenuegroove.com',
+        sitemap: 'https://www.blueavenuegroove.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://www.blueavenuegroove.com`,
+      },
+    },
   ],
 };

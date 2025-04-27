@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import SEO from './SEO'
+import { BusinessStructuredData } from './StructuredData'
 
 import '../assets/scss/main.scss'
 
-const Layout = ({ children, location }) => {
+const Layout = ({ children, location, title, description, image, article, keywords }) => {
 
   let content;
   let titleAdd;
@@ -56,15 +57,15 @@ const Layout = ({ children, location }) => {
       `}
       render={data => (
         <>
-          <Helmet
-            title={data.site.siteMetadata.title + titleAdd}
-            meta={[
-              { name: 'description', content: 'Top Live Wedding Bands' },
-              { name: 'keywords', content: 'nyc wedding, nyc wedding entertainment, nyc wedding entertainment, bk wedding entertainment, brooklyn wedding, wedding reception, wedding band, wedding entertainment' },
-            ]}
-          >
-            <html lang="en" />
-          </Helmet>
+          <SEO 
+            title={title || data.site.siteMetadata.title + (titleAdd || '')}
+            description={description || "Premium NYC wedding band serving Manhattan, Brooklyn and beyond"}
+            image={image}
+            article={article}
+            keywords={keywords}
+            pathname={typeof location === "string" ? `/${location}` : null}
+          />
+          <BusinessStructuredData />
           {content}
         </>
       )}
