@@ -1,10 +1,5 @@
 import PropTypes from 'prop-types'
 import React, { useContext, Suspense, lazy } from 'react'
-// import ContactForm from './Contact.js'
-// import WhoWeAre from './WhoWeAre.js'
-// import Media from './Media.js'
-// import EventServices from './EventServices.js'
-// import Reviews from './Reviews.js'
 import { globalContext } from "../context/context"
 const Media = lazy(() => import('./Media.js'));
 const EventServices = lazy(() => import('./EventServices.js'));

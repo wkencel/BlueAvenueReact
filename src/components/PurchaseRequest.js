@@ -4,19 +4,10 @@ import { Input, TextField } from '@material-ui/core';
 import {  Form,   TextArea, Grid } from "semantic-ui-react"
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
-// import { Link } from 'gatsby';
-// import DatePickers from './DateInput'
-// import TimePickers from './TimeInput'
-// require('dotenv').config();
-// let serviceId = process.env.YOUR_SERVICE_ID_PURCHASE_REQUEST
-// let templateId = process.env.YOUR_TEMPLATE_ID_PURCHASE_REQUEST
-// let userId = process.env.YOUR_USER_ID_PURCHASE_REQUEST
 
 const styles = {
   root: {
     background: "grey",
-    // marginLeft: theme.spacing(1),
-    // marginRight: theme.spacing(1),
     width: 150,
     color: 'white'
   },
