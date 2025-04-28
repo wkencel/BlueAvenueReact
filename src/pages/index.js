@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
-import ShowcasePopup from "../components/ShowcasePopup"; // Import the test component
+import ShowcasePopup from "../components/ShowCasePopup"; // Import the test component
 
 import Header from "../components/Header";
 import Main from "../components/Main";
