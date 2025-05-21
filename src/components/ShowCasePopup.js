@@ -40,7 +40,7 @@ const ShowcasePopup = () => {
         </header>
         <section aria-labelledby="showcaseEventTitle">
           <p className="popup-text">
-            Join us for a showcase on May 9th and June 11th from 7-10pm at{" "}
+            Join us for a showcase on June 11th, July 31st, and August 14th from 7-10pm at{" "}
             <a
               href="https://www.google.com/maps/place/The+Red+Lion/@40.7284222,-73.9994518,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25991e8b3e73f:0x40bdec8381464f98!8m2!3d40.7284222!4d-73.9994518!16s%2Fm%2F0kjgdsg?entry=ttu&g_ep=EgoyMDI1MDExMC4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
