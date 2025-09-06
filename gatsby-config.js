@@ -7,7 +7,7 @@ module.exports = {
     title: "Top Live Wedding Bands in NYC | Blue Avenue Groove",
     author: "Will Kencel",
     description: "Premier NYC wedding band serving Manhattan, Brooklyn and Hudson Valley with exceptional live music entertainment for weddings and corporate events",
-    siteUrl: "https://www.blueavenuegroove.com", // Add your URL - critical for SEO
+    siteUrl: "https://www.blueavemusic.io", // Add your URL - critical for SEO
     social: {
       twitter: "@blueavegroove",
       instagram: "@blueavenuegroove",
@@ -83,15 +83,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
-        host: 'https://www.blueavenuegroove.com',
-        sitemap: 'https://www.blueavenuegroove.com/sitemap.xml',
+        host: 'https://www.blueavemusic.io',
+        sitemap: 'https://www.blueavemusic.io/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://www.blueavenuegroove.com`,
+        siteUrl: `https://www.blueavemusic.io`,
       },
     },
   ],
