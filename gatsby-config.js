@@ -69,7 +69,17 @@ module.exports = {
         icon: "src/images/building-icon.webp", // This path is relative to the root of the site.
       },
     },
-    "gatsby-plugin-sass",
+    {
+      resolve: "gatsby-plugin-sass",
+      options: {
+        implementation: require("sass"),
+        sassOptions: {
+          functions: {
+            // Using the modern Sass JS API by avoiding direct use of legacy API
+          }
+        }
+      }
+    },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
