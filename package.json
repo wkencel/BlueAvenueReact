@@ -6,11 +6,11 @@
   "dependencies": {
     "emailjs-com": "^3.2.0",
     "next": "^14.2.0",
+    "next-sitemap": "^4.2.3",
     "react": "^18",
     "react-dom": "^18",
     "react-social-icons": "^6.7.0",
     "sass": "^1.69.5",
-    "semantic-ui-react": "^2.1.4",
     "typescript": "^5.3.2"
   },
   "keywords": [
@@ -21,6 +21,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
+    "deploy": "next build && aws s3 sync out/ s3://$S3_BUCKET --delete",
     "start": "next start",
     "format": "prettier --write '**/*.{js,jsx,ts,tsx}'",
     "test": "echo \"Error: no test specified\" && exit 1",
