@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import BrooklynWeddingsContent from './content'
 
 export const metadata: Metadata = {
-  title: 'Brooklyn Wedding Bands: Top Wedding Band in Brooklyn & NYC',
+  title: 'Brooklyn Live Wedding Band | Blue Avenue Groove',
   description:
-    'Blue Avenue Groove is the most unforgettable live wedding band in Brooklyn. Personalized performances, versatile repertoire, and professional entertainment for your special day.',
+    'Blue Avenue Groove is a 6-12 piece Brooklyn wedding band playing Funk, Soul, Pop, R&B, Rock and Motown. Over 10 years of live wedding music across Brooklyn and NYC.',
   alternates: {
     canonical: 'https://www.blueavemusic.io/brooklyn-wedding-bands/',
   },
