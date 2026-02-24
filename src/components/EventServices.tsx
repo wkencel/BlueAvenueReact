@@ -13,125 +13,47 @@ export default function EventServices() {
         width="100%"
         style={{ borderRadius: '10px' }}
       />
-      <br />
-      <br />
-      <h2 className="major">What we offer</h2>
-      <h3> Reception - base package</h3>
-      <ul className="list-dash">
-        <li>
-          6 - 12 piece band (4 hours of the highest quality music in NYC)
-          <ul className="list-dash">
-            <li>
-              starts 2 vocals, guitar, keys, bass, drums
-              <ul className="list-dash">
-                <li>additions include tenor sax, trumpet, alto sax, trombone</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>Pro audio set up with AV Engineer</li>
-        <li>3 song requests (most often 1st dance &amp; parents&apos; dances)</li>
-        <li>
-          Announcing dances, cake cutting &amp; other info during reception (aka MC)
-        </li>
-        <li>Specialties include: Funk, Soul, Pop/Top 40, R&amp;B, Rock</li>
-      </ul>
-      <h4> Cocktail hr </h4>
-      <ul className="list-dash">
-        <li>
-          1 - 4 piece band
-          <ul className="list-dash">
-            <li>Small PA and 1 hr of background music</li>
-            <li>
-              Options:
-              <ul className="list-dash">
-                <li>
-                  1 piece - solo keys or keys/voice
-                  <ul className="list-dash">
-                    <li>Solo keys - jazz/soft/background music</li>
-                    <li>
-                      Female vocals/keys - Regina Spektor/Carole King mixed with
-                      soft soulful jazz
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  2 piece - vocals/keys, vocals/guitar, sax/keys
-                  <ul className="list-dash">
-                    <li>vocals/keys - jazz ballads, soft pop</li>
-                    <li>vocals/guitar - less jazz oriented, more folk/indie</li>
-                    <li>sax/keys - jazz standards</li>
-                  </ul>
-                </li>
-                <li>
-                  3 piece - vocals/sax/keys, sax/keys/drums, sax/keys/bass
-                  <ul className="list-dash">
-                    <li>
-                      FAV JAZZ COMBO : vocals/sax/keys - high caliber soulful
-                      jazz, great chemistry between female vox &amp; sax
-                    </li>
-                    <li>
-                      sax/keys/drums - Instrumental jazz standards, NYC jazz
-                      scene vibe
-                    </li>
-                    <li>
-                      sax/keys/bass - Instrumental jazz standards, NYC jazz scene
-                      vibe
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  4 piece - vocals/guitar/bass/drums, vocals/keys/bass/drums
-                  <ul className="list-dash">
-                    <li>
-                      vocals/guitar/bass/drums - indie/folk i.e. The Band, The
-                      Beatles
-                    </li>
-                    <li>vocals/keys/bass/drums - softer jazz oriented quartet</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
+      <p>
+        Blue Avenue Groove brings music from the soul to your celebration. As one of NYC's premier
+        wedding bands, we deliver live music that gets your guests on their feet and creates an
+        unforgettable atmosphere — from the ceremony to the last dance of the reception.
+      </p>
+
+      <h2 className="major">Reception Band</h2>
+      <p>
+        This is where the party happens. Our 6 to 12 piece band brings four hours of nonstop energy
+        to your reception — funky grooves, soulful ballads, and everything in between. We read the
+        room and keep the dance floor packed all night so you and your guests can get your groove on.
+      </p>
+      <ul>
+        <li>Professional audio setup with a dedicated AV engineer</li>
+        <li>MC services — announcing dances, cake cutting, toasts, and more</li>
+        <li>Up to 3 song requests (most often first dance &amp; parent dances)</li>
+        <li>Core lineup: 2 vocals, guitar, keys, bass, drums — expandable with horns (sax, trumpet, trombone)</li>
+        <li>Specialties: Funk, Soul, Pop/Top 40, R&amp;B, Rock, Motown</li>
       </ul>
 
-      <h4> Ceremony </h4>
-      <ul className="list-dash">
-        <li>
-          1 - 2 piece ensemble
-          <ul className="list-dash">
-            <li>Mid-size PA and live music for 30 min ceremony</li>
-            <li>
-              Options
-              <ul className="list-dash">
-                <li>
-                  1 piece - solo keys or solo guitar
-                  <ul className="list-dash">
-                    <li>Solo keys - traditional i.e bridal march</li>
-                    <li>
-                      Solo guitar - less traditional i.e. Van Morrison, Beatles
-                      instrumentals
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  2 piece - vocals/keys, vocals/guitar
-                  <ul className="list-dash">
-                    <li>
-                      vocals/keys - traditional leaning but with the added effect
-                      of a vocalist
-                    </li>
-                    <li>
-                      vocals/guitar - folk/indie with the added effect of a
-                      vocalist
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
+      <h2 className="major">Cocktail Hour</h2>
+      <p>
+        Set the tone before the party starts. Our cocktail hour ensembles bring warm, sophisticated
+        vibes — think soulful jazz, soft pop, and easy conversation starters. Choose the size and
+        style that fits your vision:
+      </p>
+      <ul>
+        <li><strong>Solo</strong> — Keys or vocals/keys. Soft jazz, soulful background — Carole King meets Regina Spektor.</li>
+        <li><strong>Duo</strong> — Vocals/keys, vocals/guitar, or sax/keys. Jazz ballads, soft pop, or folk/indie.</li>
+        <li><strong>Trio</strong> — Our favorite: vocals/sax/keys for high-caliber soulful jazz with great chemistry. Also sax/keys/drums or sax/keys/bass for that NYC jazz scene vibe.</li>
+        <li><strong>Quartet</strong> — Vocals/guitar/bass/drums (indie/folk — think The Band, The Beatles) or vocals/keys/bass/drums (softer jazz quartet).</li>
+      </ul>
+
+      <h2 className="major">Ceremony Music</h2>
+      <p>
+        The walk down the aisle is one of the most emotional moments of your day. Our ceremony
+        musicians provide a live, intimate soundtrack that makes it feel as special as it is.
+      </p>
+      <ul>
+        <li><strong>Solo</strong> — Keys (traditional, bridal march) or guitar (Van Morrison, Beatles instrumentals).</li>
+        <li><strong>Duo</strong> — Vocals/keys (traditional with a vocalist's touch) or vocals/guitar (folk/indie feel).</li>
       </ul>
 
       <a href="https://docs.google.com/spreadsheets/d/1U4fJlgAtdRjQKzBbRz1U-c0-5hjIY9OVANt_CEp53YM/edit?usp=sharing">
