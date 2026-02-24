@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import { siteMetadata } from '@/lib/siteMetadata'
+import { BusinessStructuredData } from '@/components/StructuredData'
+import { Providers } from './providers'
 import '@/assets/scss/main.scss'
 
 export const metadata: Metadata = {
@@ -38,7 +40,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <BusinessStructuredData />
+        <Providers>{children}</Providers>
+      </body>
     </html>
   )
 }

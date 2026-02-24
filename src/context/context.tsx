@@ -16,11 +16,8 @@ export const initialState: GlobalState = {
 
 export const globalContext = createContext<GlobalState>(initialState)
 
-export const ContextProvider: React.FC = (props: any) => {
- 
+export const ContextProvider = ({ children }: { children: React.ReactNode }) => {
   const [stopPlay, setStopPlay] = useState<boolean>(false);
 
-
-  return <globalContext.Provider value={{stopPlay, setStopPlay }}>{props.children}</globalContext.Provider>
-
+  return <globalContext.Provider value={{stopPlay, setStopPlay }}>{children}</globalContext.Provider>
 }
