@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import BrideAndGroom from '@/optimized-images/Leibel-Band-2.webp'
 import { getImageSrc } from '@/lib/image'
 
@@ -136,13 +137,11 @@ export default function EventServices() {
       <a href="https://docs.google.com/spreadsheets/d/1U4fJlgAtdRjQKzBbRz1U-c0-5hjIY9OVANt_CEp53YM/edit?usp=sharing">
         <button>Repertoire</button>
       </a>
-      <br />
-      <br />
-      <h3>-list of booked dates coming soon-</h3>
-      <h4>until then, please inquiry about dates directly</h4>
-      <br />
-      <br />
-      <p>Go to our Contact Page to find out about pricing and booking!</p>
+      <hr />
+      <p><em>List of booked dates coming soon &mdash; please inquire about dates directly.</em></p>
+      <p>
+        <Link href="/contact" className="button special">Contact Us for Pricing &amp; Booking</Link>
+      </p>
     </>
   )
 }

@@ -24,6 +24,9 @@ export const metadata: Metadata = {
     ],
     type: 'website',
   },
+  icons: {
+    icon: '/favicon-32x32.png',
+  },
   twitter: {
     card: 'summary_large_image',
     title: siteMetadata.title,

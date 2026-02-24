@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Reviews from '@/components/Reviews'
 import { ReviewsStructuredData } from '@/components/StructuredData'
 import Link from 'next/link'
+import PageNav from '@/components/PageNav'
 
 export const metadata: Metadata = {
   title: 'Wedding Band Reviews',
@@ -16,11 +17,11 @@ export default function ReviewsPage() {
   return (
     <div id="wrapper" className="page">
       <ReviewsStructuredData />
-      <div style={{ maxWidth: '40rem', margin: '0 auto', padding: '2rem' }}>
+      <PageNav current="/reviews" />
+      <div className="page-panel">
         <h2 className="major">Reviews</h2>
         <Reviews />
-        <br />
-        <Link href="/">Back to Home</Link>
+        <Link href="/" className="button">Back to Home</Link>
       </div>
     </div>
   )

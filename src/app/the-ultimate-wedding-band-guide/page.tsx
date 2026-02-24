@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function UltimateWeddingBandGuidePage() {
   return (
     <div id="wrapper" className="page">
-      <div>
+      <div className="page-panel">
         <GuideContent />
       </div>
     </div>

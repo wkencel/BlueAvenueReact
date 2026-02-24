@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import ContactContent from './content'
 import Link from 'next/link'
+import PageNav from '@/components/PageNav'
 
 export const metadata: Metadata = {
   title: 'Contact & Pricing',
@@ -14,11 +15,11 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div id="wrapper" className="page">
-      <div style={{ maxWidth: '40rem', margin: '0 auto', padding: '2rem' }}>
+      <PageNav current="/contact" />
+      <div className="page-panel">
         <h2 className="major">Contact</h2>
         <ContactContent />
-        <br />
-        <Link href="/">Back to Home</Link>
+        <Link href="/" className="button">Back to Home</Link>
       </div>
     </div>
   )

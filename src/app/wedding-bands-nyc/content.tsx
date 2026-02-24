@@ -127,9 +127,7 @@ export default function NYCWeddingsContent() {
       </p>
       <h3>Send us a message to Book</h3>
       <ContactUs />
-      <Link href="/" style={{ fontSize: '24px' }}>
-        Home
-      </Link>
+      <Link href="/" className="button">Back to Home</Link>
     </>
   )
 }

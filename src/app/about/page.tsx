@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import AboutContent from './content'
 import Link from 'next/link'
+import PageNav from '@/components/PageNav'
 
 export const metadata: Metadata = {
   title: 'About Blue Avenue Groove',
@@ -14,10 +15,10 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div id="wrapper" className="page">
-      <div style={{ maxWidth: '40rem', margin: '0 auto', padding: '2rem' }}>
+      <PageNav current="/about" />
+      <div className="page-panel">
         <AboutContent />
-        <br />
-        <Link href="/">Back to Home</Link>
+        <Link href="/" className="button">Back to Home</Link>
       </div>
     </div>
   )

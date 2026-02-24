@@ -28,7 +28,7 @@ const blogPosts = [
 export default function BlogPage() {
   return (
     <div id="wrapper" className="page">
-      <div>
+      <div className="page-panel">
         <h1 style={{ textAlign: 'center' }}>Check out our blog</h1>
         <div className="blog-list">
           {blogPosts.map((post, index) => (

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import MediaContent from './content'
 import Link from 'next/link'
+import PageNav from '@/components/PageNav'
 
 export const metadata: Metadata = {
   title: 'Wedding Band Videos & Photos',
@@ -14,10 +15,10 @@ export const metadata: Metadata = {
 export default function MediaPage() {
   return (
     <div id="wrapper" className="page">
-      <div style={{ maxWidth: '40rem', margin: '0 auto', padding: '2rem' }}>
+      <PageNav current="/media" />
+      <div className="page-panel">
         <MediaContent />
-        <br />
-        <Link href="/">Back to Home</Link>
+        <Link href="/" className="button">Back to Home</Link>
       </div>
     </div>
   )

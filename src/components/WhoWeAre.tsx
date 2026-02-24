@@ -16,7 +16,6 @@ export default function WhoWeAre() {
   return (
     <>
       <h2 className="major">Who We Are</h2>
-      <span className="image main"></span>
       <p>
         We believe in weddings without the cheese. We believe in music as a form
         of expression that connects us together. It&apos;s brought each of us
@@ -36,51 +35,51 @@ export default function WhoWeAre() {
         width="100%"
         style={{ borderRadius: '10px' }}
       />
-      <br />
-      <br />
-      <h3>
-        <u>See what the band&apos;s been up to</u>
+
+      <h3 className="major" style={{ marginTop: '2.5rem' }}>
+        See what the band&apos;s been up to
       </h3>
-      <br />
-      <h4>Smooth Vibes from Bk with Sami</h4>
-      <LightYouTubeEmbed id="pM75HyKUNEc" />
-      <br />
-      <br />
-      <br />
-      <h4>Live from Phil&apos;s apartment</h4>
-      <LightYouTubeEmbed id="OxSzSZQMfPA" />
-      <br />
-      <br />
-      <br />
-      <h4>From the Beat Lab with Syd</h4>
-      <LightYouTubeEmbed id="3FNJFJpK1CU" />
-      <br />
-      <br />
-      <br />
-      <h4>
-        Ben, Professor of Sound, building a vibe w/ his fiance, Caroline
-      </h4>
-      <LightYouTubeEmbed id="bUxmcNQR6pg" />
-      <br />
-      <br />
-      <br />
-      <br />
-      <h1>Leadership</h1>
-      <br />
-      <br />
-      <div className="Pam" style={{ marginBottom: 32 }}>
-        <img src={getImageSrc(Pam1)} alt="Pam Steebler" width="320px" />
-        <h2>COO - Pam Steebler</h2>
+
+      <div className="video-item">
+        <h4>Smooth Vibes from Bk with Sami</h4>
+        <LightYouTubeEmbed id="pM75HyKUNEc" />
+      </div>
+
+      <div className="video-item">
+        <h4>Live from Phil&apos;s apartment</h4>
+        <LightYouTubeEmbed id="OxSzSZQMfPA" />
+      </div>
+
+      <div className="video-item">
+        <h4>From the Beat Lab with Syd</h4>
+        <LightYouTubeEmbed id="3FNJFJpK1CU" />
+      </div>
+
+      <div className="video-item">
+        <h4>
+          Ben, Professor of Sound, building a vibe w/ his fiance, Caroline
+        </h4>
+        <LightYouTubeEmbed id="bUxmcNQR6pg" />
+      </div>
+
+      <h2 className="major" style={{ marginTop: '2.5rem' }}>
+        Leadership
+      </h2>
+
+      <div className="leader-card">
+        <img src={getImageSrc(Pam1)} alt="Pam Steebler" />
+        <h3>COO - Pam Steebler</h3>
         <p>
           Dedicated to providing the best user experience from the time you
           inquire to the time we make your wedding a blast
         </p>
       </div>
-      <div className="Will">
+
+      <div className="leader-card">
         <a href="https://willkencelhome.io">
-          <img src={getImageSrc(Will1)} alt="Will Kencel" width="320px" />
+          <img src={getImageSrc(Will1)} alt="Will Kencel" />
         </a>
-        <h2>CTO - Will Kencel</h2>
+        <h3>CTO - Will Kencel</h3>
         <p>
           Original founder and bassist. Guiding Blue Avenue into the next decade
           by integrating tech to create an incredible user experience

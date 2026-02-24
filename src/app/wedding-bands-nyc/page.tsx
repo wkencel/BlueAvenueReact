@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function NYCWeddingsPage() {
   return (
     <div id="wrapper" className="page">
-      <div>
+      <div className="page-panel">
         <NYCWeddingsContent />
       </div>
     </div>
