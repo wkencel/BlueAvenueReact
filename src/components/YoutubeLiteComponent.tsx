@@ -22,23 +22,25 @@ export default function LightYouTubeEmbed({ id }: { id: string }) {
       onClick={handleClick}
       style={{
         width: '100%',
-        height: '100%',
         position: 'relative',
         cursor: 'pointer',
+        aspectRatio: '16 / 9',
+        borderRadius: '10px',
+        overflow: 'hidden',
       }}
     >
       {!videoPlayed && (
         <img
           src={`https://img.youtube.com/vi/${id}/sddefault.jpg`}
           alt="thumbnail"
-          style={{ width: '100%', height: '100%', borderRadius: '10px' }}
+          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
         />
       )}
 
       {videoPlayed && !stopPlay ? (
         <iframe
           width="100%"
-          height="300px"
+          height="100%"
           src={videoSrc}
           title="Video"
           allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
