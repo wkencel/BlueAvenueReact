@@ -15,12 +15,14 @@ const LightYouTubeEmbed = dynamic(
 export default function WhoWeAre() {
   return (
     <>
-      <h2 className="major">Who We Are</h2>
+      <h2 className="major">Celebrating Your Story in Sound</h2>
       <p>
-        We believe in weddings without the cheese. We believe in music as a form
-        of expression that connects us together. It&apos;s brought each of us
-        from different walks of life to make up the family we have in Blue Ave
-        Groove today.
+        We believe in weddings without the cheese. With over 10 years of
+        experience and a catalog of more than 200 songs spanning Pop, Soul,
+        Top 40, Motown, Rock and Jazz, Blue Avenue Groove has something for
+        every couple&apos;s special day. Our energy is dedicated to matching you
+        and your guests&apos; vibe on the dance floor for a wedding that&apos;ll
+        be talked about for ages.
       </p>
       <p>
         Like anything we do, we strive not to &quot;go through the motions&quot;

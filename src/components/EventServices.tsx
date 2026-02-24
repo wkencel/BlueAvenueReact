@@ -16,27 +16,27 @@ export default function EventServices() {
       <p>
         Blue Avenue Groove brings music from the soul to your celebration. As one of NYC's premier
         wedding bands, we deliver live music that gets your guests on their feet and creates an
-        unforgettable atmosphere — from the ceremony to the last dance of the reception.
+        unforgettable atmosphere, from the ceremony to the last dance of the reception.
       </p>
 
       <h2 className="major">Reception Band</h2>
       <p>
         This is where the party happens. Our 6 to 12 piece band brings four hours of nonstop energy
-        to your reception — funky grooves, soulful ballads, and everything in between. We read the
+        to your reception: funky grooves, soulful ballads, and everything in between. We read the
         room and keep the dance floor packed all night so you and your guests can get your groove on.
       </p>
       <ul>
         <li>Professional audio setup with a dedicated AV engineer</li>
-        <li>MC services — announcing dances, cake cutting, toasts, and more</li>
+        <li>MC services including announcing dances, cake cutting, toasts, and more</li>
         <li>Up to 3 song requests (most often first dance &amp; parent dances)</li>
-        <li>Core lineup: 2 vocals, guitar, keys, bass, drums — expandable with horns (sax, trumpet, trombone)</li>
+        <li>Core lineup: 2 vocals, guitar, keys, bass, drums, expandable with horns (sax, trumpet, trombone)</li>
         <li>Specialties: Funk, Soul, Pop/Top 40, R&amp;B, Rock, Motown</li>
       </ul>
 
       <h2 className="major">Cocktail Hour</h2>
       <p>
         Set the tone before the party starts. Our cocktail hour ensembles bring warm, sophisticated
-        vibes — think soulful jazz, soft pop, and easy conversation starters. Choose the size and
+        vibes: soulful jazz, soft pop, and easy conversation starters. Choose the size and
         style that fits your vision:
       </p>
       <ul>
