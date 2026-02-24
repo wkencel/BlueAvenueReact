@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Reviews from '@/components/Reviews'
+import { ReviewsStructuredData } from '@/components/StructuredData'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
 export default function ReviewsPage() {
   return (
     <div id="wrapper" className="page">
+      <ReviewsStructuredData />
       <div style={{ maxWidth: '40rem', margin: '0 auto', padding: '2rem' }}>
         <h2 className="major">Reviews</h2>
         <Reviews />

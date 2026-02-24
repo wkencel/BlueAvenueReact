@@ -1,4 +1,5 @@
 import React from 'react'
+import { reviews } from '@/data/reviews'
 
 export function BusinessStructuredData() {
   const businessData = {
@@ -72,6 +73,41 @@ export function EventStructuredData({
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(eventData) }}
+    />
+  )
+}
+
+export function ReviewsStructuredData() {
+  const reviewsData = {
+    '@context': 'https://schema.org',
+    '@type': 'MusicGroup',
+    name: 'Blue Avenue Groove',
+    url: 'https://www.blueavemusic.io',
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5.0',
+      bestRating: '5',
+      ratingCount: String(reviews.length),
+    },
+    review: reviews.map((r) => ({
+      '@type': 'Review',
+      author: {
+        '@type': 'Person',
+        name: r.author,
+      },
+      reviewBody: r.body,
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: '5',
+        bestRating: '5',
+      },
+    })),
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewsData) }}
     />
   )
 }
