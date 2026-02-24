@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(cd:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(cd \"C:\\\\Users\\\\wkenc\\\\Repos\\\\BlueAvenueReact\" && npx yarn dev 2>&1)",
+      "Bash(cd \"C:\\\\Users\\\\wkenc\\\\Repos\\\\BlueAvenueReact\" && npx yarn install 2>&1)",
+      "Bash(cd \"C:\\\\Users\\\\wkenc\\\\Repos\\\\BlueAvenueReact\" && rm -rf node_modules && rm -f package-lock.json && npx yarn install 2>&1)"
     ]
   }
 }
