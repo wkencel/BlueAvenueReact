@@ -139,6 +139,7 @@
 				background-color: transparentize(_palette(bg), 0.15);
 				border-radius: 12px;
 				padding: 2.5rem 2.5rem;
+				animation: page-fade-in 0.5s ease-out both;
 
 				@include breakpoint(small) {
 					padding: 2rem 2rem;
@@ -146,6 +147,23 @@
 
 				@include breakpoint(xsmall) {
 					padding: 2rem 1.5rem;
+				}
+			}
+
+			@keyframes page-fade-in {
+				from {
+					opacity: 0;
+					transform: translateY(10px);
+				}
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+
+			@media (prefers-reduced-motion: reduce) {
+				.page-panel {
+					animation: none;
 				}
 			}
 		}
