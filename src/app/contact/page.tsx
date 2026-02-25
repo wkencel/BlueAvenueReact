@@ -17,7 +17,7 @@ export default function ContactPage() {
     <div id="wrapper" className="page">
       <PageNav current="/contact" />
       <div className="page-panel">
-        <h2 className="major">Contact</h2>
+        <h1 className="major">Contact</h1>
         <ContactContent />
         <Link href="/" className="button">Back to Home</Link>
       </div>

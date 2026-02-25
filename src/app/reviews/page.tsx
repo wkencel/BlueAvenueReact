@@ -19,7 +19,7 @@ export default function ReviewsPage() {
       <ReviewsStructuredData />
       <PageNav current="/reviews" />
       <div className="page-panel">
-        <h2 className="major">Reviews</h2>
+        <h1 className="major">Reviews</h1>
         <Reviews />
         <Link href="/" className="button">Back to Home</Link>
       </div>

@@ -15,7 +15,7 @@ const LightYouTubeEmbed = dynamic(
 export default function WhoWeAre() {
   return (
     <>
-      <h2 className="major">Celebrating Your Story in Sound</h2>
+      <h1 className="major">Celebrating Your Story in Sound</h1>
       <p>
         We believe in weddings without the cheese. With over 10 years of
         experience and a catalog of more than 200 songs spanning Pop, Soul,

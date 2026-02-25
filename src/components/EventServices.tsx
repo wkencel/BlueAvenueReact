@@ -6,7 +6,7 @@ import { getImageSrc } from '@/lib/image'
 export default function EventServices() {
   return (
     <>
-      <h2 className="major">Event Services</h2>
+      <h1 className="major">Event Services</h1>
       <img
         src={getImageSrc(BrideAndGroom)}
         alt="Happy Bride and Groom"
