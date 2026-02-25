@@ -36,11 +36,14 @@
 
 		&.page {
 			@include vendor('justify-content', 'flex-start');
-			background-color: #0a1628;
-			background-image: linear-gradient(to bottom, #0a1628 0%, rgba(76,154,207,0.15) 50%, #0a1628 100%), url('/images/overlay.webp');
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-color: #000000;
+			background-image:
+				linear-gradient(to right, transparent 0%, rgba(56,136,255,0.4) 30%, rgba(56,136,255,0.4) 70%, transparent 100%),
+				linear-gradient(to right, transparent 10%, rgba(30,80,200,0.25) 35%, rgba(30,80,200,0.25) 65%, transparent 90%),
+				url('/images/overlay.webp');
+			background-size: auto, auto, 256px 256px;
+			background-position: center, center, center;
+			background-repeat: no-repeat, no-repeat, repeat;
 
 			.page-nav {
 				width: 40rem;
