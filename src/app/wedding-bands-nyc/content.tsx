@@ -23,6 +23,7 @@ export default function NYCWeddingsContent() {
         src="/images/weddingPhotos/nyc-wedding-reception-3.jpg"
         alt="NYC Wedding Band"
         width="95%"
+        loading="lazy"
         style={{
           display: 'block',
           margin: '0 auto',

@@ -11,5 +11,5 @@ export const siteMetadata = {
   keywords:
     "wedding band, NYC wedding music, live wedding entertainment, corporate events, brooklyn wedding band",
   location: "New York, NY",
-  image: "/images/blue-avenue-groove-share.jpg",
+  image: "/images/blue-avenue-groove-band.webp",
 }

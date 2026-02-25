@@ -21,6 +21,7 @@ export default function BrooklynWeddingsContent() {
         src="/images/weddingPhotos/nyc-wedding-reception-1.jpeg"
         alt="Brooklyn Wedding Band"
         width="90%"
+        loading="lazy"
         style={{
           display: 'block',
           margin: '0 auto',
@@ -50,6 +51,7 @@ export default function BrooklynWeddingsContent() {
         src="/images/weddingPhotos/nyc-wedding-reception-2.jpeg"
         alt="Brooklyn Rooftop Wedding"
         width="90%"
+        loading="lazy"
         style={{
           display: 'block',
           margin: '0 auto',

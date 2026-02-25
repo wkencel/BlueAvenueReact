@@ -39,6 +39,7 @@ export default function BlogPage() {
                     src={post.imageUrl}
                     alt={post.title}
                     className="blog-image"
+                    loading="lazy"
                   />
                 ) : null}
               </div>

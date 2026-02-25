@@ -2,9 +2,9 @@
 
 import React from 'react'
 import dynamic from 'next/dynamic'
-import Will1 from '@/optimized-images/WillK.headshot_1.webp'
-import Pam1 from '@/optimized-images/pam1.webp'
-import BandPhoto from '@/optimized-images/BlueAvenueCCphoto.webp'
+import Will1 from '@/optimized-images/will-kencel-headshot.webp'
+import Pam1 from '@/optimized-images/pam-steebler-headshot.webp'
+import BandPhoto from '@/optimized-images/blue-avenue-groove-band.webp'
 import { getImageSrc } from '@/lib/image'
 
 const LightYouTubeEmbed = dynamic(
@@ -35,6 +35,7 @@ export default function WhoWeAre() {
         src={getImageSrc(BandPhoto)}
         alt="Blue Avenue Groove"
         width="100%"
+        loading="lazy"
         style={{ borderRadius: '10px' }}
       />
 
@@ -69,7 +70,7 @@ export default function WhoWeAre() {
       </h2>
 
       <div className="leader-card">
-        <img src={getImageSrc(Pam1)} alt="Pam Steebler" />
+        <img src={getImageSrc(Pam1)} alt="Pam Steebler" loading="lazy" />
         <h3>COO - Pam Steebler</h3>
         <p>
           Dedicated to providing the best user experience from the time you
@@ -79,7 +80,7 @@ export default function WhoWeAre() {
 
       <div className="leader-card">
         <a href="https://willkencelhome.io">
-          <img src={getImageSrc(Will1)} alt="Will Kencel" />
+          <img src={getImageSrc(Will1)} alt="Will Kencel" loading="lazy" />
         </a>
         <h3>CTO - Will Kencel</h3>
         <p>

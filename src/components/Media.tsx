@@ -2,10 +2,10 @@
 
 import React from 'react'
 import dynamic from 'next/dynamic'
-import SamiAndPhil from '@/optimized-images/SamiPhilwmanhattan.webp'
-import Pam from '@/optimized-images/Pam.webp'
-import GirlDancing from '@/optimized-images/Leibel-Band-10.webp'
-import OldGuy from '@/optimized-images/Liebel.oldguydancing.webp'
+import SamiAndPhil from '@/optimized-images/couple-manhattan-wedding.webp'
+import Pam from '@/optimized-images/pam-steebler-singer.webp'
+import GirlDancing from '@/optimized-images/girl-dancing-nyc-wedding.webp'
+import OldGuy from '@/optimized-images/guest-dancing-wedding.webp'
 import { getImageSrc } from '@/lib/image'
 
 const LightYouTubeEmbed = dynamic(
@@ -63,6 +63,7 @@ export default function Media() {
           src={getImageSrc(GirlDancing)}
           alt="Girl Dancing at NYC wedding"
           width="100%"
+          loading="lazy"
           style={{ borderRadius: '10px' }}
         />
         <br />
@@ -71,6 +72,7 @@ export default function Media() {
           src={getImageSrc(OldGuy)}
           alt="Guy dancing at NYC wedding"
           width="100%"
+          loading="lazy"
           style={{ borderRadius: '10px' }}
         />
         <br />
@@ -79,6 +81,7 @@ export default function Media() {
           src={getImageSrc(SamiAndPhil)}
           alt="Sami Stevens and Phil Faconti"
           width="100%"
+          loading="lazy"
           style={{ borderRadius: '10px' }}
         />
         <br />
@@ -87,6 +90,7 @@ export default function Media() {
           src={getImageSrc(Pam)}
           alt="Pam"
           width="100%"
+          loading="lazy"
           style={{ borderRadius: '10px' }}
         />
       </div>

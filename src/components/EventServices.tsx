@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import BrideAndGroom from '@/optimized-images/Leibel-Band-2.webp'
+import BrideAndGroom from '@/optimized-images/bride-and-groom-wedding.webp'
 import { getImageSrc } from '@/lib/image'
 
 export default function EventServices() {
@@ -11,6 +11,7 @@ export default function EventServices() {
         src={getImageSrc(BrideAndGroom)}
         alt="Happy Bride and Groom"
         width="100%"
+        loading="lazy"
         style={{ borderRadius: '10px' }}
       />
       <p>

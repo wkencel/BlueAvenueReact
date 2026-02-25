@@ -8,8 +8,8 @@ export function BusinessStructuredData() {
     name: 'Blue Avenue Groove',
     description: 'Premier NYC wedding band and event entertainment',
     url: 'https://www.blueavemusic.io',
-    logo: 'https://www.blueavemusic.io/logo.jpg',
-    image: 'https://www.blueavemusic.io/band-photo.jpg',
+    logo: 'https://www.blueavemusic.io/icons/icon-512x512.png',
+    image: 'https://www.blueavemusic.io/images/blue-avenue-groove-band.webp',
     email: 'info@blueavemusic.io',
     telephone: '857-204-7853',
     address: {

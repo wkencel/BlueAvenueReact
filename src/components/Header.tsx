@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import Buildings from '@/optimized-images/buildings2.webp'
+import Buildings from '@/optimized-images/nyc-skyline.webp'
 import { getImageSrc } from '@/lib/image'
 
 export default function Header({ timeout }: { timeout?: boolean }) {

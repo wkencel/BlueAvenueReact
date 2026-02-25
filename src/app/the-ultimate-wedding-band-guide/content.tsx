@@ -59,6 +59,7 @@ export default function GuideContent() {
           src="/images/blogImages/the-ultimate-wedding-band-guide_img1.webp"
           alt="Ultimate wedding entertainment guide image"
           width="70%"
+          loading="lazy"
           style={{ borderRadius: '10px' }}
         />
         <br />
@@ -123,6 +124,7 @@ export default function GuideContent() {
         src="/images/blogImages/the-ultimate-wedding-band-guide_img5.jpeg"
         alt="Ultimate wedding entertainment guide image 2"
         width="60%"
+        loading="lazy"
         style={{ borderRadius: '10px' }}
       />
       <p></p>
