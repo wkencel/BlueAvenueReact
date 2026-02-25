@@ -7,6 +7,7 @@ import CoupleChoice2018 from '@/optimized-images/wedding-wire-couples-choice-201
 import CoupleChoice2020 from '@/optimized-images/wedding-wire-couples-choice-2020.png'
 import CoupleChoice2021 from '@/optimized-images/wedding-wire-couples-choice-2021.png'
 import CoupleChoice2022 from '@/optimized-images/wedding-wire-couples-choice-2022.png'
+import CoupleChoice2023 from '@/optimized-images/wedding-wire-couples-choice-2023.png'
 import { getImageSrc } from '@/lib/image'
 
 const SocialIcon = dynamic(
@@ -47,6 +48,13 @@ export default function Footer() {
       <img
         src={getImageSrc(CoupleChoice2022)}
         alt="NY Wedding band award 2022"
+        width="80px"
+        loading="lazy"
+        style={{ marginLeft: 10 }}
+      />
+      <img
+        src={getImageSrc(CoupleChoice2023)}
+        alt="NY Wedding band award 2023"
         width="80px"
         loading="lazy"
         style={{ marginLeft: 10 }}
