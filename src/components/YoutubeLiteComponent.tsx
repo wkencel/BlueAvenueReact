@@ -5,6 +5,7 @@ import { globalContext } from '../context/context'
 
 export default function LightYouTubeEmbed({ id }: { id: string }) {
   const [videoPlayed, setVideoPlayed] = useState(false)
+  const [imageLoaded, setImageLoaded] = useState(false)
   const videoSrc = `https://www.youtube.com/embed/${id}?autoplay=1`
   const { stopPlay, setStopPlay } = useContext(globalContext)
 
@@ -29,11 +30,19 @@ export default function LightYouTubeEmbed({ id }: { id: string }) {
         overflow: 'hidden',
       }}
     >
+      {!videoPlayed && !imageLoaded && (
+        <div
+          className="shimmer-placeholder"
+          style={{ position: 'absolute', top: 0, left: 0, aspectRatio: 'unset', height: '100%' }}
+        />
+      )}
+
       {!videoPlayed && (
         <img
           src={`https://img.youtube.com/vi/${id}/sddefault.jpg`}
           alt="thumbnail"
           style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          onLoad={() => setImageLoaded(true)}
         />
       )}
 

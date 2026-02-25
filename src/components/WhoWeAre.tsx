@@ -1,16 +1,11 @@
 'use client'
 
 import React from 'react'
-import dynamic from 'next/dynamic'
+import MediaCard from '@/components/MediaCard'
 import Will1 from '@/optimized-images/will-kencel-headshot.webp'
 import Pam1 from '@/optimized-images/pam-steebler-headshot.webp'
 import BandPhoto from '@/optimized-images/blue-avenue-groove-band.webp'
 import { getImageSrc } from '@/lib/image'
-
-const LightYouTubeEmbed = dynamic(
-  () => import('@/components/YoutubeLiteComponent'),
-  { ssr: false }
-)
 
 export default function WhoWeAre() {
   return (
@@ -43,26 +38,11 @@ export default function WhoWeAre() {
         See what the band&apos;s been up to
       </h3>
 
-      <div className="video-item">
-        <h4>Smooth Vibes from Bk with Sami</h4>
-        <LightYouTubeEmbed id="pM75HyKUNEc" />
-      </div>
-
-      <div className="video-item">
-        <h4>Live from Phil&apos;s apartment</h4>
-        <LightYouTubeEmbed id="OxSzSZQMfPA" />
-      </div>
-
-      <div className="video-item">
-        <h4>From the Beat Lab with Syd</h4>
-        <LightYouTubeEmbed id="3FNJFJpK1CU" />
-      </div>
-
-      <div className="video-item">
-        <h4>
-          Ben, Professor of Sound, building a vibe w/ his fiance, Caroline
-        </h4>
-        <LightYouTubeEmbed id="bUxmcNQR6pg" />
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+        <MediaCard title="Smooth Vibes from Bk with Sami" videoId="pM75HyKUNEc" />
+        <MediaCard title="Live from Phil's apartment" videoId="OxSzSZQMfPA" />
+        <MediaCard title="From the Beat Lab with Syd" videoId="3FNJFJpK1CU" />
+        <MediaCard title="Ben, Professor of Sound, building a vibe w/ his fiance, Caroline" videoId="bUxmcNQR6pg" />
       </div>
 
       <h2 className="major" style={{ marginTop: '2.5rem' }}>

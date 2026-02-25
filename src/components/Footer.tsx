@@ -14,9 +14,9 @@ const SocialIcon = dynamic(
   { ssr: false }
 )
 
-export default function Footer({ timeout }: { timeout?: boolean }) {
+export default function Footer() {
   return (
-    <footer id="footer" style={timeout ? { display: 'none' } : {}}>
+    <footer id="footer">
       <SocialIcon
         url="https://www.instagram.com/blueavenuegroove/"
         bgColor="lightBlue"

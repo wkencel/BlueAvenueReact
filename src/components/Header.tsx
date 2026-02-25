@@ -3,9 +3,9 @@ import Link from 'next/link'
 import Buildings from '@/optimized-images/nyc-skyline.webp'
 import { getImageSrc } from '@/lib/image'
 
-export default function Header({ timeout }: { timeout?: boolean }) {
+export default function Header() {
   return (
-    <header id="header" style={timeout ? { display: 'none' } : {}}>
+    <header id="header">
       <div className="logo">
         <img
           src={getImageSrc(Buildings)}

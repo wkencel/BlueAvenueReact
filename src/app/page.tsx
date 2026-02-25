@@ -5,20 +5,20 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
 export default function HomePage() {
-  const [isLoading, setIsLoading] = useState(true)
+  const [loading, setLoading] = useState('is-loading')
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsLoading(false)
-    }, 325)
+      setLoading('')
+    }, 100)
     return () => clearTimeout(timer)
   }, [])
 
   return (
-    <div className={`body ${isLoading ? 'is-loading' : ''}`}>
+    <div className={`body ${loading}`}>
       <div id="wrapper">
-        <Header timeout={isLoading} />
-        <Footer timeout={isLoading} />
+        <Header />
+        <Footer />
       </div>
       <div id="bg"></div>
     </div>
