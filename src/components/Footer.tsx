@@ -57,6 +57,8 @@ export default function Footer() {
         <Link href="/wedding-bands-nyc">NYC Weddings</Link>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <Link href="/brooklyn-wedding-bands">Brooklyn Weddings</Link>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <Link href="/wedding-band-song-list">Song List</Link>
       </div>
       <div>
         <Link href="/blog">Find more wedding info on our Blog</Link>

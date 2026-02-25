@@ -58,7 +58,7 @@ export default function GuideContent() {
       </p>
       <ul>
         <li>
-          <strong>Repertoire range.</strong> You want a band that can move between Motown
+          <strong><Link href="/wedding-band-song-list">Repertoire range.</Link></strong> You want a band that can move between Motown
           and Top 40 and make both feel natural. A band locked into one genre is going to
           lose part of your crowd.
         </li>
