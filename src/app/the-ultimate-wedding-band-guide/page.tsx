@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title:
     'The Ultimate Wedding Band Guide | Selecting the Perfect Soundtrack for Your Big Day',
   description:
-    'Everything you need to know about choosing a wedding band — live band vs. DJ, how the night should flow, what to look for, and questions to ask before you book.',
+    'Everything you need to know about choosing a wedding band. Live band vs. DJ, how the night should flow, what to look for, and questions to ask before you book.',
   alternates: {
     canonical:
       'https://www.blueavemusic.io/the-ultimate-wedding-band-guide/',

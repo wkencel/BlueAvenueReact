@@ -15,7 +15,7 @@ const blogPosts = [
   {
     title: 'How to Choose a Wedding Band in NYC',
     excerpt:
-      'New York has more wedding bands than any city in the country. Here\'s what actually matters when you\'re making this decision — from reading demos to asking the right questions to knowing what to budget.',
+      'New York has more wedding bands than any city in the country. Here\'s what actually matters when you\'re making this decision, from reading demos to asking the right questions to knowing what to budget.',
     imageUrl: '/images/blogImages/weddingbandAI_img1.webp',
     blogUrl: '/how-to-choose-a-wedding-band-nyc',
   },

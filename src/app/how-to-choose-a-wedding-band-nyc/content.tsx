@@ -25,7 +25,7 @@ export default function HowToChooseContent() {
       <p>
         Each of those spaces changes what a band needs to do. The size of the room, the
         ceiling height, the acoustics, whether there&apos;s a built-in sound system or
-        the band brings their own — all of it affects how the music lands. A band that
+        the band brings their own. All of it affects how the music lands. A band that
         plays NYC regularly already knows this. One that doesn&apos;t will learn it at
         your wedding, and you don&apos;t want to be the test run.
       </p>
@@ -33,7 +33,7 @@ export default function HowToChooseContent() {
       <h2 className="major">Start With the Vibe, Not the Vendor List</h2>
       <p>
         Before you start comparing bands, sit down and talk about what you want the night
-        to feel like. Not what songs to play — what the energy should be.
+        to feel like. Not what songs to play, but what the energy should be.
       </p>
       <p>
         Are you imagining a packed dance floor from the first song to the last call? Or
@@ -167,7 +167,7 @@ export default function HowToChooseContent() {
       </p>
       <p>
         The process usually looks like this: you reach out and tell us about your wedding.
-        We have a conversation about what you&apos;re looking for — the vibe, the venue,
+        We have a conversation about what you&apos;re looking for: the vibe, the venue,
         any must-play songs. We put together a proposal with options and pricing. If it
         feels right, a deposit holds the date. Between booking and the wedding, we stay
         in touch to nail down the details: timeline, special songs, coordination with
