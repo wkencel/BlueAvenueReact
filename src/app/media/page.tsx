@@ -18,7 +18,7 @@ export default function MediaPage() {
       <PageNav current="/media" />
       <div className="page-panel">
         <MediaContent />
-        <Link href="/" className="button">Back to Home</Link>
+        <Link href="/" className="button" style={{ marginTop: '1rem' }}>Back to Home</Link>
       </div>
     </div>
   )

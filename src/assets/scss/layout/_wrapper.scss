@@ -55,9 +55,10 @@
 
 				.page-nav-home {
 					font-size: 0.7rem;
+					font-weight: _font(weight-bold);
 					text-transform: uppercase;
 					letter-spacing: _font(letter-spacing);
-					color: _palette(fg-light);
+					color: _palette(fg);
 					border-bottom: none;
 
 					&:hover {
@@ -88,9 +89,10 @@
 							height: 2.25rem;
 							line-height: 2.25rem;
 							font-size: 0.7rem;
+							font-weight: _font(weight-bold);
 							text-transform: uppercase;
 							letter-spacing: _font(letter-spacing);
-							color: _palette(fg);
+							color: _palette(fg-bold);
 							border-bottom: none;
 							text-decoration: none;
 
