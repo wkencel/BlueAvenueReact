@@ -9,12 +9,12 @@ import OldGuy from '@/optimized-images/guest-dancing-wedding.webp'
 import { getImageSrc } from '@/lib/image'
 
 const videos = [
-  { title: 'Blue Avenue Groove Promo 2023', videoId: 'Kt-j9h9qatk' },
+  { title: 'Blue Avenue Groove Promo', videoId: 'Kt-j9h9qatk' },
   { title: 'Move on Up - Curtis Mayfield -- live', videoId: 'NtZLBObQ3PU' },
   { title: 'Use me - Bill Withers -- live', videoId: 'jw4zzH1DVM0' },
   { title: 'As It Was/Take On Me -Harry Styles/A-Ha', videoId: 'jVUzk9YT06w' },
   { title: 'About Damn Time -Lizzo', videoId: 'qQw_oftZmzI' },
-  { title: 'Promo Vid', videoId: 'Kh6JXWRmLWE' },
+  { title: 'Promo Vid 2', videoId: 'Kh6JXWRmLWE' },
 ]
 
 export default function Media() {

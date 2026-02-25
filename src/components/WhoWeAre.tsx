@@ -21,7 +21,7 @@ export default function WhoWeAre() {
       </p>
       <p>
         Like anything we do, we strive not to &quot;go through the motions&quot;
-        with each song, but to give you part of us. We&apos;re building a better
+        with each song, but to bring real energy and heart to every song. We&apos;re building a better
         version of what it means to be a &quot;wedding band&quot;: filled with
         music from the soul, bringing friends and family together for the
         experience of a lifetime.
