@@ -4,175 +4,156 @@ import React from 'react'
 import Link from 'next/link'
 import ContactUs from '@/components/ContactUs'
 
-const pageStyles = {
-  marginLeft: '2%',
-  fontFamily: "'Lora', serif",
-  color: '#333',
-}
-
-const headingStyles = {
-  fontFamily: "'Playfair Display', serif",
-  color: '#5DADE2',
-}
-
-const subHeadingStyles = {
-  fontFamily: "'Playfair Display', serif",
-  color: '#B2BEC3',
-}
-
-const h2Styles = {
-  color: '#8094a0',
-  fontFamily: "'Merriweather', serif",
-}
-
-const paragraphStyles: React.CSSProperties = {
-  lineHeight: '1.75',
-  marginBottom: '20px',
-  color: '#6c757d',
-  fontSize: '20px',
-  fontFamily: "'Lora', serif",
-}
-
-const linkStyle = {
-  fontSize: '32px',
-  fontWeight: '600' as const,
-  marginLeft: '10px',
-  textDecoration: 'none',
-  color: '#6c757d',
-}
-
-const strongTagStyle = {
-  color: '#8094a0',
-  fontSize: '20px',
-}
-
 export default function GuideContent() {
   return (
-    <div style={pageStyles}>
-      <div style={{ textAlign: 'center' }}>
-        <h1 style={headingStyles}>The Ultimate Wedding Band Guide</h1>
-        <h2 style={subHeadingStyles}>
-          Selecting the Perfect Soundtrack for Your Big Day
-        </h2>
-        <br />
-        <img
-          src="/images/blogImages/the-ultimate-wedding-band-guide_img1.webp"
-          alt="Ultimate wedding entertainment guide image"
-          width="70%"
-          loading="lazy"
-          style={{ borderRadius: '10px' }}
-        />
-        <br />
-        <br />
-        <p style={{ ...paragraphStyles, fontSize: '22px' }}>
-          Planning your wedding day includes creating a magical musical
-          atmosphere.
-        </p>
-        <p style={{ ...paragraphStyles, fontSize: '22px' }}>
-          Our Ultimate Wedding Band Guide is here to help you ensure your musical
-          backdrop is as perfect as your love story.
-        </p>
-      </div>
-      <br />
-      <br />
+    <>
+      <h1 className="major">The Ultimate Wedding Band Guide</h1>
+      <h2>Selecting the Perfect Soundtrack for Your Big Day</h2>
 
-      <h2 style={h2Styles}>Introduction:</h2>
-      <p style={paragraphStyles}>
-        Your wedding day: a symphony of love, joy, and celebration. And what
-        better way to underscore this beautiful harmony than with the perfect
-        wedding band? Music does more than fill the air with melody; it enhances
-        moments, evokes emotions, and creates memories that last a lifetime.
+      <img
+        src="/images/blogImages/the-ultimate-wedding-band-guide_img1.webp"
+        alt="Live wedding band performing at NYC reception"
+        width="100%"
+        loading="lazy"
+        style={{ borderRadius: '10px', margin: '1.5rem 0' }}
+      />
+
+      <h2 className="major">Why Your Wedding Band Matters More Than You Think</h2>
+      <p>
+        Here&apos;s something we&apos;ve seen over and over in 10+ years of playing
+        weddings: couples spend months choosing flowers and linens, then give themselves
+        about 15 minutes to figure out music. But when the night&apos;s over, nobody
+        talks about the centerpieces. They talk about the moment the dance floor opened
+        up and everybody lost it.
+      </p>
+      <p>
+        Music is the thing that makes people feel something. It sets the pace of the
+        entire night. Get it right and your guests are telling stories for years. Get it
+        wrong and even the best food and venue can feel flat.
       </p>
 
-      <br />
-      <h2 style={h2Styles}>Understanding Your Musical Taste and Theme</h2>
-      <p style={paragraphStyles}>
-        Before you start your search, have a heart-to-heart about your musical
-        preferences. Are you fans of classic hits, or is your playlist more about
-        the latest chart-toppers? Your chosen genre will set the tone for the
-        entire celebration.
+      <h2 className="major">Live Band vs. DJ: An Honest Take</h2>
+      <p>
+        We&apos;re a band, so obviously we&apos;re biased. But here&apos;s the truth:
+        DJs are a great fit for some weddings. If you want deep cuts, seamless mixing
+        between genres, or a very specific playlist played exactly as recorded, a DJ
+        makes sense.
+      </p>
+      <p>
+        What a live band brings is different. It&apos;s energy you can feel in your chest.
+        It&apos;s musicians reading the room and adjusting in real time. It&apos;s the
+        moment the sax player steps forward for a solo and the crowd erupts. There&apos;s
+        a human connection between performers and guests that a playlist can&apos;t
+        replicate, no matter how good the speakers are.
+      </p>
+      <p>
+        Some couples go with both: a DJ for cocktail hour or transitions, and a live band
+        for the reception. That works too. The point is to think about what kind of energy
+        you want in the room and work backward from there.
       </p>
 
-      <br />
-      <h2 style={h2Styles}>
-        Key Considerations When Choosing Your Wedding Band
-      </h2>
-      <p style={paragraphStyles}>
-        <strong style={strongTagStyle}>Repertoire Range:</strong> Ensure the
-        band&apos;s playlist is versatile, catering to all your favorite tunes.
+      <h2 className="major">What to Look For in a Wedding Band</h2>
+      <p>
+        Not all wedding bands are created equal. Here&apos;s what actually matters:
       </p>
-      <p style={paragraphStyles}>
-        <strong style={strongTagStyle}>Band Dynamics:</strong> The size of the
-        band is crucial. Think about your venue&apos;s space, the number of
-        guests, and the intimacy you desire.
+      <ul>
+        <li>
+          <strong>Repertoire range.</strong> You want a band that can move between Motown
+          and Top 40 and make both feel natural. A band locked into one genre is going to
+          lose part of your crowd.
+        </li>
+        <li>
+          <strong>They read the room.</strong> This is the big one. A great wedding band
+          doesn&apos;t just play a setlist. They watch the floor, feel the energy, and
+          adjust. If people are vibing on funk, you stay in that pocket. If the energy
+          dips, you know how to bring it back.
+        </li>
+        <li>
+          <strong>Professionalism behind the scenes.</strong> Sound checks, load-in,
+          setup, teardown, MC duties, coordinating with your venue and planner. The best
+          bands handle all of this so you don&apos;t have to think about it.
+        </li>
+        <li>
+          <strong>Live video, not just studio recordings.</strong> Studio tracks tell you
+          a band can play. Live video tells you how they perform. There&apos;s a big
+          difference.
+        </li>
+      </ul>
+
+      <h2 className="major">How the Night Should Flow</h2>
+      <p>
+        Wedding music isn&apos;t one thing. It&apos;s three or four different vibes
+        across the course of an evening, and each one matters.
       </p>
-      <p style={paragraphStyles}>
-        <strong style={strongTagStyle}>Experience and Professionalism:</strong> A
-        band experienced in weddings knows how to set the pace, interact with
-        guests, and keep the party going.
+      <h3>Ceremony</h3>
+      <p>
+        This is intimate and emotional. A solo pianist, a vocalist with guitar, or a
+        small duo is usually the right fit. You want something that makes the walk down
+        the aisle feel like a moment, not a production.
       </p>
-      <p style={paragraphStyles}>
-        <strong style={strongTagStyle}>Personalization and Flexibility:</strong>{' '}
-        Can the band customize their performance to your taste?
+      <h3>Cocktail Hour</h3>
+      <p>
+        The energy shifts. People are mingling, getting drinks, catching up. This is
+        where a jazz trio, a sax-and-keys duo, or a solo pianist sets the perfect tone.
+        Warm, sophisticated, not competing with conversation.{' '}
+        <Link href="/services">We offer ensembles from solo to quartet for cocktail hour.</Link>
       </p>
-      <p style={paragraphStyles}>
-        <strong style={strongTagStyle}>Logistical Details:</strong> Consider the
-        practicalities—sound checks, equipment, space requirements, and breaks.
+      <h3>Reception</h3>
+      <p>
+        This is where it all opens up. A full band, four hours of energy, building from
+        dinner music into a packed dance floor. The first dance, the parent dances, the
+        moment when the whole room is singing along. This is what people remember.
       </p>
 
       <img
         src="/images/blogImages/the-ultimate-wedding-band-guide_img5.jpeg"
-        alt="Ultimate wedding entertainment guide image 2"
-        width="60%"
+        alt="Wedding guests dancing at reception"
+        width="100%"
         loading="lazy"
-        style={{ borderRadius: '10px' }}
+        style={{ borderRadius: '10px', margin: '1.5rem 0' }}
       />
-      <p></p>
-      <h2 style={h2Styles}>
-        Making the Most of Your Wedding Band Experience
-      </h2>
-      <p style={paragraphStyles}>
-        <strong style={strongTagStyle}>Plan Ahead:</strong> Popular bands book up
-        fast, especially during peak wedding season.
+
+      <h2 className="major">Questions to Ask Before You Book</h2>
+      <p>
+        When you&apos;re talking to a band, these are the questions that actually tell
+        you what you need to know:
       </p>
-      <p style={paragraphStyles}>
-        <strong style={strongTagStyle}>Communication is Key:</strong> Share your
-        vision, favorite songs, and any no-play tunes with the band.
-      </p>
-      <p style={paragraphStyles}>
-        <strong style={strongTagStyle}>Think Beyond the Playlist:</strong> A
-        great band does more than play music; they create an atmosphere.
-      </p>
-      <p style={paragraphStyles}>
-        <strong style={strongTagStyle}>Backup Plans:</strong> Ensure the band has
-        a contingency plan for unexpected situations.
+      <ul>
+        <li>Can you learn a specific song for our first dance?</li>
+        <li>What happens if a band member gets sick the day of?</li>
+        <li>Do you bring your own sound system and engineer?</li>
+        <li>How do you handle MC duties and announcements?</li>
+        <li>What does setup and teardown look like? How much time do you need?</li>
+        <li>How many breaks do you take, and what happens during breaks?</li>
+        <li>Have you played our venue before? Any logistical things to know?</li>
+      </ul>
+      <p>
+        A band that answers these confidently and specifically has done this before. Vague
+        answers are a red flag.
       </p>
 
-      <br />
-      <h2 style={h2Styles}>Encore: Wrapping It Up</h2>
-      <p style={paragraphStyles}>
-        Choosing the right wedding band is about striking a chord that resonates
-        with your personal love story and elevating your celebration to an
-        unforgettable experience.
+      <h2 className="major">When to Start Looking</h2>
+      <p>
+        The best wedding bands in NYC book up fast, especially for peak season (May
+        through October). We recommend starting your search 6 to 12 months before your
+        date. That gives you time to see bands live, compare options, and lock in your
+        pick before the calendar fills up.
       </p>
-      <p style={paragraphStyles}>
-        As you embark on this harmonious journey, remember that music is more than
-        just background noise—it&apos;s the heartbeat of your celebration.
+      <p>
+        The process usually goes: initial conversation about your wedding and what
+        you&apos;re looking for, a proposal with options and pricing, and then booking.
+        Most bands ask for a deposit to hold the date.
       </p>
 
-      <br />
-      <h2 style={h2Styles}>Book Your Ultimate Wedding Band Today:</h2>
-      <p style={paragraphStyles}>
-        Ready to experience the best of Brooklyn? Reach out to us via our contact
-        form, email, or phone. Let&apos;s make your wedding day as unique and
-        vibrant as Brooklyn itself!
+      <h2 className="major">Ready to Talk?</h2>
+      <p>
+        We&apos;d love to hear about your wedding. Tell us about your day, the vibe
+        you&apos;re going for, and any must-play songs. We&apos;ll put something together
+        that fits.
       </p>
-      <h3>Send us a message to Book</h3>
+      <h3>Send us a message</h3>
       <ContactUs />
-
-      <Link href="/" style={linkStyle}>
-        Home
-      </Link>
-    </div>
+      <Link href="/" className="button">Back to Home</Link>
+    </>
   )
 }

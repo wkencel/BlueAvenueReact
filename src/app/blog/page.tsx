@@ -13,15 +13,18 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
-    title: 'The Ultimate Wedding Band Guide',
+    title: 'How to Choose a Wedding Band in NYC',
     excerpt:
-      'Planning your wedding day includes creating a magical musical atmosphere. Our Ultimate Wedding Band Guide is here to help you navigate through options, ensuring your musical backdrop is as perfect as your love story.',
+      'New York has more wedding bands than any city in the country. Here\'s what actually matters when you\'re making this decision — from reading demos to asking the right questions to knowing what to budget.',
     imageUrl: '/images/blogImages/weddingbandAI_img1.webp',
-    blogUrl: '/the-ultimate-wedding-band-guide',
+    blogUrl: '/how-to-choose-a-wedding-band-nyc',
   },
   {
-    title: 'next post coming soon',
-    excerpt: 'Stay tuned for our next blog post...',
+    title: 'The Ultimate Wedding Band Guide',
+    excerpt:
+      'Most couples spend hours on flowers and 15 minutes on music, but music is what people actually remember. Our guide covers everything from live band vs. DJ to how the night should flow.',
+    imageUrl: '/images/blogImages/the-ultimate-wedding-band-guide_img1.webp',
+    blogUrl: '/the-ultimate-wedding-band-guide',
   },
 ]
 
