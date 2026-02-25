@@ -175,7 +175,7 @@
 				font-style: normal;
 				font-weight: _font(weight-bold);
 				font-size: 0.85rem;
-				color: _palette(fg-light);
+				color: _palette(fg);
 				letter-spacing: _font(letter-spacing);
 				text-transform: uppercase;
 			}
@@ -248,7 +248,7 @@
 		}
 
 		p {
-			color: _palette(fg-light);
+			color: _palette(fg);
 			font-size: 0.9rem;
 		}
 	}
