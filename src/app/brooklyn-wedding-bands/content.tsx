@@ -7,19 +7,20 @@ import ContactUs from '@/components/ContactUs'
 export default function BrooklynWeddingsContent() {
   return (
     <>
-      <h1>Brooklyn&apos;s Live Wedding Band</h1>
+      <h1>Brooklyn&apos;s Live Wedding Band, Blue Avenue Groove</h1>
       <div style={{ marginLeft: '2%' }}>
-        <h2>Blue Avenue Groove</h2>
         <p>
           Brooklyn is where we got our start, and it&apos;s still where we
-          feel most at home. From warehouse lofts in Williamsburg to gardens
-          in Prospect Park to rooftops in DUMBO, we&apos;ve played weddings
-          all over the borough and we bring that Brooklyn energy every time.
+          feel most at home. From warehouse lofts in Williamsburg to the
+          Brooklyn Botanical Gardens to rooftops in DUMBO, we&apos;ve been
+          playing weddings across the borough for over a decade. This is our
+          neighborhood, these are our venues, and we bring that Brooklyn
+          energy every single time.
         </p>
       </div>
       <img
         src="/images/weddingPhotos/nyc-wedding-reception-1.jpeg"
-        alt="Brooklyn Wedding Band"
+        alt="Blue Avenue Groove performing live at a Brooklyn wedding reception"
         width="90%"
         loading="lazy"
         style={{
@@ -30,26 +31,26 @@ export default function BrooklynWeddingsContent() {
       />
       <br />
       <br />
-      <h2>What We Bring to Your Wedding</h2>
+      <h2>A Band Built for Brooklyn Venues</h2>
       <div style={{ marginLeft: '2%' }}>
         <p>
-          Our 6 to 12 piece band plays four hours of Funk, Soul, Pop, R&amp;B,
-          Rock, Motown and more. Every set comes with pro audio run by a
-          dedicated AV engineer, MC services to keep your reception on track,
-          and up to three song requests for your first dance, parent dances,
-          or whatever matters most to you.
+          Brooklyn wedding venues run the full spectrum: exposed brick and
+          steel beams one weekend, waterfront sunsets the next. We&apos;ve
+          played The Green Building, 501 Union, Liberty Warehouse, W Loft,
+          and dozens of other spaces across the borough. Our lineup scales
+          to fit any room, from a tight six-piece for an intimate Greenpoint
+          loft to a full horn section for a grand hall in Park Slope.
         </p>
         <p>
-          We also offer cocktail hour and ceremony ensembles, from solo keys
-          to a full quartet, covering everything from soulful jazz to indie
-          folk.{' '}
-          <Link href="/services">Check out our full services page for details.</Link>
+          We cover your entire night, reception through last call, with
+          pro audio, MC services, and cocktail hour and ceremony music.{' '}
+          <Link href="/services">See the full list of what we offer.</Link>
         </p>
       </div>
       <br />
       <img
         src="/images/weddingPhotos/nyc-wedding-reception-2.jpeg"
-        alt="Brooklyn Rooftop Wedding"
+        alt="Wedding guests dancing at a Brooklyn rooftop reception"
         width="90%"
         loading="lazy"
         style={{
@@ -60,39 +61,49 @@ export default function BrooklynWeddingsContent() {
       />
       <br />
       <br />
-      <h2>Why Couples in Brooklyn Choose Us</h2>
+      <h2>Why Brooklyn Couples Trust Us with Their Wedding</h2>
       <div style={{ marginLeft: '2%' }}>
         <p>
-          Over 10 years of playing weddings across NYC means we know how to
-          read a room and keep a dance floor packed. We don&apos;t just run
-          through songs. We build momentum, match your crowd&apos;s energy,
-          and make sure people are still talking about the music long after
-          the night ends.
+          Brooklyn weddings have their own vibe: creative, personal, a
+          little unexpected. We get it because we live it. We don&apos;t
+          show up with a rigid setlist. We read the room, match your
+          crowd&apos;s energy, and build the kind of momentum that keeps
+          people on the dance floor past last call.
         </p>
         <p>
-          Brooklyn weddings have their own vibe and we get it. Whether
-          you&apos;re going for laid-back and intimate or a full-on dance
-          party, we tailor the set to fit your day, not the other way around.
+          Whether you&apos;re going for a laid-back dinner party in
+          Bushwick or a full-on dance marathon in Red Hook, we tailor
+          every set to fit your day, your guests, and your taste. Funk,
+          Soul, Motown, Rock, Pop, R&amp;B. We bring it all and we
+          make it feel effortless.
+        </p>
+        <p>
+          Our musicians aren&apos;t just wedding players. They&apos;ve
+          toured with major recording artists, performed at events like
+          the Super Bowl, recorded on hit albums, and
+          trained at top music conservatories. That level of musicianship
+          is what separates a good band from one your guests won&apos;t
+          stop talking about.
         </p>
       </div>
       <br />
-      <h2>How Booking Works</h2>
+      <h2>How to Book a Brooklyn Wedding Band</h2>
       <div style={{ marginLeft: '2%' }}>
         <p>
-          Tell us about your wedding, the vibe you&apos;re going for, and any
-          must-play songs. We&apos;ll put together a package that fits,
-          whether that&apos;s reception only or ceremony through last call.
-          We recommend reaching out 6 to 12 months ahead to lock in your
-          date.
+          It starts with your vision. Tell us about your venue, the
+          vibe you&apos;re going for, and any must-play songs. We&apos;ll
+          put together a package around your day: reception only,
+          ceremony through last call, or anything in between. Brooklyn
+          dates fill up fast, so we recommend reaching out 6 to 12
+          months ahead to hold yours.
         </p>
       </div>
       <br />
-      <h2>Book Your Date</h2>
+      <h2>Book Blue Avenue Groove for Your Brooklyn Wedding</h2>
       <p>
-        Ready to make it happen? Drop us a message and let&apos;s talk about
-        your Brooklyn wedding.
+        Ready to lock in your date? Drop us a message below and
+        let&apos;s start planning the music for your night.
       </p>
-      <h3>Send us a message to Book</h3>
       <ContactUs />
       <Link href="/" className="button">Back to Home</Link>
     </>
