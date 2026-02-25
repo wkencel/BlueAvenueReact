@@ -9,7 +9,7 @@ export default function SongListContent() {
     <>
       <h1 className="major">Song List</h1>
       <p>
-        From Motown classics to today&apos;s biggest hits, we bring over 180 songs spanning
+        From Motown classics to today&apos;s biggest hits, we bring over 200+ songs spanning
         Funk, Soul, Pop, R&amp;B, Rock, Jazz, and more. Don&apos;t see your must-have song?
         We learn requests &mdash; <Link href="/contact">get in touch</Link> and we&apos;ll
         make it happen.
