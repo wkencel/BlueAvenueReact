@@ -7,7 +7,7 @@ import ContactUs from '@/components/ContactUs'
 export default function BrooklynWeddingsContent() {
   return (
     <>
-      <h1>Brooklyn&apos;s Live Wedding Band, Blue Avenue Groove</h1>
+      <h1>Brooklyn&apos;s Live Wedding Band</h1>
       <div style={{ marginLeft: '2%' }}>
         <p>
           Brooklyn is where we got our start, and it&apos;s still where we
@@ -38,7 +38,7 @@ export default function BrooklynWeddingsContent() {
           steel beams one weekend, waterfront sunsets the next. We&apos;ve
           played The Green Building, 501 Union, Liberty Warehouse, W Loft,
           and dozens of other spaces across the borough. Our lineup scales
-          to fit any room, from a tight six-piece for an intimate Greenpoint
+          to fit any room, from a tight five-piece for an intimate Greenpoint
           loft to a full horn section for a grand hall in Park Slope.
         </p>
         <p>
@@ -64,23 +64,23 @@ export default function BrooklynWeddingsContent() {
       <h2>Why Brooklyn Couples Trust Us with Their Wedding</h2>
       <div style={{ marginLeft: '2%' }}>
         <p>
-          Brooklyn weddings have their own vibe: creative, personal, a
-          little unexpected. We get it because we live it. We don&apos;t
+          Brooklyn weddings have their own vibe: creative, personal,
+          anything but ordinary. We get it because we live it. We don&apos;t
           show up with a rigid setlist. We read the room, match your
           crowd&apos;s energy, and build the kind of momentum that keeps
-          people on the dance floor past last call.
+          people on the dance floor until the last song.
         </p>
         <p>
           Whether you&apos;re going for a laid-back dinner party in
-          Bushwick or a full-on dance marathon in Red Hook, we tailor
+          Bushwick or a full-on dance party in Red Hook, we tailor
           every set to fit your day, your guests, and your taste. Funk,
           Soul, Motown, Rock, Pop, R&amp;B. We bring it all and we
           make it feel effortless.
         </p>
         <p>
-          Our musicians aren&apos;t just wedding players. They&apos;ve
-          toured with major recording artists, performed at events like
-          the Super Bowl, recorded on hit albums, and
+          Our musicians don&apos;t just play weddings. They&apos;ve
+          toured with major recording artists, performed at international
+          events, recorded on hit albums, and
           trained at top music conservatories. That level of musicianship
           is what separates a good band from one your guests won&apos;t
           stop talking about.
@@ -92,8 +92,9 @@ export default function BrooklynWeddingsContent() {
         <p>
           It starts with your vision. Tell us about your venue, the
           vibe you&apos;re going for, and any must-play songs. We&apos;ll
-          put together a package around your day: reception only,
-          ceremony through last call, or anything in between. Brooklyn
+          put together a package around your day: just the reception,
+          the full night from ceremony to last call, or anything in
+          between. Brooklyn
           dates fill up fast, so we recommend reaching out 6 to 12
           months ahead to hold yours.
         </p>

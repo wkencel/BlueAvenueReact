@@ -41,7 +41,7 @@ export default function NYCWeddingsContent() {
           best.
         </p>
         <p>
-          Our 6 to 12 piece band brings world-class live music to your
+          Our 5 to 12 piece band brings world-class live music to your
           reception, with pro audio, MC services, and a setlist built
           around your night. We also cover cocktail hour and ceremony
           music.{' '}
