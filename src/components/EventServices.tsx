@@ -15,16 +15,16 @@ export default function EventServices() {
         style={{ borderRadius: '10px' }}
       />
       <p>
-        Blue Avenue Groove brings music from the soul to your celebration. As one of NYC's premier
-        wedding bands, we deliver live music that gets your guests on their feet and creates an
-        unforgettable atmosphere, from the ceremony to the last dance of the reception.
+        We're not just here to play, we're here to make your night unforgettable. As one of NYC's premier
+        wedding bands, we bring the energy that gets your guests moving and keeps them on the dance
+        floor from the ceremony to the last song of the night.
       </p>
 
-      <h2 className="major">Reception Band</h2>
+      <h2 className="major">Reception</h2>
       <p>
         This is where the party happens. Our 6 to 12 piece band brings four hours of nonstop energy
-        to your reception: funky grooves, soulful ballads, and everything in between. We read the
-        room and keep the dance floor packed all night so you and your guests can get your groove on.
+        to your reception: funky grooves, soulful ballads, and everything in between. We keep the
+        dance floor packed all night so you and your guests can get your groove on.
       </p>
       <ul>
         <li>Professional audio setup with a dedicated AV engineer</li>
@@ -37,20 +37,19 @@ export default function EventServices() {
       <h2 className="major">Cocktail Hour</h2>
       <p>
         Set the tone before the party starts. Our cocktail hour ensembles bring warm, sophisticated
-        vibes: soulful jazz, soft pop, and easy conversation starters. Choose the size and
-        style that fits your vision:
+        vibes, jazz, soul, soft pop, or whatever fits your crowd. Choose the size that works
+        for your venue:
       </p>
       <ul>
-        <li><strong>Solo</strong> — Keys or vocals/keys. Soft jazz, soulful background — Carole King meets Regina Spektor.</li>
-        <li><strong>Duo</strong> — Vocals/keys, vocals/guitar, or sax/keys. Jazz ballads, soft pop, or folk/indie.</li>
-        <li><strong>Trio</strong> — Our favorite: vocals/sax/keys for high-caliber soulful jazz with great chemistry. Also sax/keys/drums or sax/keys/bass for that NYC jazz scene vibe.</li>
-        <li><strong>Quartet</strong> — Vocals/guitar/bass/drums (indie/folk — think The Band, The Beatles) or vocals/keys/bass/drums (softer jazz quartet).</li>
+        <li><strong>Solo</strong> — Keys or vocals/keys. Great for soft jazz, soulful background music.</li>
+        <li><strong>Duo</strong> — Vocals/keys, vocals/guitar, or sax/keys. Think jazz ballads, soft pop, or folk/indie.</li>
+        <li><strong>Trio</strong> — Vocals/sax/keys, sax/keys/drums, or sax/keys/bass. Perfect for soulful jazz with great chemistry.</li>
+        <li><strong>Quartet</strong> — Vocals/guitar/bass/drums or vocals/keys/bass/drums. Fuller sound for jazz, indie, or folk.</li>
       </ul>
 
       <h2 className="major">Ceremony Music</h2>
       <p>
-        The walk down the aisle is one of the most emotional moments of your day. Our ceremony
-        musicians provide a live, intimate soundtrack that makes it feel as special as it is.
+        The walk down the aisle is one of the most memorable moments of your day. Our ceremony musicians are there to make that moment land the way it should.
       </p>
       <ul>
         <li><strong>Solo</strong> — Keys (traditional, bridal march) or guitar (Van Morrison, Beatles instrumentals).</li>
