@@ -153,7 +153,7 @@ export default function GuideContent() {
       </p>
       <h3>Send us a message</h3>
       <ContactUs />
-      <Link href="/" className="button">Back to Home</Link>
+      <Link href="/blog" className="button">Back to Blog</Link>
     </>
   )
 }

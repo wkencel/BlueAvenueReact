@@ -100,8 +100,8 @@ export default function HowToChooseContent() {
           want a band that handles logistics, not one that creates them.
         </li>
         <li>
-          <strong>Can we see you perform live before booking?</strong> A showcase, a
-          public gig, another wedding (with permission). Seeing a band in person tells
+          <strong>Can we see you perform live before booking?</strong> Ask if they do
+          showcases or have any upcoming public gigs. Seeing a band in person tells
           you more than any video.
         </li>
       </ul>
@@ -117,8 +117,10 @@ export default function HowToChooseContent() {
           edited clips, you don&apos;t know what you&apos;re getting.
         </li>
         <li>
-          <strong>They won&apos;t let you see them play live.</strong> Every working band
-          has gigs. If they can&apos;t get you into one, ask why.
+          <strong>They can&apos;t show you what they sound like.</strong> Not every band
+          plays regular bar gigs — some are booked solid with private events. But
+          they should at least have quality video of a real performance. If
+          there&apos;s nothing to see, that&apos;s a red flag.
         </li>
         <li>
           <strong>Vague about what&apos;s included.</strong> &quot;We&apos;ll figure it
@@ -138,15 +140,16 @@ export default function HowToChooseContent() {
 
       <h2 className="major">What Should a NYC Wedding Band Cost?</h2>
       <p>
-        We&apos;re not going to publish our exact pricing here, but we can set
-        expectations for the NYC market so you&apos;re not blindsided.
+        We&apos;re not going to publish our exact pricing here, but we built a{' '}
+        <Link href="/contact">price calculator</Link> to help you get a ballpark.
+        Here&apos;s what to expect in the NYC market so you&apos;re not blindsided.
       </p>
       <p>
         A professional wedding band in New York is a significant investment. The cost
         scales with band size (a 6-piece is less than a 12-piece), duration, and
-        add-ons like cocktail hour or ceremony music. You&apos;re paying for rehearsal
-        time, professional gear, a sound engineer, transportation, setup, and years of
-        experience knowing how to make your night great.
+        add-ons like cocktail hour or ceremony music. You&apos;re paying for professional musicians, top-tier gear, a sound
+        engineer, transportation, setup, and years of experience knowing how to make
+        your night great.
       </p>
       <p>
         If you find a band that&apos;s dramatically cheaper than everyone else,
@@ -183,7 +186,7 @@ export default function HowToChooseContent() {
       </p>
       <h3>Send us a message</h3>
       <ContactUs />
-      <Link href="/" className="button">Back to Home</Link>
+      <Link href="/blog" className="button">Back to Blog</Link>
     </>
   )
 }

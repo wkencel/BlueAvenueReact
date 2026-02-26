@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import PageNav from '@/components/PageNav'
 import '@/assets/css/blogList.css'
 
 export const metadata: Metadata = {
@@ -31,6 +32,7 @@ const blogPosts = [
 export default function BlogPage() {
   return (
     <div id="wrapper" className="page">
+      <PageNav current="/blog" />
       <div className="page-panel">
         <h1 style={{ textAlign: 'center', fontSize: 'clamp(1rem, 4vw, 2.25rem)', marginBottom: '1.5rem' }}>Check out our blog</h1>
         <div className="blog-list">

@@ -52,7 +52,7 @@ export default function EventServices() {
         The walk down the aisle is one of the most memorable moments of your day. Our ceremony musicians are there to make that moment land the way it should.
       </p>
       <ul>
-        <li><strong>Solo</strong> — Keys (traditional, bridal march) or guitar (Van Morrison, Beatles instrumentals).</li>
+        <li><strong>Solo</strong> — Keys (traditional, bridal march) or guitar (acoustic classics, Beatles instrumentals).</li>
         <li><strong>Duo</strong> — Vocals/keys (traditional with a vocalist's touch) or vocals/guitar (folk/indie feel).</li>
       </ul>
 
