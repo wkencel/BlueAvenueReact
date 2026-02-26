@@ -3,15 +3,6 @@
 import React from 'react'
 import emailjs from 'emailjs-com'
 
-const inputStyles: React.CSSProperties = {
-  background: 'grey',
-  width: 150,
-  color: 'white',
-  border: '1px solid #666',
-  borderRadius: '4px',
-  padding: '0.5rem',
-}
-
 export default function PurchaseRequest() {
   function sendEmail(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
@@ -36,127 +27,112 @@ export default function PurchaseRequest() {
   }
 
   return (
-    <div>
-      <h1>Purchase Request</h1>
+    <div className="purchase-request">
+      <h3>Purchase Request</h3>
       <form onSubmit={sendEmail}>
-        <div className="field half first">
-          <input
-            name="email"
-            placeholder="Email"
-            type="email"
-            required
-          />
+        <div className="purchase-grid">
+          <div className="field">
+            <input
+              name="email"
+              placeholder="Email"
+              type="email"
+              required
+            />
+          </div>
+          <div className="field">
+            <input
+              name="name"
+              placeholder="Name"
+              type="text"
+              required
+            />
+          </div>
+          <div className="field">
+            <input
+              name="venue-name"
+              placeholder="Venue name"
+              type="text"
+              required
+            />
+          </div>
+          <div className="field">
+            <input
+              name="location"
+              placeholder="City, State"
+              type="text"
+              required
+            />
+          </div>
         </div>
-        <div className="field half">
-          <input
-            name="name"
-            placeholder="Name"
-            type="text"
-            required
-          />
-        </div>
-        <div className="field half first">
-          <input
-            name="venue-name"
-            placeholder="venue name"
-            type="text"
-            required
-          />
-        </div>
-        <div className="field half">
-          <input
-            name="location"
-            placeholder="city, state"
-            type="text"
-            required
-          />
-        </div>
-        <div className="field half first">
-          <p style={{ fontSize: '24px' }}>Date: </p>
+
+        <div className="purchase-date-row">
+          <label>Date:</label>
           <input
             name="date-purchase-request"
             type="date"
             required
-            style={inputStyles}
+            className="purchase-input"
           />
         </div>
-        <div>
-          <h4>Reception: </h4>
-          <div className="field half">
-            <p style={{ float: 'left', marginTop: 0, marginBottom: 0 }}>
-              start time &nbsp;&nbsp;
-            </p>
+
+        <div className="purchase-time-section">
+          <h4>Reception</h4>
+          <div className="purchase-time-grid">
+            <label>Start time</label>
             <input
               name="reception-start-time"
               type="time"
-              style={inputStyles}
+              className="purchase-input"
             />
-          </div>
-          <div className="field half" style={{ float: 'left' }}>
-            <p style={{ float: 'left', marginTop: 0, marginBottom: 0 }}>
-              end time &nbsp;&nbsp;
-            </p>
+            <label>End time</label>
             <input
               name="reception-end-time"
               type="time"
-              style={inputStyles}
+              className="purchase-input"
             />
           </div>
         </div>
-        <br />
-        <br />
-        <br />
-        <h4>
-          <u>if applicable</u>
-        </h4>
-        <div>
-          <div>
-            <h4>Cocktail Hr (60 min): </h4>
-            <div className="field half">
-              <p style={{ float: 'left', marginTop: 0, marginBottom: 0 }}>
-                start time &nbsp;&nbsp;
-              </p>
-              <input
-                name="cocktail-start-time"
-                type="time"
-                style={inputStyles}
-              />
-            </div>
-            <div className="field half" style={{ float: 'left' }}>
-              <p style={{ float: 'left', marginTop: 0, marginBottom: 0 }}>
-                end time &nbsp;&nbsp;
-              </p>
-              <input
-                name="cocktail-end-time"
-                type="time"
-                style={inputStyles}
-              />
-            </div>
-          </div>
-          <div>
-            <h4>Ceremony (30 min): </h4>
-            <div className="field half">
-              <p style={{ float: 'left', marginTop: 0, marginBottom: 0 }}>
-                start time &nbsp;&nbsp;
-              </p>
-              <input
-                name="ceremony-start-time"
-                type="time"
-                style={inputStyles}
-              />
-            </div>
-            <div className="field half" style={{ float: 'left' }}>
-              <p style={{ float: 'left', marginTop: 0, marginBottom: 0 }}>
-                end time &nbsp;&nbsp;
-              </p>
-              <input
-                name="ceremony-end-time"
-                type="time"
-                style={inputStyles}
-              />
-            </div>
+
+        <p className="purchase-optional">
+          <u>If applicable</u>
+        </p>
+
+        <div className="purchase-time-section purchase-time-section-optional">
+          <h4>Cocktail Hr (60 min)</h4>
+          <div className="purchase-time-grid">
+            <label>Start time</label>
+            <input
+              name="cocktail-start-time"
+              type="time"
+              className="purchase-input"
+            />
+            <label>End time</label>
+            <input
+              name="cocktail-end-time"
+              type="time"
+              className="purchase-input"
+            />
           </div>
         </div>
+
+        <div className="purchase-time-section purchase-time-section-optional">
+          <h4>Ceremony (30 min)</h4>
+          <div className="purchase-time-grid">
+            <label>Start time</label>
+            <input
+              name="ceremony-start-time"
+              type="time"
+              className="purchase-input"
+            />
+            <label>End time</label>
+            <input
+              name="ceremony-end-time"
+              type="time"
+              className="purchase-input"
+            />
+          </div>
+        </div>
+
         <ul className="actions">
           <div className="field">
             <textarea
