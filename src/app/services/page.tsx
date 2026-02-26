@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'Blue Avenue Groove offers 6-12 piece reception bands, cocktail hour ensembles, and ceremony musicians. Professional audio, MC services, and a repertoire spanning Funk, Soul, Pop, R&B, and Rock.',
   alternates: {
-    canonical: 'https://www.blueavemusic.io/services/',
+    canonical: 'https://www.blueavenuegroove.com/services/',
   },
 }
 

@@ -7,10 +7,10 @@ export function BusinessStructuredData() {
     '@type': 'MusicGroup',
     name: 'Blue Avenue Groove',
     description: 'Premier NYC wedding band and event entertainment',
-    url: 'https://www.blueavemusic.io',
-    logo: 'https://www.blueavemusic.io/icons/icon-512x512.png',
-    image: 'https://www.blueavemusic.io/images/blue-avenue-groove-band.webp',
-    email: 'info@blueavemusic.io',
+    url: 'https://www.blueavenuegroove.com',
+    logo: 'https://www.blueavenuegroove.com/icons/icon-512x512.png',
+    image: 'https://www.blueavenuegroove.com/images/blue-avenue-groove-band.webp',
+    email: 'info@blueavenuegroove.com',
     telephone: '857-204-7853',
     address: {
       '@type': 'PostalAddress',
@@ -82,7 +82,7 @@ export function ReviewsStructuredData() {
     '@context': 'https://schema.org',
     '@type': 'MusicGroup',
     name: 'Blue Avenue Groove',
-    url: 'https://www.blueavemusic.io',
+    url: 'https://www.blueavenuegroove.com',
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '5.0',

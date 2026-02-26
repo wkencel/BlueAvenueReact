@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Read reviews from real couples who hired Blue Avenue Groove for their NYC wedding. See why we are one of the top-rated wedding bands in New York.',
   alternates: {
-    canonical: 'https://www.blueavemusic.io/reviews/',
+    canonical: 'https://www.blueavenuegroove.com/reviews/',
   },
 }
 

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     'A practical guide to finding and booking the right wedding band in New York City. What to look for, questions to ask, red flags, and what to expect on pricing.',
   alternates: {
     canonical:
-      'https://www.blueavemusic.io/how-to-choose-a-wedding-band-nyc/',
+      'https://www.blueavenuegroove.com/how-to-choose-a-wedding-band-nyc/',
   },
 }
 

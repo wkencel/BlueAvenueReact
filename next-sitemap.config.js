@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://www.blueavemusic.io',
+  siteUrl: 'https://www.blueavenuegroove.com',
   generateRobotsTxt: true,
   outDir: './out',
 }

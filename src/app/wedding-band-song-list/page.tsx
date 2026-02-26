@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Browse Blue Avenue Groove's full song list — 180+ songs spanning Funk, Soul, Pop, R&B, Motown, Rock, and Jazz. NYC's premier wedding band. Custom requests welcome.",
   alternates: {
-    canonical: 'https://www.blueavemusic.io/wedding-band-song-list/',
+    canonical: 'https://www.blueavenuegroove.com/wedding-band-song-list/',
   },
 }
 

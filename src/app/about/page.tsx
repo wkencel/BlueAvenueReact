@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'Meet the musicians of Blue Avenue Groove - NYC premier wedding band. Our story, leadership, and the passion behind our music.',
   alternates: {
-    canonical: 'https://www.blueavemusic.io/about/',
+    canonical: 'https://www.blueavenuegroove.com/about/',
   },
 }
 

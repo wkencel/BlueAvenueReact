@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'Get in touch with Blue Avenue Groove for your NYC wedding or event. Schedule a meeting, use our price calculator, or submit a booking request.',
   alternates: {
-    canonical: 'https://www.blueavemusic.io/contact/',
+    canonical: 'https://www.blueavenuegroove.com/contact/',
   },
 }
 

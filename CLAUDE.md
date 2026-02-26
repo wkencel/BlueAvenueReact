@@ -23,7 +23,7 @@ Blue Avenue Groove website — a Next.js 14 + React 18 + TypeScript site for an 
 - **Next.js 14** with App Router, static export (`output: 'export'` in `next.config.js`)
 - **TypeScript** — all components are `.tsx`, `@/*` path alias maps to `./src/*`
 - Images are `unoptimized: true` (required for static export)
-- `next-sitemap.config.js` generates sitemap and robots.txt pointing to `https://www.blueavemusic.io`
+- `next-sitemap.config.js` generates sitemap and robots.txt pointing to `https://www.blueavenuegroove.com`
 
 ### Routing (`src/app/`)
 - `layout.tsx` — Root layout. Sets global metadata from `src/lib/siteMetadata.ts`, injects `BusinessStructuredData`, wraps children in `Providers` (context).
@@ -60,4 +60,4 @@ Blue Avenue Groove website — a Next.js 14 + React 18 + TypeScript site for an 
 - Per-page metadata via Next.js `Metadata` exports in each `page.tsx`
 - Global defaults from `src/lib/siteMetadata.ts`
 - Canonical URLs set per page via `alternates.canonical`
-- Site URL: `https://www.blueavemusic.io`
+- Site URL: `https://www.blueavenuegroove.com`

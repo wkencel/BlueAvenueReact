@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     'Blue Avenue Groove is a 6-12 piece Brooklyn wedding band playing Funk, Soul, Pop, R&B, Rock and Motown. Over 10 years of live wedding music across Brooklyn and NYC.',
   alternates: {
-    canonical: 'https://www.blueavemusic.io/brooklyn-wedding-bands/',
+    canonical: 'https://www.blueavenuegroove.com/brooklyn-wedding-bands/',
   },
 }
 

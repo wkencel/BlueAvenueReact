@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     'Everything you need to know about choosing a wedding band. Live band vs. DJ, how the night should flow, what to look for, and questions to ask before you book.',
   alternates: {
     canonical:
-      'https://www.blueavemusic.io/the-ultimate-wedding-band-guide/',
+      'https://www.blueavenuegroove.com/the-ultimate-wedding-band-guide/',
   },
 }
 

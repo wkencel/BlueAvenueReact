@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'Watch Blue Avenue Groove perform live at NYC weddings and events. Videos, photos, and highlights from our performances across Manhattan, Brooklyn, and beyond.',
   alternates: {
-    canonical: 'https://www.blueavemusic.io/media/',
+    canonical: 'https://www.blueavenuegroove.com/media/',
   },
 }
 

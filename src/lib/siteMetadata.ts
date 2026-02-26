@@ -3,7 +3,7 @@ export const siteMetadata = {
   author: "Will Kencel",
   description:
     "Premier NYC wedding band serving Manhattan, Brooklyn and Hudson Valley with exceptional live music entertainment for weddings and corporate events",
-  siteUrl: "https://www.blueavemusic.io",
+  siteUrl: "https://www.blueavenuegroove.com",
   social: {
     twitter: "@blueavegroove",
     instagram: "@blueavenuegroove",
