@@ -10,11 +10,11 @@ export default function LongIslandContent() {
       <h1>Long Island&apos;s Live Wedding Band</h1>
       <div style={{ marginLeft: '2%' }}>
         <p>
-          Long Island weddings are legendary for a reason: big families, full
-          dance floors, and celebrations that go all night. From waterfront
-          estates on the North Shore to vineyard weddings on the East End,
-          we&apos;ve been playing Long Island weddings for over a decade and
-          we know exactly what it takes to keep the party going.
+          Long Island weddings are known for packed dance floors and high
+          expectations. Whether it&apos;s a 300-person ballroom reception or
+          an intimate vineyard ceremony on the North Fork, the band needs
+          to deliver. We&apos;ve been playing Long Island weddings for over a decade.
+          We know what&apos;s at stake and we show up ready every time.
         </p>
       </div>
       <img
@@ -30,43 +30,46 @@ export default function LongIslandContent() {
       />
       <br />
       <br />
-      <h2>Long Island Venues We Know</h2>
+      <h2>From the North Shore to the North Fork</h2>
       <div style={{ marginLeft: '2%' }}>
         <p>
-          We&apos;ve performed at Oheka Castle, The Mansion at Oyster Bay,
-          Chateau Briand, Land&apos;s End, Crest Hollow Country Club, and
-          venues throughout the Hamptons, Garden City, Huntington, and the
-          North Fork. Whether it&apos;s a grand estate or an intimate
-          beachside ceremony, we bring the right lineup and energy.
+          We&apos;ve played North Fork wineries like Bedell Cellars and
+          Raphael Vineyard, and venues throughout the island, including Oheka
+          Castle, The Mansion at Oyster Bay, Crest Hollow Country Club,
+          Land&apos;s End, and more. Gold Coast estates, Hamptons properties,
+          Garden City ballrooms. Long Island has one of the deepest wedding
+          venue scenes in the Northeast, and we know what each type of
+          setting demands.
         </p>
         <p>
-          Our band scales from five to twelve pieces, with pro audio, MC
-          services, and cocktail hour and ceremony music.{' '}
-          <Link href="/wedding-event-services">See everything we offer.</Link>
+          Our band scales from 5 to 12 pieces with a full horn section.
+          Ceremony music, cocktail hour, pro audio, MC services.
+          We cover your entire night.{' '}
+          <Link href="/wedding-event-services">See everything we bring.</Link>
         </p>
       </div>
       <br />
-      <h2>Why Long Island Couples Choose Us</h2>
+      <h2>A Band That Can Keep Up with a Long Island Dance Floor</h2>
       <div style={{ marginLeft: '2%' }}>
         <p>
-          Long Island couples want a band that can deliver. The dance floor
-          is the centerpiece of the night, and there&apos;s no room for a
-          band that can&apos;t keep up. We play Funk, Soul, Motown, Pop,
-          Rock, and R&amp;B, and we read the room to build the kind of
-          momentum that keeps every generation on the floor.
+          Long Island dance floors are a test. Guests show up ready and they
+          expect the band to match that energy from the jump. We play Funk,
+          Soul, Motown, Pop, Rock, and R&amp;B, and we don&apos;t let up. Our
+          musicians have toured with major recording artists, recorded on hit
+          albums, and trained at top conservatories. But on your
+          wedding night, all of that training goes into one thing: keeping
+          every generation on that floor.
         </p>
         <p>
-          Our musicians have toured with major recording artists, recorded on
-          hit albums, and trained at top conservatories. That experience is
-          what makes the difference between a good band and one your guests
-          won&apos;t stop talking about.
+          That&apos;s what a Long Island crowd deserves and that&apos;s
+          what we bring.
         </p>
       </div>
       <br />
       <h2>Book Blue Avenue Groove for Your Long Island Wedding</h2>
       <p>
-        Ready to lock in your date? Drop us a message below and
-        let&apos;s start planning the music for your night.
+        Long Island dates fill up fast, especially summer and fall. Reach out 6 to 12
+        months ahead to hold yours. Drop us a message below.
       </p>
       <ContactUs />
       <Link href="/" className="button">Back to Home</Link>

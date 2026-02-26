@@ -10,11 +10,12 @@ export default function ManhattanContent() {
       <h1>Manhattan&apos;s Live Wedding Band</h1>
       <div style={{ marginLeft: '2%' }}>
         <p>
-          Manhattan weddings are unlike anything else. From landmark ballrooms
-          on the Upper East Side to industrial lofts in Chelsea, every venue
-          has its own character and its own acoustic challenges. After more
-          than a decade of playing weddings across the island, we know how to
-          make every room sound its best.
+          Manhattan venues are demanding. Load-ins through service elevators,
+          strict timelines, noise ordinances that vary block by block, and
+          acoustics that change from a Midtown ballroom to a SoHo loft to a
+          rooftop overlooking the park. After more than a decade of playing
+          weddings across the island, we handle all of it so you
+          don&apos;t have to think about it.
         </p>
       </div>
       <img
@@ -30,42 +31,64 @@ export default function ManhattanContent() {
       />
       <br />
       <br />
-      <h2>A Band That Knows Manhattan Venues</h2>
+      <h2>Manhattan Venues We Know</h2>
       <div style={{ marginLeft: '2%' }}>
         <p>
-          We&apos;ve performed at The Plaza, Cipriani, Gotham Hall, The
-          Lighthouse at Chelsea Piers, 620 Loft &amp; Garden, and dozens of
-          other Manhattan venues. Whether it&apos;s a grand Midtown ballroom,
-          a SoHo gallery, or a rooftop overlooking Central Park, we bring
-          the right lineup and energy to match the space.
-        </p>
-        <p>
-          Our band scales from an intimate five-piece to a full 12-piece
-          ensemble with a horn section. We handle pro audio, MC services,
-          and ceremony and cocktail hour music.{' '}
-          <Link href="/wedding-event-services">See everything we offer.</Link>
+          We&apos;ve played The Plaza, Gotham Hall, 620 Loft &amp; Garden,
+          and The Lighthouse at Chelsea Piers. We&apos;ve played intimate
+          gallery spaces in the West Village and grand ballrooms on the Upper
+          East Side. Every room on this island sounds different, and we know
+          how to make each one work.
         </p>
       </div>
       <br />
-      <h2>Why Manhattan Couples Choose Us</h2>
+      <h2>Reading the Room in Manhattan</h2>
       <div style={{ marginLeft: '2%' }}>
         <p>
-          Manhattan couples expect the best, and the stakes are high. Venues
-          have strict load-in windows, noise ordinances, and unique logistics.
-          We handle all of it professionally so you can focus on your night.
+          Manhattan crowds are sharp. They notice the details: a clean
+          transition between songs, a setlist that flows instead of lurches, a
+          band that knows when to build and when to pull back. We don&apos;t
+          work off a rigid playlist. We read your guests, feel the energy shift,
+          and adjust in real time. That&apos;s the difference between a band
+          that plays music and one that runs the room.
         </p>
         <p>
           Our musicians have toured with major recording artists, recorded on
-          hit albums, and trained at top conservatories. On your wedding night,
-          all of that experience goes into reading the room, building energy,
-          and keeping the dance floor packed from the first song to last call.
+          hit albums, and trained at top conservatories. That background shows
+          up in the tight arrangements, the vocal harmonies, and the kind of
+          pocket groove that keeps a dance floor locked in all night.
+        </p>
+      </div>
+      <br />
+      <img
+        src="/images/weddingPhotos/nyc-wedding-reception-1.jpeg"
+        alt="Wedding guests dancing at a Manhattan reception"
+        width="90%"
+        loading="lazy"
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          borderRadius: '10px',
+        }}
+      />
+      <br />
+      <br />
+      <h2>What We Bring to Your Night</h2>
+      <div style={{ marginLeft: '2%' }}>
+        <p>
+          Our band scales from a 5-piece to a full 12-piece ensemble with
+          a horn section. We cover your entire night, from ceremony music
+          and cocktail hour through reception and last call, with pro audio
+          and MC services included. Funk, Soul, Motown, Pop, Rock,
+          R&amp;B. We play it all and we make it fit your crowd.{' '}
+          <Link href="/wedding-event-services">Here&apos;s the full breakdown of what we offer.</Link>
         </p>
       </div>
       <br />
       <h2>Book Blue Avenue Groove for Your Manhattan Wedding</h2>
       <p>
-        Ready to lock in your date? Drop us a message below and
-        let&apos;s start planning the music for your night.
+        Manhattan dates go fast. Reach out 6 to 12 months ahead to hold
+        yours. Drop us a message below and let&apos;s start planning.
       </p>
       <ContactUs />
       <Link href="/" className="button">Back to Home</Link>

@@ -10,12 +10,13 @@ export default function QueensContent() {
       <h1>Queens&apos; Live Wedding Band</h1>
       <div style={{ marginLeft: '2%' }}>
         <p>
-          Queens is the most diverse borough in the world, and its weddings
-          reflect that. From elegant ballrooms in Astoria to waterfront
-          celebrations in Long Island City, we&apos;ve been bringing live music
-          to Queens weddings for over a decade. Whatever your cultural
-          traditions and musical tastes, we make it all come together on the
-          dance floor.
+          Queens has some of the most diverse wedding celebrations in
+          New York City, and every wedding we play here reflects that.
+          Astoria to Flushing, Long Island City to Bayside. The celebrations
+          are big, the energy is high, and the dance floors don&apos;t quit. We&apos;ve been
+          playing Queens weddings for over a decade and we know what it takes
+          to bring a room together when the guest list spans three generations
+          and five musical tastes.
         </p>
       </div>
       <img
@@ -31,41 +32,46 @@ export default function QueensContent() {
       />
       <br />
       <br />
-      <h2>Queens Venues We Know and Love</h2>
+      <h2>Playing Every Corner of Queens</h2>
       <div style={{ marginLeft: '2%' }}>
         <p>
-          We&apos;ve played The Foundry, Queens Botanical Garden, Terrace on
-          the Park, The Riverview, and venues throughout Astoria, Flushing,
-          Bayside, and Long Island City. Each space has its own feel, and
-          after years of performing across the borough we know how to make
-          every one sound incredible.
+          We&apos;ve played Terrace on the Park, Russo&apos;s On The Bay,
+          and The Foundry in Long Island City. Each venue brings a different
+          crowd and a different energy. A waterfront reception in LIC feels
+          nothing like a grand hall in Howard Beach, and whether the next
+          wedding is in Astoria, Bayside, or Flushing, we adjust our
+          approach for every room.
         </p>
         <p>
-          Our lineup scales from a tight five-piece to a full horn section,
-          with pro audio, MC services, and cocktail hour and ceremony music.{' '}
-          <Link href="/wedding-event-services">See everything we offer.</Link>
+          Our band ranges from 5 to 12 pieces. We bring pro audio, MC
+          services, and ceremony and cocktail hour music. Everything
+          you need for the full night.{' '}
+          <Link href="/wedding-event-services">See what we offer.</Link>
         </p>
       </div>
       <br />
-      <h2>Why Queens Couples Trust Us</h2>
+      <h2>Music That Brings Everyone Together</h2>
       <div style={{ marginLeft: '2%' }}>
         <p>
-          Queens weddings bring together families and traditions from around
-          the world. We thrive in that environment. Our repertoire spans
-          Funk, Soul, Motown, Pop, Rock, and R&amp;B, and we read the room
-          to match the energy your guests bring.
+          The best Queens weddings are the ones where everyone ends up on the
+          floor. The couple&apos;s college friends, the aunts and
+          uncles, the kids, the grandparents. That doesn&apos;t happen by
+          accident. It happens because the band knows how to move between Motown
+          and current Pop, how to drop into a Funk groove that pulls people out
+          of their seats, and when to bring it back to a slow song that gives
+          the room a breath.
         </p>
         <p>
-          Our musicians have toured with major recording artists, recorded on
-          hit albums, and trained at top conservatories. That experience shows
-          in every set we play.
+          Our musicians have toured professionally, recorded on hit albums,
+          and studied at top conservatories. They bring that range to every
+          Queens wedding we play.
         </p>
       </div>
       <br />
       <h2>Book Blue Avenue Groove for Your Queens Wedding</h2>
       <p>
-        Ready to lock in your date? Drop us a message below and
-        let&apos;s start planning the music for your night.
+        Tell us about your venue and your vision. We&apos;ll put together a
+        package that fits. Drop us a message below.
       </p>
       <ContactUs />
       <Link href="/" className="button">Back to Home</Link>
