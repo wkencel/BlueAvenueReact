@@ -155,82 +155,101 @@ export default function PriceCalculator() {
     <div className="calculator">
       <br />
       <div className="form">
-        <h1 className="price-calculate-heading">Price Calculator</h1>
+        <h3 className="price-calculate-heading">Price Calculator</h3>
         <p className="error">{error}</p>
         <form onSubmit={handleSubmitValues}>
           {!results.isResult ? (
-            <div className="form-items">
-              <div
-                className="reception-inputs"
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                }}
-              >
-                <span className="larger-text-bold">reception: </span>
+            <div className="calculator-grid-wrapper">
+              <div className="reception-inputs">
+                <span className="natural-lang">reception: </span>
                 <select
                   className="small-dropdown"
                   name="ReceptionBandSize"
                   value={userValues.receptionBandSize}
                   onChange={handleReceptionBandInputChange}
                 >
-                  <option value=""> </option>
+                  <option value="" disabled hidden>Size</option>
                   <option value="6">6</option>
                   <option value="7">7</option>
                   <option value="8">8</option>
                   <option value="9">9</option>
                   <option value="10">10</option>
                 </select>
-                <span className="larger-text"> piece band for a </span>
+                <span className="natural-lang"> piece band for a </span>
                 <select
                   name="reception-length"
                   className="small-dropdown"
                   value={userValues.receptionLength}
                   onChange={handleReceptionLengthInputChange}
                 >
-                  <option value=""> </option>
+                  <option value="" disabled hidden>Hrs</option>
                   <option value="4">4</option>
                   <option value="3">3</option>
                   <option value="2">2</option>
                 </select>
-                <span className="larger-text"> hour reception</span>
+                <span className="natural-lang"> hour reception</span>
               </div>
 
-              <div className="cocktail-hour">
-                <br />
-                <label>cocktail hour band size </label>
+              <div className="calculator-grid">
+                <div className="reception-inputs-mobile">
+                  <label>reception band size</label>
+                  <select
+                    className="small-dropdown"
+                    name="ReceptionBandSize-mobile"
+                    value={userValues.receptionBandSize}
+                    onChange={handleReceptionBandInputChange}
+                  >
+                    <option value="" disabled hidden>Size</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+
+                  <label>reception length (hrs)</label>
+                  <select
+                    name="reception-length-mobile"
+                    className="small-dropdown"
+                    value={userValues.receptionLength}
+                    onChange={handleReceptionLengthInputChange}
+                  >
+                    <option value="" disabled hidden>Hrs</option>
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                  </select>
+                </div>
+
+                <label>cocktail hour band size</label>
                 <select
+                  className="small-dropdown"
                   name="cocktail-band-size"
                   value={userValues.cocktailBandSize}
                   onChange={handleCocktailBandInputChange}
                 >
-                  <option value=""> </option>
+                  <option value="">N/A</option>
                   <option value="4">4</option>
                   <option value="3">3</option>
                   <option value="2">2</option>
                 </select>
-              </div>
 
-              <div className="ceremony">
-                <br />
-                <label>ceremony band size </label>
+                <label>ceremony band size</label>
                 <select
+                  className="small-dropdown"
                   name="ceremony-band-size"
                   value={userValues.ceremonyBandSize}
                   onChange={handleCeremonyInputChange}
                 >
-                  <option value=""> </option>
+                  <option value="">N/A</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
                 </select>
-              </div>
 
-              <div className="distance">
-                <br />
-                <label>distance from NYC (in hrs) : </label>
+                <label>distance from NYC (hrs)</label>
                 <select
+                  className="small-dropdown"
                   name="distance-from-NYC"
                   value={userValues.distanceFromNYC}
                   onChange={handleDistanceInputChange}
@@ -248,8 +267,8 @@ export default function PriceCalculator() {
                   <option value="5">5</option>
                 </select>
               </div>
-              <br />
-              <input type="submit" className="button" />
+
+              <input type="submit" className="button" style={{ marginTop: '0.75rem' }} />
             </div>
           ) : (
             <div className="form-items">

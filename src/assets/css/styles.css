@@ -1,20 +1,69 @@
-.small-dropdown {
-  width: 50px;
-  font-size: 0.8rem;
-  padding: 0.25rem;
-  margin: 1rem;
-}
-
-.larger-text {
-  font-size: 1.1rem;
-}
-
-.larger-text-bold {
-  font-size: 1.2rem;
-  font-weight: bold;
+select.small-dropdown {
+  width: 52px;
+  height: 1.6rem;
+  font-size: 0.7rem;
+  padding: 0.15rem 0.2rem;
+  margin: 0;
+  display: inline-block;
+  text-align: center;
 }
 
 .price-calculate-heading {
+  margin-bottom: 0.5rem;
+}
+
+.calculator-grid-wrapper {
+  text-align: left;
+}
+
+/* Two-column grid: labels right-aligned, dropdowns left-aligned */
+.calculator-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.4rem 0.75rem;
+  align-items: center;
+  justify-content: start;
+}
+
+.calculator-grid label {
+  display: inline;
+  margin: 0;
+  font-size: 0.7rem;
+  white-space: nowrap;
+  text-align: left;
+}
+
+/* Natural language reception row (desktop) */
+.natural-lang {
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.natural-lang:first-child {
+  font-weight: bold;
+}
+
+.reception-inputs {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.reception-inputs select.small-dropdown {
+  margin: 0 0.4rem;
+}
+
+/* Mobile reception rows hidden on desktop, shown on mobile inside the grid */
+.reception-inputs-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .reception-inputs {
+    display: none;
+  }
+
+  .reception-inputs-mobile {
+    display: contents;
+  }
 }

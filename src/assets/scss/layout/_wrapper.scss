@@ -27,11 +27,11 @@
 		}
 
 		@include breakpoint(small) {
-			padding: 2rem 1rem;
+			padding: 1.5rem 1rem;
 		}
 
 		@include breakpoint(xsmall) {
-			padding: 1rem;
+			padding: 0.75rem;
 		}
 
 		&.page {

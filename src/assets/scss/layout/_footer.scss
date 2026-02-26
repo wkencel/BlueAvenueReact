@@ -20,6 +20,10 @@
   margin-top: 2rem;
   text-align: center;
 
+  @include breakpoint(small) {
+    margin-top: 1rem;
+  }
+
   .copyright {
     letter-spacing: _font(letter-spacing);
     font-size: 0.6rem;

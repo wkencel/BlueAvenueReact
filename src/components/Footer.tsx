@@ -23,9 +23,7 @@ export default function Footer() {
         bgColor="lightBlue"
         fgColor="darkRed"
       />
-      <br />
-      <br />
-      <div style={{ display: 'flex', justifyContent: 'center', gap: 10, flexWrap: 'nowrap' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', gap: 10, flexWrap: 'nowrap', marginTop: '0.75rem' }}>
         <img
           src={getImageSrc(CoupleChoice2018)}
           alt="NY Wedding band award 2018"
@@ -57,8 +55,7 @@ export default function Footer() {
           loading="lazy"
         />
       </div>
-      <br />
-      <div style={{ textAlign: 'center' }}>
+      <div style={{ textAlign: 'center', marginTop: '0.5rem' }}>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <Link href="/wedding-bands-nyc">NYC Weddings</Link>
         &nbsp;&nbsp;&nbsp;&nbsp;
