@@ -12,10 +12,7 @@ export default function ContactForm() {
   return (
     <>
       <div>
-        <a href="https://calendly.com/blueavenuegroove/intro-meeting" className="button special">
-          Schedule a Meeting
-        </a>
-        <p style={{ marginTop: '1.5rem' }}>or send us an email</p>
+        <p>Tell us about your big day and we&apos;ll put together a custom quote for you. We&apos;d love to hear your vision!</p>
         <ul className="icons">
           <ContactUs />
           <nav>

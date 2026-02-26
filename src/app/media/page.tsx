@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import MediaContent from './content'
 import Link from 'next/link'
 import PageNav from '@/components/PageNav'
+import SiteFooter from '@/components/SiteFooter'
 
 export const metadata: Metadata = {
   title: 'Wedding Band Videos & Photos',
@@ -20,6 +21,7 @@ export default function MediaPage() {
         <MediaContent />
         <Link href="/" className="button" style={{ marginTop: '1rem' }}>Back to Home</Link>
       </div>
+      <SiteFooter />
     </div>
   )
 }

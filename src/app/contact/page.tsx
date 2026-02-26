@@ -2,11 +2,12 @@ import type { Metadata } from 'next'
 import ContactContent from './content'
 import Link from 'next/link'
 import PageNav from '@/components/PageNav'
+import SiteFooter from '@/components/SiteFooter'
 
 export const metadata: Metadata = {
   title: 'Contact & Pricing',
   description:
-    'Get in touch with Blue Avenue Groove for your NYC wedding or event. Schedule a meeting, use our price calculator, or submit a booking request.',
+    'Get in touch with Blue Avenue Groove for your NYC wedding or event. Message us for a custom quote, use our price calculator, or submit a booking request.',
   alternates: {
     canonical: 'https://www.blueavenuegroove.com/contact/',
   },
@@ -21,6 +22,7 @@ export default function ContactPage() {
         <ContactContent />
         <Link href="/" className="button">Back to Home</Link>
       </div>
+      <SiteFooter />
     </div>
   )
 }

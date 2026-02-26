@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import GuideContent from './content'
 import PageNav from '@/components/PageNav'
+import SiteFooter from '@/components/SiteFooter'
 
 export const metadata: Metadata = {
   title:
@@ -20,6 +21,7 @@ export default function UltimateWeddingBandGuidePage() {
       <div className="page-panel">
         <GuideContent />
       </div>
+      <SiteFooter />
     </div>
   )
 }

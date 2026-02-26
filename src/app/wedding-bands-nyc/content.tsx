@@ -7,7 +7,7 @@ import ContactUs from '@/components/ContactUs'
 export default function NYCWeddingsContent() {
   return (
     <>
-      <h1>NYC&apos;s Live Wedding Band, Blue Avenue Groove</h1>
+      <h1>NYC&apos;s Live Wedding Band</h1>
       <div style={{ marginLeft: '2%' }}>
         <p>
           From The MET Museum to Chelsea Piers to intimate rooftops across
@@ -45,7 +45,7 @@ export default function NYCWeddingsContent() {
           reception, with pro audio, MC services, and a setlist built
           around your night. We also cover cocktail hour and ceremony
           music.{' '}
-          <Link href="/services">See the full breakdown on our services page.</Link>
+          <Link href="/wedding-event-services">See the full breakdown on our services page.</Link>
         </p>
       </div>
       <br />

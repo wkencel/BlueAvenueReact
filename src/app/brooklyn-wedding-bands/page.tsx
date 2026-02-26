@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 import BrooklynWeddingsContent from './content'
+import SiteFooter from '@/components/SiteFooter'
 
 export const metadata: Metadata = {
-  title: 'Brooklyn Live Wedding Band | Blue Avenue Groove',
+  title: 'Brooklyn Live Wedding Band',
   description:
     'Blue Avenue Groove is a 6-12 piece Brooklyn wedding band playing Funk, Soul, Pop, R&B, Rock and Motown. Over 10 years of live wedding music across Brooklyn and NYC.',
   alternates: {
@@ -16,6 +17,7 @@ export default function BrooklynWeddingsPage() {
       <div className="page-panel">
         <BrooklynWeddingsContent />
       </div>
+      <SiteFooter />
     </div>
   )
 }

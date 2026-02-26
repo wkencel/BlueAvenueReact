@@ -44,7 +44,7 @@ export default function BrooklynWeddingsContent() {
         <p>
           We cover your entire night, reception through last call, with
           pro audio, MC services, and cocktail hour and ceremony music.{' '}
-          <Link href="/services">See the full list of what we offer.</Link>
+          <Link href="/wedding-event-services">See the full list of what we offer.</Link>
         </p>
       </div>
       <br />

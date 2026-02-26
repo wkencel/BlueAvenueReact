@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 const navItems = [
-  { href: '/services', label: 'Events' },
+  { href: '/wedding-event-services', label: 'Events' },
   { href: '/media', label: 'Media' },
   { href: '/about', label: 'People' },
   { href: '/contact', label: 'Contact' },

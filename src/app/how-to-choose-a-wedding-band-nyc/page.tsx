@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import HowToChooseContent from './content'
 import PageNav from '@/components/PageNav'
+import SiteFooter from '@/components/SiteFooter'
 
 export const metadata: Metadata = {
   title: 'How to Choose a Wedding Band in NYC',
@@ -19,6 +20,7 @@ export default function HowToChooseWeddingBandPage() {
       <div className="page-panel">
         <HowToChooseContent />
       </div>
+      <SiteFooter />
     </div>
   )
 }

@@ -180,7 +180,7 @@ export default function HowToChooseContent() {
       <h2 className="major">Find Your Band</h2>
       <p>
         We&apos;d love to be part of your night. Check out what we offer on
-        our <Link href="/services">services page</Link>, read what
+        our <Link href="/wedding-event-services">services page</Link>, read what
         other couples have said on our <Link href="/reviews">reviews page</Link>, or just
         drop us a message below and let&apos;s talk.
       </p>

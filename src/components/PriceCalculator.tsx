@@ -78,11 +78,11 @@ export default function PriceCalculator() {
     }
 
     if (ceremonyBandSize) {
-      ceremonyCost = String(Number(ceremonyBandSize) * 300 + 300)
+      ceremonyCost = String(800 + (Number(ceremonyBandSize) - 1) * 300)
     }
 
     if (cocktailBandSize) {
-      cocktailHrCost = String(Number(cocktailBandSize) * 300 + 300)
+      cocktailHrCost = String(700 + (Number(cocktailBandSize) - 1) * 250)
     }
 
     if (lengthOfReception === 3) {
@@ -232,6 +232,7 @@ export default function PriceCalculator() {
                   <option value="4">4</option>
                   <option value="3">3</option>
                   <option value="2">2</option>
+                  <option value="1">1</option>
                 </select>
 
                 <label>ceremony band size</label>

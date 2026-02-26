@@ -94,7 +94,7 @@ export default function GuideContent() {
         The energy shifts. People are mingling, getting drinks, catching up. This is
         where a jazz trio, a sax-and-keys duo, or a solo pianist sets the perfect tone.
         Warm, sophisticated, not competing with conversation.{' '}
-        <Link href="/services">We offer ensembles from solo to quartet for cocktail hour.</Link>
+        <Link href="/wedding-event-services">We offer ensembles from solo to quartet for cocktail hour.</Link>
       </p>
       <h3>Reception</h3>
       <p>

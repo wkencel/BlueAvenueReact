@@ -23,7 +23,7 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <Link href="/services">Events</Link>
+            <Link href="/wedding-event-services">Events</Link>
           </li>
           <li>
             <Link href="/media">Media</Link>

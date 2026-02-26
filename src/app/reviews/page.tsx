@@ -3,6 +3,7 @@ import Reviews from '@/components/Reviews'
 import { ReviewsStructuredData } from '@/components/StructuredData'
 import Link from 'next/link'
 import PageNav from '@/components/PageNav'
+import SiteFooter from '@/components/SiteFooter'
 
 export const metadata: Metadata = {
   title: 'Wedding Band Reviews',
@@ -23,6 +24,7 @@ export default function ReviewsPage() {
         <Reviews />
         <Link href="/" className="button" style={{ marginTop: '4px', marginLeft: '12px' }}>Back to Home</Link>
       </div>
+      <SiteFooter />
     </div>
   )
 }
