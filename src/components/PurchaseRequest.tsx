@@ -3,6 +3,35 @@
 import React from 'react'
 import emailjs from 'emailjs-com'
 
+function generateTimeOptions() {
+  const options: { value: string; label: string }[] = []
+  for (let h = 10; h <= 23; h++) {
+    for (let m = 0; m < 60; m += 30) {
+      const hour12 = h > 12 ? h - 12 : h
+      const ampm = h >= 12 ? 'PM' : 'AM'
+      const value = `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`
+      const label = `${hour12}:${String(m).padStart(2, '0')} ${ampm}`
+      options.push({ value, label })
+    }
+  }
+  return options
+}
+
+const timeOptions = generateTimeOptions()
+
+function TimeSelect({ name }: { name: string }) {
+  return (
+    <select name={name} className="purchase-select">
+      <option value="">--</option>
+      {timeOptions.map((opt) => (
+        <option key={opt.value} value={opt.value}>
+          {opt.label}
+        </option>
+      ))}
+    </select>
+  )
+}
+
 export default function PurchaseRequest() {
   function sendEmail(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
@@ -77,19 +106,13 @@ export default function PurchaseRequest() {
 
         <div className="purchase-time-section">
           <h4>Reception</h4>
-          <div className="purchase-time-grid">
+          <div className="purchase-time-pair">
             <label>Start time</label>
-            <input
-              name="reception-start-time"
-              type="time"
-              className="purchase-input"
-            />
+            <TimeSelect name="reception-start-time" />
+          </div>
+          <div className="purchase-time-pair">
             <label>End time</label>
-            <input
-              name="reception-end-time"
-              type="time"
-              className="purchase-input"
-            />
+            <TimeSelect name="reception-end-time" />
           </div>
         </div>
 
@@ -99,37 +122,25 @@ export default function PurchaseRequest() {
 
         <div className="purchase-time-section purchase-time-section-optional">
           <h4>Cocktail Hr (60 min)</h4>
-          <div className="purchase-time-grid">
+          <div className="purchase-time-pair">
             <label>Start time</label>
-            <input
-              name="cocktail-start-time"
-              type="time"
-              className="purchase-input"
-            />
+            <TimeSelect name="cocktail-start-time" />
+          </div>
+          <div className="purchase-time-pair">
             <label>End time</label>
-            <input
-              name="cocktail-end-time"
-              type="time"
-              className="purchase-input"
-            />
+            <TimeSelect name="cocktail-end-time" />
           </div>
         </div>
 
         <div className="purchase-time-section purchase-time-section-optional">
           <h4>Ceremony (30 min)</h4>
-          <div className="purchase-time-grid">
+          <div className="purchase-time-pair">
             <label>Start time</label>
-            <input
-              name="ceremony-start-time"
-              type="time"
-              className="purchase-input"
-            />
+            <TimeSelect name="ceremony-start-time" />
+          </div>
+          <div className="purchase-time-pair">
             <label>End time</label>
-            <input
-              name="ceremony-end-time"
-              type="time"
-              className="purchase-input"
-            />
+            <TimeSelect name="ceremony-end-time" />
           </div>
         </div>
 
