@@ -25,40 +25,38 @@ export default function Footer() {
       />
       <br />
       <br />
-      <img
-        src={getImageSrc(CoupleChoice2018)}
-        alt="NY Wedding band award 2018"
-        width="80px"
-        loading="lazy"
-      />
-      <img
-        src={getImageSrc(CoupleChoice2020)}
-        alt="NY Wedding band award 2020"
-        width="80px"
-        loading="lazy"
-        style={{ marginLeft: 10 }}
-      />
-      <img
-        src={getImageSrc(CoupleChoice2021)}
-        alt="NY Wedding band award 2021"
-        width="80px"
-        loading="lazy"
-        style={{ marginLeft: 10 }}
-      />
-      <img
-        src={getImageSrc(CoupleChoice2022)}
-        alt="NY Wedding band award 2022"
-        width="80px"
-        loading="lazy"
-        style={{ marginLeft: 10 }}
-      />
-      <img
-        src={getImageSrc(CoupleChoice2023)}
-        alt="NY Wedding band award 2023"
-        width="80px"
-        loading="lazy"
-        style={{ marginLeft: 10 }}
-      />
+      <div style={{ display: 'flex', justifyContent: 'center', gap: 10, flexWrap: 'nowrap' }}>
+        <img
+          src={getImageSrc(CoupleChoice2018)}
+          alt="NY Wedding band award 2018"
+          style={{ width: 80, maxWidth: '18%', height: 'auto' }}
+          loading="lazy"
+        />
+        <img
+          src={getImageSrc(CoupleChoice2020)}
+          alt="NY Wedding band award 2020"
+          style={{ width: 80, maxWidth: '18%', height: 'auto' }}
+          loading="lazy"
+        />
+        <img
+          src={getImageSrc(CoupleChoice2021)}
+          alt="NY Wedding band award 2021"
+          style={{ width: 80, maxWidth: '18%', height: 'auto' }}
+          loading="lazy"
+        />
+        <img
+          src={getImageSrc(CoupleChoice2022)}
+          alt="NY Wedding band award 2022"
+          style={{ width: 80, maxWidth: '18%', height: 'auto' }}
+          loading="lazy"
+        />
+        <img
+          src={getImageSrc(CoupleChoice2023)}
+          alt="NY Wedding band award 2023"
+          style={{ width: 80, maxWidth: '18%', height: 'auto' }}
+          loading="lazy"
+        />
+      </div>
       <br />
       <div style={{ textAlign: 'center' }}>
         &nbsp;&nbsp;&nbsp;&nbsp;
