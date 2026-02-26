@@ -4,9 +4,9 @@ import PageNav from '@/components/PageNav'
 import SiteFooter from '@/components/SiteFooter'
 
 export const metadata: Metadata = {
-  title: 'NYC Live Wedding Band',
+  title: 'Award-Winning NYC Wedding Band',
   description:
-    'Blue Avenue Groove is a 6-12 piece NYC wedding band playing Funk, Soul, Pop, R&B, Rock and Motown. Over 10 years of live wedding music across New York City.',
+    'NYC wedding band with 10+ years performing across all five boroughs, from Manhattan ballrooms to Brooklyn lofts. 6-time WeddingWire Couples Choice award winners. 6-12 piece Funk, Soul, Pop, R&B and Motown.',
   alternates: {
     canonical: 'https://www.blueavenuegroove.com/wedding-bands-nyc/',
   },

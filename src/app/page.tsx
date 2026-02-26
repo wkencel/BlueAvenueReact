@@ -1,26 +1,12 @@
-'use client'
+import type { Metadata } from 'next'
+import HomeContent from './content'
 
-import React, { useState, useEffect } from 'react'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+export const metadata: Metadata = {
+  alternates: {
+    canonical: 'https://www.blueavenuegroove.com/',
+  },
+}
 
 export default function HomePage() {
-  const [loading, setLoading] = useState('is-loading')
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading('')
-    }, 100)
-    return () => clearTimeout(timer)
-  }, [])
-
-  return (
-    <div className={`body ${loading}`}>
-      <div id="wrapper">
-        <Header />
-        <Footer />
-      </div>
-      <div id="bg"></div>
-    </div>
-  )
+  return <HomeContent />
 }

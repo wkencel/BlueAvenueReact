@@ -22,7 +22,7 @@ export default function ReviewsPage() {
       <div className="page-panel">
         <h1 className="major">Reviews</h1>
         <Reviews />
-        <Link href="/" className="button" style={{ marginTop: '4px', marginLeft: '12px' }}>Back to Home</Link>
+        <Link href="/" className="button" style={{ float: 'right', marginTop: '4px' }}>Back to Home</Link>
       </div>
       <SiteFooter />
     </div>

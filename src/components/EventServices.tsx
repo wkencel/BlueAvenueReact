@@ -10,9 +10,10 @@ export default function EventServices() {
       <img
         src={getImageSrc(BrideAndGroom)}
         alt="Happy Bride and Groom"
-        width="100%"
+        width={BrideAndGroom.width}
+        height={BrideAndGroom.height}
         loading="lazy"
-        style={{ borderRadius: '10px' }}
+        style={{ width: '100%', height: 'auto', borderRadius: '10px' }}
       />
       <p>
         We're not just here to play, we're here to make your night unforgettable. As one of NYC's premier

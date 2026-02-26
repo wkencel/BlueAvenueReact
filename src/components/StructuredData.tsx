@@ -77,6 +77,47 @@ export function EventStructuredData({
   )
 }
 
+export function ArticleStructuredData({
+  title,
+  description,
+  datePublished,
+  url,
+}: {
+  title: string
+  description: string
+  datePublished: string
+  url: string
+}) {
+  const articleData = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description,
+    datePublished,
+    url,
+    author: {
+      '@type': 'Organization',
+      name: 'Blue Avenue Groove',
+      url: 'https://www.blueavenuegroove.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Blue Avenue Groove',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://www.blueavenuegroove.com/icons/icon-512x512.png',
+      },
+    },
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(articleData) }}
+    />
+  )
+}
+
 export function ReviewsStructuredData() {
   const reviewsData = {
     '@context': 'https://schema.org',
@@ -95,6 +136,7 @@ export function ReviewsStructuredData() {
         '@type': 'Person',
         name: r.author,
       },
+      datePublished: r.datePublished,
       reviewBody: r.body,
       reviewRating: {
         '@type': 'Rating',

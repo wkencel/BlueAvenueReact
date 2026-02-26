@@ -4,9 +4,9 @@ import PageNav from '@/components/PageNav'
 import SiteFooter from '@/components/SiteFooter'
 
 export const metadata: Metadata = {
-  title: 'Westchester Live Wedding Band',
+  title: 'Award-Winning Westchester Wedding Band',
   description:
-    'Blue Avenue Groove is a 6-12 piece Westchester wedding band playing Funk, Soul, Pop, R&B, Rock and Motown. Over 10 years of live wedding music across Westchester County and the NYC area.',
+    'Westchester wedding band with 10+ years performing at Tappan Hill Mansion, Blue Hill at Stone Barns and venues across Westchester County. 6-12 piece Funk, Soul, Pop, R&B and Motown.',
   alternates: {
     canonical: 'https://www.blueavenuegroove.com/westchester-wedding-band/',
   },

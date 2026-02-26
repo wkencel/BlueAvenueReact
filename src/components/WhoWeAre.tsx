@@ -29,14 +29,15 @@ export default function WhoWeAre() {
       <img
         src={getImageSrc(BandPhoto)}
         alt="Blue Avenue Groove"
-        width="100%"
+        width={BandPhoto.width}
+        height={BandPhoto.height}
         loading="lazy"
-        style={{ borderRadius: '10px' }}
+        style={{ width: '100%', height: 'auto', borderRadius: '10px' }}
       />
 
-      <h3 className="major" style={{ marginTop: '2.5rem' }}>
+      <h2 className="major" style={{ marginTop: '2.5rem' }}>
         See what the band&apos;s been up to
-      </h3>
+      </h2>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
         <MediaCard title="Smooth Vibes from Bk with Sami" videoId="pM75HyKUNEc" />

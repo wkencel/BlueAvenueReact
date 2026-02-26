@@ -4,9 +4,9 @@ import PageNav from '@/components/PageNav'
 import SiteFooter from '@/components/SiteFooter'
 
 export const metadata: Metadata = {
-  title: 'New Jersey Live Wedding Band',
+  title: 'Award-Winning New Jersey Wedding Band',
   description:
-    'Blue Avenue Groove is a 6-12 piece New Jersey wedding band playing Funk, Soul, Pop, R&B, Rock and Motown. Over 10 years of live wedding music across New Jersey and the NYC area.',
+    'New Jersey wedding band with 10+ years performing at Liberty House, Stone House at Stirling Ridge and venues across NJ. NYC-based 6-12 piece band playing Funk, Soul, Pop, R&B and Motown.',
   alternates: {
     canonical: 'https://www.blueavenuegroove.com/new-jersey-wedding-band/',
   },

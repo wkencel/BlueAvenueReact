@@ -39,36 +39,40 @@ export default function Media() {
       <img
         src={getImageSrc(GirlDancing)}
         alt="Girl Dancing at NYC wedding"
-        width="100%"
+        width={GirlDancing.width}
+        height={GirlDancing.height}
         loading="lazy"
-        style={{ borderRadius: '10px' }}
+        style={{ width: '100%', height: 'auto', borderRadius: '10px' }}
       />
       <br />
       <br />
       <img
         src={getImageSrc(OldGuy)}
         alt="Guy dancing at NYC wedding"
-        width="100%"
+        width={OldGuy.width}
+        height={OldGuy.height}
         loading="lazy"
-        style={{ borderRadius: '10px' }}
+        style={{ width: '100%', height: 'auto', borderRadius: '10px' }}
       />
       <br />
       <br />
       <img
         src={getImageSrc(SamiAndPhil)}
         alt="Sami Stevens and Phil Faconti"
-        width="100%"
+        width={SamiAndPhil.width}
+        height={SamiAndPhil.height}
         loading="lazy"
-        style={{ borderRadius: '10px' }}
+        style={{ width: '100%', height: 'auto', borderRadius: '10px' }}
       />
       <br />
       <br />
       <img
         src={getImageSrc(Pam)}
         alt="Pam"
-        width="100%"
+        width={Pam.width}
+        height={Pam.height}
         loading="lazy"
-        style={{ borderRadius: '10px' }}
+        style={{ width: '100%', height: 'auto', borderRadius: '10px' }}
       />
     </>
   )

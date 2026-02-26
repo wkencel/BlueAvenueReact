@@ -4,9 +4,9 @@ import PageNav from '@/components/PageNav'
 import SiteFooter from '@/components/SiteFooter'
 
 export const metadata: Metadata = {
-  title: 'Long Island Live Wedding Band',
+  title: 'Award-Winning Long Island Wedding Band',
   description:
-    'Blue Avenue Groove is a 6-12 piece Long Island wedding band playing Funk, Soul, Pop, R&B, Rock and Motown. Over 10 years of live wedding music across Long Island and the NYC area.',
+    'Long Island wedding band with 10+ years performing at North Fork wineries and venues across Long Island. Based in NYC, we bring Funk, Soul, Pop, R&B and Motown to your LI celebration.',
   alternates: {
     canonical: 'https://www.blueavenuegroove.com/long-island-wedding-band/',
   },

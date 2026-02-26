@@ -4,9 +4,9 @@ import PageNav from '@/components/PageNav'
 import SiteFooter from '@/components/SiteFooter'
 
 export const metadata: Metadata = {
-  title: 'Hudson Valley Live Wedding Band',
+  title: 'Award-Winning Hudson Valley Wedding Band',
   description:
-    'Blue Avenue Groove is a 6-12 piece Hudson Valley wedding band playing Funk, Soul, Pop, R&B, Rock and Motown. Over 10 years of live wedding music across the Hudson Valley and NYC area.',
+    'Hudson Valley wedding band with 10+ years performing at The Garrison, Mohonk Mountain House and venues throughout the Hudson Valley. 6-12 piece band playing Funk, Soul, Pop, R&B and Motown.',
   alternates: {
     canonical: 'https://www.blueavenuegroove.com/hudson-valley-wedding-band/',
   },

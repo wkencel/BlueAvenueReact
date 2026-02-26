@@ -4,9 +4,9 @@ import PageNav from '@/components/PageNav'
 import SiteFooter from '@/components/SiteFooter'
 
 export const metadata: Metadata = {
-  title: 'Manhattan Live Wedding Band',
+  title: 'Award-Winning Manhattan Wedding Band',
   description:
-    'Blue Avenue Groove is a 6-12 piece Manhattan wedding band playing Funk, Soul, Pop, R&B, Rock and Motown. Over 10 years of live wedding music across Manhattan and NYC.',
+    'Manhattan wedding band with 10+ years performing at The Plaza, Gotham Hall, 620 Loft & Garden, Lighthouse at Chelsea Piers and venues across Manhattan. 6-12 piece Funk, Soul, Pop, R&B and Motown.',
   alternates: {
     canonical: 'https://www.blueavenuegroove.com/manhattan-wedding-band/',
   },

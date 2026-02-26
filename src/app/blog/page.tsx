@@ -5,7 +5,7 @@ import SiteFooter from '@/components/SiteFooter'
 import '@/assets/css/blogList.css'
 
 export const metadata: Metadata = {
-  title: 'Blog',
+  title: 'Wedding Planning Tips and Music Guides',
   description:
     'Wedding planning tips, music guides, and insights from Blue Avenue Groove - NYC premier wedding band.',
   alternates: {

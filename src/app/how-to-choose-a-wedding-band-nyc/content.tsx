@@ -184,7 +184,7 @@ export default function HowToChooseContent() {
         other couples have said on our <Link href="/reviews">reviews page</Link>, or just
         drop us a message below and let&apos;s talk.
       </p>
-      <h3>Send us a message</h3>
+      <h2>Send us a message</h2>
       <ContactUs />
       <Link href="/blog" className="button">Back to Blog</Link>
     </>

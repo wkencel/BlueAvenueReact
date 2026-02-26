@@ -83,20 +83,20 @@ export default function GuideContent() {
         Your wedding isn&apos;t one vibe. It&apos;s three or four across the night,
         and each one matters.
       </p>
-      <h3>Ceremony</h3>
+      <h2>Ceremony</h2>
       <p>
         This is intimate and emotional. A solo pianist, a vocalist with guitar, or a
         small duo is usually the right fit. You want something that makes the walk down
         the aisle feel like a moment, not a production.
       </p>
-      <h3>Cocktail Hour</h3>
+      <h2>Cocktail Hour</h2>
       <p>
         The energy shifts. People are mingling, getting drinks, catching up. This is
         where a jazz trio, a sax-and-keys duo, or a solo pianist sets the perfect tone.
         Warm, sophisticated, not competing with conversation.{' '}
         <Link href="/wedding-event-services">We offer ensembles from solo to quartet for cocktail hour.</Link>
       </p>
-      <h3>Reception</h3>
+      <h2>Reception</h2>
       <p>
         This is where it all opens up. A full band, four hours of energy, building from
         dinner music into a packed dance floor. The first dance, the parent dances, the
@@ -148,7 +148,7 @@ export default function GuideContent() {
         Tell us about your wedding. The venue, the vibe, the songs you can&apos;t
         imagine the night without. We&apos;ll put something together that fits.
       </p>
-      <h3>Send us a message</h3>
+      <h2>Send us a message</h2>
       <ContactUs />
       <Link href="/blog" className="button">Back to Blog</Link>
     </>

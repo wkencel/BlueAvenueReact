@@ -1,8 +1,17 @@
 import type { Metadata } from 'next'
+import { Source_Sans_3 } from 'next/font/google'
 import { siteMetadata } from '@/lib/siteMetadata'
 import { BusinessStructuredData } from '@/components/StructuredData'
 import { Providers } from './providers'
 import '@/assets/scss/main.scss'
+
+const sourceSans = Source_Sans_3({
+  weight: ['300', '600'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-source-sans',
+})
 
 export const metadata: Metadata = {
   title: {
@@ -42,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={sourceSans.variable}>
       <body>
         <BusinessStructuredData />
         <Providers>{children}</Providers>
