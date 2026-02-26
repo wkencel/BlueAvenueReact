@@ -32,7 +32,7 @@ export default function BlogPage() {
   return (
     <div id="wrapper" className="page">
       <div className="page-panel">
-        <h1 style={{ textAlign: 'center', fontSize: 'clamp(1rem, 4vw, 2.25rem)' }}>Check out our blog</h1>
+        <h1 style={{ textAlign: 'center', fontSize: 'clamp(1rem, 4vw, 2.25rem)', marginBottom: '1.5rem' }}>Check out our blog</h1>
         <div className="blog-list">
           {blogPosts.map((post, index) => (
             <div key={index} className="blog-item">
