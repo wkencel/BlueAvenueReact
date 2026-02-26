@@ -15,14 +15,14 @@ const blogPosts = [
   {
     title: 'How to Choose a Wedding Band in NYC',
     excerpt:
-      'New York has more wedding bands than any city in the country. Here\'s what actually matters when you\'re making this decision, from reading demos to asking the right questions to knowing what to budget.',
+      'New York has more wedding bands than any city in the country. Here\'s what actually matters when you\'re making this decision, from watching demos to asking the right questions to knowing what to budget.',
     imageUrl: '/images/blogImages/weddingbandAI_img1.webp',
     blogUrl: '/how-to-choose-a-wedding-band-nyc',
   },
   {
     title: 'The Ultimate Wedding Band Guide',
     excerpt:
-      'Most couples spend hours on flowers and 15 minutes on music, but music is what people actually remember. Our guide covers everything from live band vs. DJ to how the night should flow.',
+      'Most couples spend hours on flowers and 15 minutes on music. Funny thing is, nobody\'s talking about the centerpieces a year later. They\'re talking about the dance floor. Our guide covers everything from live band vs. DJ to how the night should flow.',
     imageUrl: '/images/blogImages/the-ultimate-wedding-band-guide_img1.webp',
     blogUrl: '/the-ultimate-wedding-band-guide',
   },
@@ -32,7 +32,7 @@ export default function BlogPage() {
   return (
     <div id="wrapper" className="page">
       <div className="page-panel">
-        <h1 style={{ textAlign: 'center' }}>Check out our blog</h1>
+        <h1 style={{ textAlign: 'center', fontSize: 'clamp(1rem, 4vw, 2.25rem)' }}>Check out our blog</h1>
         <div className="blog-list">
           {blogPosts.map((post, index) => (
             <div key={index} className="blog-item">
