@@ -8,7 +8,13 @@ export default function GuideContent() {
   return (
     <>
       <h1 className="major">The Ultimate Wedding Band Guide</h1>
-      <h2>Selecting the Perfect Soundtrack for Your Big Day</h2>
+      <p>
+        Here&apos;s something we&apos;ve seen over and over in 10+ years of playing
+        weddings: couples spend months choosing flowers and linens, then give themselves
+        about 15 minutes to figure out music. But when the night&apos;s over, nobody
+        talks about the centerpieces. They talk about the moment the dance floor opened
+        up and everybody lost it.
+      </p>
 
       <img
         src="/images/blogImages/the-ultimate-wedding-band-guide_img1.webp"
@@ -20,16 +26,9 @@ export default function GuideContent() {
 
       <h2 className="major">Why Your Wedding Band Matters More Than You Think</h2>
       <p>
-        Here&apos;s something we&apos;ve seen over and over in 10+ years of playing
-        weddings: couples spend months choosing flowers and linens, then give themselves
-        about 15 minutes to figure out music. But when the night&apos;s over, nobody
-        talks about the centerpieces. They talk about the moment the dance floor opened
-        up and everybody lost it.
-      </p>
-      <p>
-        Music is the thing that makes people feel something. It sets the pace of the
-        entire night. Get it right and your guests are telling stories for years. Get it
-        wrong and even the best food and venue can feel flat.
+        Music sets the tone for the entire night. Get it right and your guests are
+        telling stories for years. Get it wrong and even the best food and venue can
+        feel flat.
       </p>
 
       <h2 className="major">Live Band vs. DJ: An Honest Take</h2>
@@ -40,11 +39,10 @@ export default function GuideContent() {
         makes sense.
       </p>
       <p>
-        What a live band brings is different. It&apos;s energy you can feel in your chest.
-        It&apos;s musicians reading the room and adjusting in real time. It&apos;s the
-        moment the sax player steps forward for a solo and the crowd erupts. There&apos;s
-        a human connection between performers and guests that a playlist can&apos;t
-        replicate, no matter how good the speakers are.
+        What a live band brings is different. It&apos;s musicians reading the room
+        and adjusting in real time. It&apos;s the moment the sax player steps forward
+        for a solo and the crowd erupts. There&apos;s an exchange between the band
+        and the crowd that a playlist just can&apos;t touch.
       </p>
       <p>
         Some couples go with both: a DJ for cocktail hour or transitions, and a live band
@@ -82,8 +80,8 @@ export default function GuideContent() {
 
       <h2 className="major">How the Night Should Flow</h2>
       <p>
-        Wedding music isn&apos;t one thing. It&apos;s three or four different vibes
-        across the course of an evening, and each one matters.
+        Your wedding isn&apos;t one vibe. It&apos;s three or four across the night,
+        and each one matters.
       </p>
       <h3>Ceremony</h3>
       <p>
@@ -120,7 +118,7 @@ export default function GuideContent() {
       </p>
       <ul>
         <li>Can you learn a specific song for our first dance?</li>
-        <li>What happens if a band member gets sick the day of?</li>
+        <li>What&apos;s your plan if a band member isn&apos;t available?</li>
         <li>Do you bring your own sound system and engineer?</li>
         <li>How do you handle MC duties and announcements?</li>
         <li>What does setup and teardown look like? How much time do you need?</li>
@@ -147,9 +145,8 @@ export default function GuideContent() {
 
       <h2 className="major">Ready to Talk?</h2>
       <p>
-        We&apos;d love to hear about your wedding. Tell us about your day, the vibe
-        you&apos;re going for, and any must-play songs. We&apos;ll put something together
-        that fits.
+        Tell us about your wedding. The venue, the vibe, the songs you can&apos;t
+        imagine the night without. We&apos;ll put something together that fits.
       </p>
       <h3>Send us a message</h3>
       <ContactUs />
