@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import NYCWeddingsContent from './content'
+import PageNav from '@/components/PageNav'
 import SiteFooter from '@/components/SiteFooter'
 
 export const metadata: Metadata = {
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
 export default function NYCWeddingsPage() {
   return (
     <div id="wrapper" className="page">
+      <PageNav />
       <div className="page-panel">
         <NYCWeddingsContent />
       </div>

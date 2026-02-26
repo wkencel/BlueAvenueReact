@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import QueensContent from './content'
+import PageNav from '@/components/PageNav'
 import SiteFooter from '@/components/SiteFooter'
 
 export const metadata: Metadata = {
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
 export default function QueensWeddingBandPage() {
   return (
     <div id="wrapper" className="page">
+      <PageNav />
       <div className="page-panel">
         <QueensContent />
       </div>
