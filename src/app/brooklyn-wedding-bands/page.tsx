@@ -16,9 +16,9 @@ export default function BrooklynWeddingsPage() {
   return (
     <div id="wrapper" className="page">
       <PageNav />
-      <div className="page-panel">
+      <main className="page-panel">
         <BrooklynWeddingsContent />
-      </div>
+      </main>
       <SiteFooter />
     </div>
   )

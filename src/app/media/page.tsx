@@ -17,10 +17,10 @@ export default function MediaPage() {
   return (
     <div id="wrapper" className="page">
       <PageNav current="/media" />
-      <div className="page-panel">
+      <main className="page-panel">
         <MediaContent />
         <Link href="/" className="button" style={{ marginTop: '1rem' }}>Back to Home</Link>
-      </div>
+      </main>
       <SiteFooter />
     </div>
   )

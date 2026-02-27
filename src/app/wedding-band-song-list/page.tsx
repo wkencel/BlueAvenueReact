@@ -16,12 +16,12 @@ export default function SongListPage() {
   return (
     <div id="wrapper" className="page">
       <PageNav />
-      <div className="page-panel">
+      <main className="page-panel">
         <SongListContent />
         <Link href="/" className="button">
           Back to Home
         </Link>
-      </div>
+      </main>
     </div>
   )
 }

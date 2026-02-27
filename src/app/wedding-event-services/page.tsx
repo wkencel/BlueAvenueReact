@@ -17,10 +17,10 @@ export default function ServicesPage() {
   return (
     <div id="wrapper" className="page">
       <PageNav current="/wedding-event-services" />
-      <div className="page-panel">
+      <main className="page-panel">
         <EventServices />
         <Link href="/" className="button">Back to Home</Link>
-      </div>
+      </main>
       <SiteFooter />
     </div>
   )

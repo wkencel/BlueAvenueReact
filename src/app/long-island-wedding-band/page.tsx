@@ -16,9 +16,9 @@ export default function LongIslandWeddingBandPage() {
   return (
     <div id="wrapper" className="page">
       <PageNav />
-      <div className="page-panel">
+      <main className="page-panel">
         <LongIslandContent />
-      </div>
+      </main>
       <SiteFooter />
     </div>
   )

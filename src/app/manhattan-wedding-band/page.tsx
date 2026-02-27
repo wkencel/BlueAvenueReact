@@ -16,9 +16,9 @@ export default function ManhattanWeddingBandPage() {
   return (
     <div id="wrapper" className="page">
       <PageNav />
-      <div className="page-panel">
+      <main className="page-panel">
         <ManhattanContent />
-      </div>
+      </main>
       <SiteFooter />
     </div>
   )

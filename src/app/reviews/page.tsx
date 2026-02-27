@@ -19,11 +19,11 @@ export default function ReviewsPage() {
     <div id="wrapper" className="page">
       <ReviewsStructuredData />
       <PageNav current="/reviews" />
-      <div className="page-panel">
+      <main className="page-panel">
         <h1 className="major">Reviews</h1>
         <Reviews />
         <Link href="/" className="button" style={{ float: 'right', marginTop: '4px' }}>Back to Home</Link>
-      </div>
+      </main>
       <SiteFooter />
     </div>
   )

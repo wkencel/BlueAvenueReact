@@ -17,10 +17,10 @@ export default function AboutPage() {
   return (
     <div id="wrapper" className="page">
       <PageNav current="/about" />
-      <div className="page-panel">
+      <main className="page-panel">
         <AboutContent />
         <Link href="/" className="button">Back to Home</Link>
-      </div>
+      </main>
       <SiteFooter />
     </div>
   )

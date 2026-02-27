@@ -24,9 +24,9 @@ export default function HowToChooseWeddingBandPage() {
         url="https://www.blueavenuegroove.com/how-to-choose-a-wedding-band-nyc/"
       />
       <PageNav current="/blog" />
-      <div className="page-panel">
+      <main className="page-panel">
         <HowToChooseContent />
-      </div>
+      </main>
       <SiteFooter />
     </div>
   )

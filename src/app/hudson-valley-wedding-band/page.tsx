@@ -16,9 +16,9 @@ export default function HudsonValleyWeddingBandPage() {
   return (
     <div id="wrapper" className="page">
       <PageNav />
-      <div className="page-panel">
+      <main className="page-panel">
         <HudsonValleyContent />
-      </div>
+      </main>
       <SiteFooter />
     </div>
   )

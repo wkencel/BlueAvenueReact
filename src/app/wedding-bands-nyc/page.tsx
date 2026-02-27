@@ -16,9 +16,9 @@ export default function NYCWeddingsPage() {
   return (
     <div id="wrapper" className="page">
       <PageNav />
-      <div className="page-panel">
+      <main className="page-panel">
         <NYCWeddingsContent />
-      </div>
+      </main>
       <SiteFooter />
     </div>
   )

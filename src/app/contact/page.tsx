@@ -17,11 +17,11 @@ export default function ContactPage() {
   return (
     <div id="wrapper" className="page">
       <PageNav current="/contact" />
-      <div className="page-panel">
+      <main className="page-panel">
         <h1 className="major">Contact</h1>
         <ContactContent />
         <Link href="/" className="button">Back to Home</Link>
-      </div>
+      </main>
       <SiteFooter />
     </div>
   )

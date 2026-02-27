@@ -24,9 +24,9 @@ export default function UltimateWeddingBandGuidePage() {
         url="https://www.blueavenuegroove.com/the-ultimate-wedding-band-guide/"
       />
       <PageNav current="/blog" />
-      <div className="page-panel">
+      <main className="page-panel">
         <GuideContent />
-      </div>
+      </main>
       <SiteFooter />
     </div>
   )
