@@ -57,8 +57,8 @@ export default function EventServices() {
         <li><strong>Duo</strong> — Vocals/keys (traditional with a vocalist's touch) or vocals/guitar (folk/indie feel).</li>
       </ul>
 
-      <Link href="/wedding-band-song-list">
-        <button>Song List</button>
+      <Link href="/wedding-band-song-list" className="button">
+        Song List
       </Link>
       <hr />
       <p><em>List of booked dates coming soon &mdash; please inquire about dates directly.</em></p>

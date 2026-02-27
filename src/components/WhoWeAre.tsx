@@ -60,7 +60,7 @@ export default function WhoWeAre() {
       </div>
 
       <div className="leader-card">
-        <a href="https://willkencelhome.io">
+        <a href="https://willkencelhome.io" aria-label="Visit Will Kencel's personal website">
           <img src={getImageSrc(Will1)} alt="Will Kencel" loading="lazy" />
         </a>
         <h3>CTO - Will Kencel</h3>

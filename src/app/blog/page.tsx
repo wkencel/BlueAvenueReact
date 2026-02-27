@@ -53,7 +53,7 @@ export default function BlogPage() {
                 <h2>{post.title}</h2>
                 <p>{post.excerpt}</p>
                 {post.blogUrl ? (
-                  <Link href={post.blogUrl} className="blog-link">
+                  <Link href={post.blogUrl} className="blog-link" aria-label={`Read more about ${post.title}`}>
                     Read More
                   </Link>
                 ) : null}

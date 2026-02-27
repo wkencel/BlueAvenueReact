@@ -12,12 +12,12 @@ export default function Reviews() {
         </blockquote>
       ))}
       <h3 className="major">Check out more reviews</h3>
-      <a href="https://www.weddingwire.com/reviews/blue-avenue-groove-brooklyn/0da4ea28bbbcfffe.html">
-        <button>On Wedding Wire</button>
+      <a href="https://www.weddingwire.com/reviews/blue-avenue-groove-brooklyn/0da4ea28bbbcfffe.html" className="button">
+        On Wedding Wire
       </a>
       &nbsp;&nbsp;
-      <a href="https://www.theknot.com/marketplace/blue-avenue-groove-brooklyn-ny-964870">
-        <button>On The Knot</button>
+      <a href="https://www.theknot.com/marketplace/blue-avenue-groove-brooklyn-ny-964870" className="button">
+        On The Knot
       </a>
     </>
   )

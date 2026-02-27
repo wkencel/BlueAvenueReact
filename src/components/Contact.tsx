@@ -41,6 +41,7 @@ export default function ContactForm() {
             <a
               href="https://www.instagram.com/blueavenuegroove/"
               className="icon fa-instagram"
+              aria-label="Instagram"
             >
               <span className="label">Instagram</span>
             </a>
@@ -49,6 +50,7 @@ export default function ContactForm() {
             <a
               href="https://www.facebook.com/BlueAvenueGroove/"
               className="icon fa-facebook"
+              aria-label="Facebook"
             >
               <span className="label">Facebook</span>
             </a>
