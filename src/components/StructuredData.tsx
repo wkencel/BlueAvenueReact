@@ -82,17 +82,25 @@ export function ArticleStructuredData({
   description,
   datePublished,
   url,
+  image,
 }: {
   title: string
   description: string
   datePublished: string
   url: string
+  image: { url: string; width: number; height: number }
 }) {
   const articleData = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: title,
     description,
+    image: {
+      '@type': 'ImageObject',
+      url: image.url,
+      width: image.width,
+      height: image.height,
+    },
     datePublished,
     url,
     author: {
@@ -128,7 +136,7 @@ export function ReviewsStructuredData() {
       '@type': 'AggregateRating',
       ratingValue: '5.0',
       bestRating: '5',
-      ratingCount: String(reviews.length),
+      ratingCount: reviews.length,
     },
     review: reviews.map((r) => ({
       '@type': 'Review',

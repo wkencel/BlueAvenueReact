@@ -96,6 +96,19 @@ export default function WestchesterContent() {
         </p>
       </div>
       <br />
+      <h2>Serving All of NYC and Beyond</h2>
+      <div style={{ marginLeft: '2%' }}>
+        <p>
+          We play weddings across the entire metro area. Beyond Westchester,
+          we regularly perform in the{' '}
+          <Link href="/hudson-valley-wedding-band">Hudson Valley</Link>,{' '}
+          <Link href="/manhattan-wedding-band">Manhattan</Link>,{' '}
+          <Link href="/brooklyn-wedding-bands">Brooklyn</Link>, and on{' '}
+          <Link href="/long-island-wedding-band">Long Island</Link>.{' '}
+          <Link href="/wedding-bands-nyc">See all the areas we serve.</Link>
+        </p>
+      </div>
+      <br />
       <h2>Book Blue Avenue Groove for Your Westchester Wedding</h2>
       <p>
         Ready to lock in your date? Drop us a message below and let&apos;s

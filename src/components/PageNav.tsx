@@ -6,6 +6,7 @@ const navItems = [
   { href: '/about', label: 'People' },
   { href: '/contact', label: 'Contact' },
   { href: '/reviews', label: 'Reviews' },
+  { href: '/blog', label: 'Blog' },
 ]
 
 export default function PageNav({ current }: { current?: string }) {

@@ -88,6 +88,19 @@ export default function HudsonValleyContent() {
         </p>
       </div>
       <br />
+      <h2>Serving All of NYC and Beyond</h2>
+      <div style={{ marginLeft: '2%' }}>
+        <p>
+          Based in New York City, we play weddings across the entire metro area.
+          Beyond the Hudson Valley, we regularly perform in{' '}
+          <Link href="/westchester-wedding-band">Westchester</Link>,{' '}
+          <Link href="/manhattan-wedding-band">Manhattan</Link>,{' '}
+          <Link href="/brooklyn-wedding-bands">Brooklyn</Link>, and{' '}
+          <Link href="/new-jersey-wedding-band">New Jersey</Link>.{' '}
+          <Link href="/wedding-bands-nyc">See all the areas we serve.</Link>
+        </p>
+      </div>
+      <br />
       <h2>Book Blue Avenue Groove for Your Hudson Valley Wedding</h2>
       <p>
         Tell us about your venue and your vision. We&apos;ll build a package

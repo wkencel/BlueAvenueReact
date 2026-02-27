@@ -98,6 +98,19 @@ export default function BrooklynWeddingsContent() {
         </p>
       </div>
       <br />
+      <h2>Serving All of NYC and Beyond</h2>
+      <div style={{ marginLeft: '2%' }}>
+        <p>
+          Based in New York City, we play weddings across the entire metro area.
+          In addition to Brooklyn, we regularly perform in{' '}
+          <Link href="/manhattan-wedding-band">Manhattan</Link>,{' '}
+          <Link href="/queens-wedding-band">Queens</Link>,{' '}
+          <Link href="/long-island-wedding-band">Long Island</Link>, and{' '}
+          <Link href="/new-jersey-wedding-band">New Jersey</Link>.{' '}
+          <Link href="/wedding-bands-nyc">See all the areas we serve.</Link>
+        </p>
+      </div>
+      <br />
       <h2>Book Blue Avenue Groove for Your Brooklyn Wedding</h2>
       <p>
         Ready to lock in your date? Drop us a message below and

@@ -63,6 +63,19 @@ export default function BronxContent() {
         </p>
       </div>
       <br />
+      <h2>Serving All of NYC and Beyond</h2>
+      <div style={{ marginLeft: '2%' }}>
+        <p>
+          We play weddings across the entire metro area. Beyond the Bronx,
+          we regularly perform in{' '}
+          <Link href="/manhattan-wedding-band">Manhattan</Link>,{' '}
+          <Link href="/queens-wedding-band">Queens</Link>,{' '}
+          <Link href="/westchester-wedding-band">Westchester</Link>, and the{' '}
+          <Link href="/hudson-valley-wedding-band">Hudson Valley</Link>.{' '}
+          <Link href="/wedding-bands-nyc">See all the areas we serve.</Link>
+        </p>
+      </div>
+      <br />
       <h2>Book Blue Avenue Groove for Your Bronx Wedding</h2>
       <p>
         Ready to lock in your date? Drop us a message below and let&apos;s

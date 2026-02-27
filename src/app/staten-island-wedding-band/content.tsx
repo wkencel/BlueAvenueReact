@@ -81,6 +81,19 @@ export default function StatenIslandContent() {
         </p>
       </div>
       <br />
+      <h2>Serving All of NYC and Beyond</h2>
+      <div style={{ marginLeft: '2%' }}>
+        <p>
+          We play weddings across the entire metro area. Beyond Staten Island,
+          we regularly perform in{' '}
+          <Link href="/brooklyn-wedding-bands">Brooklyn</Link>,{' '}
+          <Link href="/manhattan-wedding-band">Manhattan</Link>,{' '}
+          <Link href="/new-jersey-wedding-band">New Jersey</Link>, and{' '}
+          <Link href="/long-island-wedding-band">Long Island</Link>.{' '}
+          <Link href="/wedding-bands-nyc">See all the areas we serve.</Link>
+        </p>
+      </div>
+      <br />
       <h2>Book Blue Avenue Groove for Your Staten Island Wedding</h2>
       <p>
         Drop us a message below with your date and venue. We&apos;ll put

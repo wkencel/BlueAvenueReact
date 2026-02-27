@@ -64,6 +64,19 @@ export default function LongIslandContent() {
         </p>
       </div>
       <br />
+      <h2>Serving All of NYC and Beyond</h2>
+      <div style={{ marginLeft: '2%' }}>
+        <p>
+          Based in New York City, we play weddings across the entire metro area.
+          Beyond Long Island, we regularly perform in{' '}
+          <Link href="/queens-wedding-band">Queens</Link>,{' '}
+          <Link href="/brooklyn-wedding-bands">Brooklyn</Link>,{' '}
+          <Link href="/manhattan-wedding-band">Manhattan</Link>, and{' '}
+          <Link href="/westchester-wedding-band">Westchester</Link>.{' '}
+          <Link href="/wedding-bands-nyc">See all the areas we serve.</Link>
+        </p>
+      </div>
+      <br />
       <h2>Book Blue Avenue Groove for Your Long Island Wedding</h2>
       <p>
         Long Island dates fill up fast, especially summer and fall. Reach out 6 to 12

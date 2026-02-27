@@ -22,6 +22,7 @@ export default function HowToChooseWeddingBandPage() {
         description="A practical guide to finding and booking the right wedding band in New York City. What to look for, questions to ask, red flags, and what to expect on pricing."
         datePublished="2026-02-15"
         url="https://www.blueavenuegroove.com/how-to-choose-a-wedding-band-nyc/"
+        image={{ url: "https://www.blueavenuegroove.com/images/blogImages/weddingbandAI_img1.webp", width: 1024, height: 1024 }}
       />
       <PageNav current="/blog" />
       <main className="page-panel">

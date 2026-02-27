@@ -79,6 +79,23 @@ export default function NYCWeddingsContent() {
         </p>
       </div>
       <br />
+      <h2>Wedding Bands by Area</h2>
+      <div style={{ marginLeft: '2%' }}>
+        <p>
+          We serve the entire New York metro area. Find out more about our
+          wedding band services in{' '}
+          <Link href="/manhattan-wedding-band">Manhattan</Link>,{' '}
+          <Link href="/brooklyn-wedding-bands">Brooklyn</Link>,{' '}
+          <Link href="/queens-wedding-band">Queens</Link>,{' '}
+          <Link href="/bronx-wedding-band">the Bronx</Link>,{' '}
+          <Link href="/staten-island-wedding-band">Staten Island</Link>,{' '}
+          <Link href="/westchester-wedding-band">Westchester</Link>,{' '}
+          <Link href="/hudson-valley-wedding-band">Hudson Valley</Link>,{' '}
+          <Link href="/long-island-wedding-band">Long Island</Link>, and{' '}
+          <Link href="/new-jersey-wedding-band">New Jersey</Link>.
+        </p>
+      </div>
+      <br />
       <h2>Book Blue Avenue Groove for Your NYC Wedding</h2>
       <p>
         Ready to lock in your date? Drop us a message below and
