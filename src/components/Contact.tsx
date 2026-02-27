@@ -1,9 +1,15 @@
 'use client'
 
 import React, { useState } from 'react'
+import dynamic from 'next/dynamic'
 import ContactUs from './ContactUs'
 import PriceCalculator from './PriceCalculator'
 import PurchaseRequest from './PurchaseRequest'
+
+const SocialIcon = dynamic(
+  () => import('react-social-icons').then((mod) => ({ default: mod.SocialIcon })),
+  { ssr: false }
+)
 
 export default function ContactForm() {
   const [showCalculator, setShowCalculator] = useState(false)
@@ -38,22 +44,18 @@ export default function ContactForm() {
           </nav>
           {showPurchaseRequest && <PurchaseRequest />}
           <li>
-            <a
-              href="https://www.instagram.com/blueavenuegroove/"
-              className="icon fa-instagram"
-              aria-label="Instagram"
-            >
-              <span className="label">Instagram</span>
-            </a>
+            <SocialIcon
+              url="https://www.instagram.com/blueavenuegroove/"
+              bgColor="transparent"
+              fgColor="#ffffff"
+            />
           </li>
           <li>
-            <a
-              href="https://www.facebook.com/BlueAvenueGroove/"
-              className="icon fa-facebook"
-              aria-label="Facebook"
-            >
-              <span className="label">Facebook</span>
-            </a>
+            <SocialIcon
+              url="https://www.facebook.com/BlueAvenueGroove/"
+              bgColor="transparent"
+              fgColor="#ffffff"
+            />
           </li>
         </ul>
       </div>
