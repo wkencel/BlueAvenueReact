@@ -52,6 +52,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={sourceSans.variable}>
+      <head>
+        <link rel="preload" href="/images/bg.webp" as="image" type="image/webp" />
+      </head>
       <body>
         <BusinessStructuredData />
         <Providers>{children}</Providers>
