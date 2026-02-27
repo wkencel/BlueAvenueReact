@@ -1,8 +1,6 @@
-'use client'
-
 import React from 'react'
 import Link from 'next/link'
-import dynamic from 'next/dynamic'
+import { SocialIcon } from 'react-social-icons'
 import CoupleChoice2018 from '@/optimized-images/wedding-wire-couples-choice-2018.png'
 import CoupleChoice2020 from '@/optimized-images/wedding-wire-couples-choice-2020.png'
 import CoupleChoice2021 from '@/optimized-images/wedding-wire-couples-choice-2021.png'
@@ -10,16 +8,14 @@ import CoupleChoice2022 from '@/optimized-images/wedding-wire-couples-choice-202
 import CoupleChoice2023 from '@/optimized-images/wedding-wire-couples-choice-2023.png'
 import { getImageSrc } from '@/lib/image'
 
-const SocialIcon = dynamic(
-  () => import('react-social-icons').then((mod) => ({ default: mod.SocialIcon })),
-  { ssr: false }
-)
-
 export default function Footer() {
   return (
     <footer id="footer">
       <SocialIcon
         url="https://www.instagram.com/blueavenuegroove/"
+        target="_blank"
+        rel="noopener noreferrer"
+        label="Follow Blue Avenue Groove on Instagram"
         bgColor="lightBlue"
         fgColor="darkRed"
       />
