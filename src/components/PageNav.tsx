@@ -4,9 +4,9 @@ const navItems = [
   { href: '/wedding-event-services', label: 'Events' },
   { href: '/media', label: 'Media' },
   { href: '/about', label: 'People' },
-  { href: '/contact', label: 'Contact' },
   { href: '/reviews', label: 'Reviews' },
   { href: '/blog', label: 'Blog' },
+  { href: '/contact', label: 'Contact' },
 ]
 
 export default function PageNav({ current }: { current?: string }) {
