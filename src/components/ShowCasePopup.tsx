@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
+import { trackLead } from '@/lib/analytics'
 import '@/styles/ShowcasePopup.css'
 
 export default function ShowcasePopup() {
@@ -55,7 +56,7 @@ export default function ShowcasePopup() {
           </p>
           <p className="popup-text">
             To add names to the VIP list, text Pam at{' '}
-            <a href="tel:8572047853" className="popup-link">
+            <a href="tel:8572047853" className="popup-link" onClick={() => trackLead('phone_click')}>
               857-204-7853
             </a>
             .

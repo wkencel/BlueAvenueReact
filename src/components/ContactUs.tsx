@@ -2,6 +2,7 @@
 
 import React from 'react'
 import emailjs from 'emailjs-com'
+import { trackLead } from '@/lib/analytics'
 
 export default function ContactUs() {
   function sendEmail(event: React.FormEvent<HTMLFormElement>) {
@@ -17,6 +18,7 @@ export default function ContactUs() {
       .then(
         (result) => {
           console.log(result.text)
+          trackLead('contact_form')
           alert(
             'Thank you for submitting your request. Looking forward to creating the experience of a lifetime for you and your guests!'
           )

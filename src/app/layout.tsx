@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import { Source_Sans_3 } from 'next/font/google'
 import { siteMetadata } from '@/lib/siteMetadata'
 import { BusinessStructuredData } from '@/components/StructuredData'
+import { GTAG_ID } from '@/lib/analytics'
 import { Providers } from './providers'
 import '@/assets/scss/main.scss'
 
@@ -56,6 +58,17 @@ export default function RootLayout({
         <link rel="preload" href="/images/bg.webp" as="image" type="image/webp" />
       </head>
       <body>
+        {GTAG_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GTAG_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="gtag-init" strategy="afterInteractive">
+              {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GTAG_ID}');`}
+            </Script>
+          </>
+        )}
         <BusinessStructuredData />
         <Providers>{children}</Providers>
       </body>
