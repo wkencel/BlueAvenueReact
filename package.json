@@ -22,7 +22,7 @@
     "dev": "next dev",
     "build": "next build",
     "postbuild": "next-sitemap",
-    "deploy": "next build && aws s3 sync out/ s3://$S3_BUCKET --delete",
+    "deploy": "next build && aws s3 sync out/ s3://$S3_BUCKET --delete && aws cloudfront create-invalidation --distribution-id $CF_DIST_ID --paths '/*'",
     "start": "next start",
     "format": "prettier --write '**/*.{js,jsx,ts,tsx}'",
     "test": "echo \"Error: no test specified\" && exit 1",
