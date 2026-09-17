@@ -84,7 +84,9 @@ export default function ContactUs() {
   return (
     <form onSubmit={sendEmail}>
       <div className="field half first">
+        <label htmlFor="cf-name">Name</label>
         <input
+          id="cf-name"
           name="name"
           placeholder="Your name"
           type="text"
@@ -94,9 +96,11 @@ export default function ContactUs() {
         />
       </div>
       <div className="field half">
+        <label htmlFor="cf-email">Email</label>
         <input
+          id="cf-email"
           name="email"
-          placeholder="Email"
+          placeholder="you@email.com"
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -104,36 +108,43 @@ export default function ContactUs() {
         />
       </div>
       <div className="field half first">
+        <label htmlFor="cf-phone">Phone</label>
         <input
+          id="cf-phone"
           name="phone"
-          placeholder="Phone"
+          placeholder="(000) 000-0000"
           type="tel"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
         />
       </div>
       <div className="field half">
+        <label htmlFor="cf-date">Event date</label>
         <input
+          id="cf-date"
           name="event_date"
           type="date"
-          aria-label="Event date"
           value={eventDate}
           onChange={(e) => setEventDate(e.target.value)}
         />
       </div>
       <div className="field half first">
+        <label htmlFor="cf-venue">Venue (if booked)</label>
         <input
+          id="cf-venue"
           name="venue"
-          placeholder="Venue (if booked)"
+          placeholder="e.g. The Green Building"
           type="text"
           value={venue}
           onChange={(e) => setVenue(e.target.value)}
         />
       </div>
       <div className="field half">
+        <label htmlFor="cf-guests">Guest count</label>
         <input
+          id="cf-guests"
           name="guests"
-          placeholder="Guest count"
+          placeholder="e.g. 120"
           type="number"
           min={0}
           value={guests}
@@ -141,7 +152,9 @@ export default function ContactUs() {
         />
       </div>
       <div className="field">
+        <label htmlFor="cf-message">Your message</label>
         <textarea
+          id="cf-message"
           name="message"
           placeholder="Tell us about your day — the vibe, must-play songs, or any questions..."
           value={message}

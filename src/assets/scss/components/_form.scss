@@ -77,6 +77,8 @@
 	input[type="password"],
 	input[type="email"],
 	input[type="tel"],
+	input[type="date"],
+	input[type="number"],
 	select,
 	textarea {
 		@include vendor('appearance', 'none');
@@ -89,6 +91,7 @@
 		border-radius: _size(border-radius);
 		border: solid _size(border-width) _palette(border);
 		color: inherit;
+		color-scheme: dark;
 		display: block;
 		outline: 0;
 		padding: 0 1rem;
@@ -141,6 +144,8 @@
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="date"],
+	input[type="number"],
 	select {
 		height: _size(element-height);
 	}
