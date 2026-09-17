@@ -35,8 +35,8 @@ const reasons = [
     body: 'You work directly with the bandleader, so you get the personal attention the big corporate companies just can’t match.',
   },
   {
-    title: '6–12 pieces, two lead vocalists',
-    body: 'Male & female vocals and a horn-driven rhythm section, scaled to your room and your budget.',
+    title: '6–12 pieces, male & female vocals',
+    body: 'A horn-driven rhythm section with sax, trumpet and trombone, scaled to your room and your budget.',
   },
   {
     title: 'Funk, soul & Motown that fills the floor',
@@ -145,8 +145,8 @@ export default function HomeV2() {
           <p className={styles.eyebrow}>★★★★★ &nbsp;6× WeddingWire Couples’ Choice</p>
           <h1>The NYC wedding band your guests won’t stop talking about</h1>
           <p className={styles.heroSub}>
-            Live funk, soul &amp; Motown from a 6–12 piece band with two lead
-            vocalists. From cocktail hour to the last dance.
+            Live funk, soul &amp; Motown from a 6–12 piece band with male &amp;
+            female lead vocals. From cocktail hour to the last dance.
           </p>
           <div className={styles.heroCtas}>
             <Link href="/contact" className={styles.btnPrimary}>Check Your Date</Link>
