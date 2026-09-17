@@ -55,6 +55,9 @@ export default function Footer() {
           loading="lazy"
         />
       </div>
+      <div style={{ textAlign: 'center', marginTop: '0.6rem', fontSize: '0.7rem', letterSpacing: '0.15rem', textTransform: 'uppercase', opacity: 0.85 }}>
+        As seen at The Plaza &middot; Gotham Hall &middot; Lighthouse at Chelsea Piers
+      </div>
       <div style={{ textAlign: 'center', marginTop: '0.5rem' }}>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <Link href="/wedding-bands-nyc">NYC Weddings</Link>
