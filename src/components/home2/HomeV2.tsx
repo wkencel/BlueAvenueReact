@@ -14,13 +14,15 @@ import Award2022 from '@/optimized-images/wedding-wire-couples-choice-2022.png'
 import Award2023 from '@/optimized-images/wedding-wire-couples-choice-2023.png'
 import styles from './HomeV2.module.scss'
 
-const HERO_VIDEO_ID = 'Kt-j9h9qatk'
+const HERO_VIDEO_ID = 'qQw_oftZmzI' // About Damn Time (Lizzo)
+const HERO_START = 32
+const HERO_END = 60
 
 const liveVideos = [
-  { title: 'Move On Up — Curtis Mayfield (live)', id: 'NtZLBObQ3PU' },
-  { title: 'Use Me — Bill Withers (live)', id: 'jw4zzH1DVM0' },
+  { title: 'Move On Up · Curtis Mayfield (live)', id: 'NtZLBObQ3PU' },
+  { title: 'Use Me · Bill Withers (live)', id: 'jw4zzH1DVM0' },
   { title: 'As It Was / Take On Me (live)', id: 'jVUzk9YT06w' },
-  { title: 'About Damn Time — Lizzo (live)', id: 'qQw_oftZmzI' },
+  { title: 'About Damn Time · Lizzo (live)', id: 'qQw_oftZmzI' },
 ]
 
 const awards = [
@@ -34,7 +36,7 @@ const awards = [
 const reasons = [
   {
     title: 'Book the band, not an agency',
-    body: 'You work directly with the bandleader — the personal attention the big corporate companies just can’t match.',
+    body: 'You work directly with the bandleader, so you get the personal attention the big corporate companies just can’t match.',
   },
   {
     title: '6–12 pieces, two lead vocalists',
@@ -42,7 +44,7 @@ const reasons = [
   },
   {
     title: 'Funk, soul & Motown that fills the floor',
-    body: 'From R&B and pop to rock — real musicians who read the room and keep everyone dancing.',
+    body: 'From R&B and pop to rock. Real musicians who read the room and keep everyone dancing.',
   },
   {
     title: 'Ceremony to last dance',
@@ -50,7 +52,7 @@ const reasons = [
   },
   {
     title: 'Every generation dancing',
-    body: 'From the three-year-old nephew to the grandparents — nobody stays in their seat.',
+    body: 'From the three-year-old nephew to the grandparents, nobody stays in their seat.',
   },
   {
     title: '10+ years · 6× WeddingWire winners',
@@ -61,12 +63,12 @@ const reasons = [
 const reviews = [
   {
     quote:
-      'The thing I hear most often is “they are not a typical wedding band” — and trust me, that’s a compliment. They had everyone dancing, from our three-year-old nephew to the grandparents.',
+      'The thing I hear most often is “they are not a typical wedding band,” and trust me, that’s a compliment. They had everyone dancing, from our three-year-old nephew to the grandparents.',
     author: 'Elizabeth K.',
   },
   {
     quote:
-      'By far the best band I have ever heard at a wedding. They energized the whole crowd — from a five-year-old to folks in their 70s. People have been talking about them ever since.',
+      'By far the best band I have ever heard at a wedding. They energized the whole crowd, from a five-year-old to folks in their 70s. People have been talking about them ever since.',
     author: 'Aly P.',
   },
   {
@@ -85,6 +87,68 @@ export default function HomeV2() {
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  // Hero background video: loop just the 0:32–1:00 window via the YouTube
+  // IFrame Player API (the simple start/end params reset to 0 on loop).
+  useEffect(() => {
+    const w = window as unknown as Record<string, any>
+    let player: any
+    let cancelled = false
+
+    function createPlayer() {
+      if (cancelled || !w.YT || !w.YT.Player) return
+      player = new w.YT.Player('bag-hero-player', {
+        videoId: HERO_VIDEO_ID,
+        playerVars: {
+          autoplay: 1,
+          mute: 1,
+          controls: 0,
+          disablekb: 1,
+          fs: 0,
+          modestbranding: 1,
+          rel: 0,
+          playsinline: 1,
+          start: HERO_START,
+          end: HERO_END,
+          cc_load_policy: 0,
+          iv_load_policy: 3,
+        },
+        events: {
+          onReady: (e: any) => {
+            e.target.mute()
+            e.target.playVideo()
+          },
+          onStateChange: (e: any) => {
+            if (e.data === w.YT.PlayerState.ENDED) {
+              e.target.seekTo(HERO_START)
+              e.target.playVideo()
+            }
+          },
+        },
+      })
+    }
+
+    if (w.YT && w.YT.Player) {
+      createPlayer()
+    } else {
+      if (!document.getElementById('yt-iframe-api')) {
+        const tag = document.createElement('script')
+        tag.id = 'yt-iframe-api'
+        tag.src = 'https://www.youtube.com/iframe_api'
+        document.head.appendChild(tag)
+      }
+      const prev = w.onYouTubeIframeAPIReady
+      w.onYouTubeIframeAPIReady = () => {
+        if (typeof prev === 'function') prev()
+        createPlayer()
+      }
+    }
+
+    return () => {
+      cancelled = true
+      if (player && player.destroy) player.destroy()
+    }
   }, [])
 
   const navLinks = (
@@ -132,12 +196,7 @@ export default function HomeV2() {
           style={{ backgroundImage: `url(${getImageSrc(GirlDancing)})` }}
         />
         <div className={styles.heroVideo}>
-          <iframe
-            src={`https://www.youtube.com/embed/${HERO_VIDEO_ID}?autoplay=1&mute=1&loop=1&playlist=${HERO_VIDEO_ID}&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1&disablekb=1`}
-            title="Blue Avenue Groove live"
-            allow="autoplay; encrypted-media; picture-in-picture"
-            frameBorder={0}
-          />
+          <div id="bag-hero-player" />
         </div>
         <div className={styles.heroOverlay} />
         <div className={styles.heroInner}>
@@ -145,7 +204,7 @@ export default function HomeV2() {
           <h1>The NYC wedding band your guests won’t stop talking about</h1>
           <p className={styles.heroSub}>
             Live funk, soul &amp; Motown from a 6–12 piece band with two lead
-            vocalists — from cocktail hour to the last dance.
+            vocalists. From cocktail hour to the last dance.
           </p>
           <div className={styles.heroCtas}>
             <Link href="/contact" className={styles.btnPrimary}>Check Your Date</Link>
@@ -176,7 +235,7 @@ export default function HomeV2() {
       <section id="watch" className={styles.watch}>
         <div className={styles.sectionHead}>
           <span className={styles.kicker}>See us live</span>
-          <h2>Don’t take our word for it — hear the room</h2>
+          <h2>Don’t take our word for it. Hear the room.</h2>
           <p>Real, unedited performances from real NYC weddings.</p>
         </div>
         <div className={styles.videoGrid}>
