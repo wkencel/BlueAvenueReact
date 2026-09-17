@@ -1,14 +1,21 @@
-// Conversion tracking (Google tag — GA4 or Google Ads).
+// Conversion tracking (Google tag — Google Ads + GA4).
 //
-// TO ACTIVATE: set your ID once the Google Ads / GA4 account exists, either by
-//   1) build-time env var:  NEXT_PUBLIC_GTAG_ID=G-XXXXXXX (or AW-XXXXXXXXX), or
-//   2) editing the fallback constant below.
-// Until an ID is set this is a complete no-op — nothing loads and no data is sent.
+// The Google tag / Ads Conversion ID and the per-action conversion labels are
+// NOT secret — they ship in the page HTML — so they live as constants here and
+// can be overridden per build via env vars.
 //
-// For Google Ads conversions, also pass a send_to value, e.g.:
-//   trackLead('contact_form', { send_to: 'AW-XXXXXXXXX/AbC-D_efGhIjKlMnOp' })
+// To disable tracking entirely, set NEXT_PUBLIC_GTAG_ID='' (empty). Then nothing
+// loads and no data is sent.
 
-export const GTAG_ID: string = process.env.NEXT_PUBLIC_GTAG_ID ?? ''
+// Google Ads Conversion ID (also serves as the base Google tag). GA4 'G-…' also works.
+export const GTAG_ID: string = process.env.NEXT_PUBLIC_GTAG_ID ?? 'AW-18456227136'
+
+// Google Ads conversion "send_to" values (Conversion ID / label) per lead source.
+// A source with no entry (or an empty value) simply doesn't report an Ads conversion.
+const ADS_CONVERSION_BY_SOURCE: Record<string, string> = {
+  contact_form:
+    process.env.NEXT_PUBLIC_ADS_CONVERSION_CONTACT ?? 'AW-18456227136/zwsVCJqqtPocEMDazuBE',
+}
 
 type GtagParams = Record<string, unknown>
 
@@ -20,7 +27,15 @@ export function gtagEvent(action: string, params: GtagParams = {}): void {
   w.gtag('event', action, params)
 }
 
-/** A lead was generated (form submit, phone tap, booking). */
+/**
+ * A lead was generated (form submit, phone tap, booking).
+ * Always fires the GA4 'generate_lead' event, and additionally fires a Google
+ * Ads 'conversion' event when the source maps to a configured conversion action.
+ */
 export function trackLead(source: string, params: GtagParams = {}): void {
   gtagEvent('generate_lead', { lead_source: source, ...params })
+  const sendTo = ADS_CONVERSION_BY_SOURCE[source]
+  if (sendTo) {
+    gtagEvent('conversion', { send_to: sendTo, value: 1.0, currency: 'USD' })
+  }
 }
