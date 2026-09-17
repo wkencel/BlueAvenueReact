@@ -14,10 +14,6 @@ import Award2022 from '@/optimized-images/wedding-wire-couples-choice-2022.png'
 import Award2023 from '@/optimized-images/wedding-wire-couples-choice-2023.png'
 import styles from './HomeV2.module.scss'
 
-const HERO_VIDEO_ID = 'qQw_oftZmzI' // About Damn Time (Lizzo)
-const HERO_START = 32
-const HERO_END = 60
-
 const liveVideos = [
   { title: 'Move On Up · Curtis Mayfield (live)', id: 'NtZLBObQ3PU' },
   { title: 'Use Me · Bill Withers (live)', id: 'jw4zzH1DVM0' },
@@ -89,68 +85,6 @@ export default function HomeV2() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  // Hero background video: loop just the 0:32–1:00 window via the YouTube
-  // IFrame Player API (the simple start/end params reset to 0 on loop).
-  useEffect(() => {
-    const w = window as unknown as Record<string, any>
-    let player: any
-    let cancelled = false
-
-    function createPlayer() {
-      if (cancelled || !w.YT || !w.YT.Player) return
-      player = new w.YT.Player('bag-hero-player', {
-        videoId: HERO_VIDEO_ID,
-        playerVars: {
-          autoplay: 1,
-          mute: 1,
-          controls: 0,
-          disablekb: 1,
-          fs: 0,
-          modestbranding: 1,
-          rel: 0,
-          playsinline: 1,
-          start: HERO_START,
-          end: HERO_END,
-          cc_load_policy: 0,
-          iv_load_policy: 3,
-        },
-        events: {
-          onReady: (e: any) => {
-            e.target.mute()
-            e.target.playVideo()
-          },
-          onStateChange: (e: any) => {
-            if (e.data === w.YT.PlayerState.ENDED) {
-              e.target.seekTo(HERO_START)
-              e.target.playVideo()
-            }
-          },
-        },
-      })
-    }
-
-    if (w.YT && w.YT.Player) {
-      createPlayer()
-    } else {
-      if (!document.getElementById('yt-iframe-api')) {
-        const tag = document.createElement('script')
-        tag.id = 'yt-iframe-api'
-        tag.src = 'https://www.youtube.com/iframe_api'
-        document.head.appendChild(tag)
-      }
-      const prev = w.onYouTubeIframeAPIReady
-      w.onYouTubeIframeAPIReady = () => {
-        if (typeof prev === 'function') prev()
-        createPlayer()
-      }
-    }
-
-    return () => {
-      cancelled = true
-      if (player && player.destroy) player.destroy()
-    }
-  }, [])
-
   const navLinks = (
     <>
       <Link href="/wedding-bands-nyc" onClick={() => setMenuOpen(false)}>Weddings</Link>
@@ -196,7 +130,15 @@ export default function HomeV2() {
           style={{ backgroundImage: `url(${getImageSrc(GirlDancing)})` }}
         />
         <div className={styles.heroVideo}>
-          <div id="bag-hero-player" />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster="/videos/hero-poster.jpg"
+          >
+            <source src="/videos/hero.mp4" type="video/mp4" />
+          </video>
         </div>
         <div className={styles.heroOverlay} />
         <div className={styles.heroInner}>
