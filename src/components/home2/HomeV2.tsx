@@ -90,6 +90,7 @@ export default function HomeV2() {
       <Link href="/wedding-bands-nyc" onClick={() => setMenuOpen(false)}>Weddings</Link>
       <a href="#watch" onClick={() => setMenuOpen(false)}>Watch</a>
       <a href="#reviews" onClick={() => setMenuOpen(false)}>Reviews</a>
+      <a href="#pricing" onClick={() => setMenuOpen(false)}>Pricing</a>
       <Link href="/about" onClick={() => setMenuOpen(false)}>About</Link>
       <Link href="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
     </>
@@ -248,18 +249,34 @@ export default function HomeV2() {
         </div>
       </section>
 
-      {/* PRICING TEASER */}
-      <section className={styles.pricing}>
-        <div className={styles.pricingInner}>
-          <div>
-            <span className={styles.kicker}>Transparent pricing</span>
-            <h2>No mystery quotes. See an instant estimate.</h2>
-            <p>
-              Most bands make you chase a number. We don’t. Tell us your date,
-              band size and hours and get a real estimate in minutes.
-            </p>
+      {/* PRICING */}
+      <section id="pricing" className={styles.pricing}>
+        <div className={styles.sectionHead}>
+          <span className={styles.kicker}>Transparent pricing</span>
+          <h2>Real numbers, no mystery quotes</h2>
+          <p>
+            Most bands make you chase a price. We put it right here so you can
+            plan with confidence.
+          </p>
+        </div>
+        <div className={styles.priceCard}>
+          <div className={styles.priceAnchor}>
+            <span className={styles.priceFrom}>Reception packages from</span>
+            <span className={styles.priceBig}>$8,000</span>
+            <span className={styles.priceNote}>
+              6-piece band. Scale up to 12 pieces and add ceremony &amp;
+              cocktail-hour sets. Most NYC weddings land between $10k and $14k.
+            </span>
           </div>
-          <Link href="/contact" className={styles.btnPrimary}>Get your estimate</Link>
+          <ul className={styles.priceIncludes}>
+            <li>Bandleader, powerhouse male &amp; female vocals and full horn section</li>
+            <li>Pro sound &amp; engineer, planning calls and custom song requests</li>
+            <li>Optional ceremony trio and jazz cocktail-hour set</li>
+          </ul>
+          <div className={styles.priceCtas}>
+            <Link href="/contact" className={styles.btnPrimary}>Get a custom quote</Link>
+            <Link href="/contact" className={styles.btnOutline}>Build an instant estimate</Link>
+          </div>
         </div>
       </section>
 
