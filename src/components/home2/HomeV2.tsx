@@ -96,12 +96,42 @@ export default function HomeV2() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const rwRef = useRef<HTMLElement>(null)
+  const heroVideoRef = useRef<HTMLVideoElement>(null)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  useEffect(() => {
+    const v = heroVideoRef.current
+    if (!v) return
+    // Ensure the element is treated as muted at the property level (React does
+    // not reliably set the muted DOM property from the attribute), which some
+    // browsers require before they will autoplay.
+    v.muted = true
+    v.defaultMuted = true
+    const tryPlay = () => {
+      const p = v.play()
+      if (p && typeof p.catch === 'function') p.catch(() => {})
+    }
+    tryPlay()
+    v.addEventListener('loadeddata', tryPlay)
+    v.addEventListener('canplay', tryPlay)
+    // Fallback for iOS Low Power Mode / blocked autoplay: start on first gesture.
+    const onGesture = () => tryPlay()
+    window.addEventListener('touchstart', onGesture, { once: true, passive: true })
+    window.addEventListener('scroll', onGesture, { once: true, passive: true })
+    window.addEventListener('click', onGesture, { once: true })
+    return () => {
+      v.removeEventListener('loadeddata', tryPlay)
+      v.removeEventListener('canplay', tryPlay)
+      window.removeEventListener('touchstart', onGesture)
+      window.removeEventListener('scroll', onGesture)
+      window.removeEventListener('click', onGesture)
+    }
   }, [])
 
   useEffect(() => {
@@ -113,6 +143,7 @@ export default function HomeV2() {
         entries.forEach((entry) => {
           const v = entry.target as HTMLVideoElement
           if (entry.isIntersecting) {
+            v.muted = true
             v.play().catch(() => {})
           } else {
             v.pause()
@@ -121,7 +152,10 @@ export default function HomeV2() {
       },
       { threshold: 0.25 }
     )
-    videos.forEach((v) => io.observe(v))
+    videos.forEach((v) => {
+      v.muted = true
+      io.observe(v)
+    })
     return () => io.disconnect()
   }, [])
 
@@ -172,10 +206,12 @@ export default function HomeV2() {
         />
         <div className={styles.heroVideo}>
           <video
+            ref={heroVideoRef}
             autoPlay
             muted
             loop
             playsInline
+            preload="auto"
             poster="/videos/hero-poster.jpg"
           >
             <source src="/videos/hero.mp4" type="video/mp4" />
