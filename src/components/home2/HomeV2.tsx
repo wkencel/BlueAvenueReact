@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { trackLead } from '@/lib/analytics'
 import { getImageSrc } from '@/lib/image'
@@ -74,15 +74,55 @@ const reviews = [
   },
 ]
 
+const realWeddings = [
+  {
+    src: '/videos/rw-firstdance.mp4',
+    poster: '/videos/rw-firstdance.jpg',
+    caption: 'The first dance',
+  },
+  {
+    src: '/videos/rw-rockleigh.mp4',
+    poster: '/videos/rw-rockleigh.jpg',
+    caption: 'The Rockleigh',
+  },
+  {
+    src: '/videos/rw-wilburton.mp4',
+    poster: '/videos/rw-wilburton.jpg',
+    caption: 'Last song, full floor',
+  },
+]
+
 export default function HomeV2() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const rwRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  useEffect(() => {
+    const el = rwRef.current
+    if (!el || typeof IntersectionObserver === 'undefined') return
+    const videos = Array.from(el.querySelectorAll('video'))
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const v = entry.target as HTMLVideoElement
+          if (entry.isIntersecting) {
+            v.play().catch(() => {})
+          } else {
+            v.pause()
+          }
+        })
+      },
+      { threshold: 0.25 }
+    )
+    videos.forEach((v) => io.observe(v))
+    return () => io.disconnect()
   }, [])
 
   const navLinks = (
@@ -147,7 +187,7 @@ export default function HomeV2() {
           <h1>The NYC wedding band your guests won’t stop talking about</h1>
           <p className={styles.heroSub}>
             Live funk, soul &amp; Motown from a 6–12 piece band with male &amp;
-            female lead vocals. From cocktail hour to the last dance.
+            female lead vocals. From ceremony to the last dance.
           </p>
           <div className={styles.heroCtas}>
             <Link href="/contact" className={styles.btnPrimary}>Check Your Date</Link>
@@ -246,6 +286,28 @@ export default function HomeV2() {
         </div>
         <div className={styles.center}>
           <Link href="/reviews" className={styles.btnOutline}>Read more reviews</Link>
+        </div>
+      </section>
+
+      {/* REAL WEDDINGS */}
+      <section className={styles.realWeddings} ref={rwRef}>
+        <div className={styles.sectionHead}>
+          <span className={styles.kicker}>Real weddings</span>
+          <h2>Real couples. Real dance floors.</h2>
+          <p>
+            A first dance, a packed ballroom, a tent that wouldn’t quit. Actual
+            moments from Blue Avenue Groove weddings.
+          </p>
+        </div>
+        <div className={styles.rwGrid}>
+          {realWeddings.map((w) => (
+            <figure key={w.src} className={styles.rwCard}>
+              <video muted loop playsInline preload="none" poster={w.poster}>
+                <source src={w.src} type="video/mp4" />
+              </video>
+              <figcaption className={styles.rwCaption}>{w.caption}</figcaption>
+            </figure>
+          ))}
         </div>
       </section>
 
