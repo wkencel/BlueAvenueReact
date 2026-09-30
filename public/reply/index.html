@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Review reply | Blue Avenue Groove</title>
+<!--
+  Speed-to-lead review page (see automation/speed-to-lead/README.md).
+  Alerts link here as /reply/?a=<m|b>&t=<token>. The page loads the draft from the
+  Apps Script web app and sends it, without Google cookies: Google's own script
+  pages fail on phones signed into more than one Google account.
+-->
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;margin:0;padding:16px;background:#f5f5f7;color:#111}
+.card{background:#fff;border-radius:14px;padding:16px;max-width:640px;margin:0 auto;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+h1{font-size:18px;margin:0 0 2px}.sub{color:#666;font-size:13px;margin:0 0 12px}
+textarea{width:100%;box-sizing:border-box;min-height:330px;font-size:16px;line-height:1.45;padding:12px;border:1px solid #ccc;border-radius:10px;-webkit-appearance:none;resize:vertical;font-family:inherit}
+button{width:100%;margin-top:12px;padding:15px;font-size:17px;font-weight:600;color:#fff;background:#0aa06e;border:0;border-radius:12px}
+button:active{background:#088a5e}button:disabled{background:#8a8f98}
+.err{color:#b3261e;font-size:14px;margin:10px 0 0;text-align:center}
+.msg{text-align:center;padding:28px 12px}.msg h1{font-size:20px;margin:0 0 8px}.msg p{color:#666;margin:0}
+.note{color:#999;font-size:12px;margin-top:10px;text-align:center}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="card">
+  <div id="msg" class="msg"><h1 id="msgTitle">Loading the draft&hellip;</h1><p id="msgSub"></p></div>
+  <div id="review" hidden>
+    <h1 id="heading"></h1>
+    <p class="sub" id="situation" hidden><strong id="situationText"></strong></p>
+    <p class="sub">Read it over, edit anything you want, then tap Send. It goes to the couple from Blue Avenue Groove.</p>
+    <textarea id="body" spellcheck="true" aria-label="Reply"></textarea>
+    <button id="send" type="button">Send reply</button>
+    <p class="err" id="err" hidden></p>
+  </div>
+  <p class="note">Blue Avenue Groove speed-to-lead</p>
+</div>
+<script>
+(function () {
+  var APPS = {
+    m: 'https://script.google.com/macros/s/AKfycbz4P_cIUjP7bRXzq_RA6P8rTDTKIrWNV-ZltxA02PSvvonvo4uZRLIyqaV5S3STsXI/exec',
+    b: 'https://script.google.com/macros/s/AKfycbx2QK57kXeXklcTAJ9DjzePV8G00ThBAqI2PYK_gA35OWv21igqJf-QcXFefnTByCUF/exec'
+  };
+  var q = new URLSearchParams(location.search);
+  var app = APPS[q.get('a') || ''], token = q.get('t') || '';
+  var $ = function (id) { return document.getElementById(id); };
+
+  function show(title, sub) {
+    $('review').hidden = true; $('msg').hidden = false;
+    $('msgTitle').textContent = title; $('msgSub').textContent = sub || '';
+  }
+  // credentials:'omit' keeps Google cookies out of it, which is the whole point of this page.
+  function call(opts, tries) {
+    return fetch(opts.url, { method: opts.method || 'GET', body: opts.body, credentials: 'omit', cache: 'no-store', redirect: 'follow' })
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .catch(function (e) {
+        if (tries > 1) return new Promise(function (res) { setTimeout(res, 1500); }).then(function () { return call(opts, tries - 1); });
+        throw e;
+      });
+  }
+
+  if (!app || !/^[A-Za-z0-9]{20,}$/.test(token)) { show('This link is incomplete', 'Open the reply link from the newest alert.'); return; }
+
+  call({ url: app + '?fmt=json&t=' + encodeURIComponent(token) }, 2).then(function (v) {
+    if (!v || v.state !== 'draft') { show((v && v.title) || 'Nothing to send', v && v.sub); return; }
+    document.title = 'Reply to ' + v.couple;
+    $('heading').textContent = 'Reply to ' + v.couple;
+    if (v.sub) { $('situationText').textContent = v.sub; $('situation').hidden = false; }
+    $('body').value = v.body || '';
+    $('msg').hidden = true; $('review').hidden = false;
+  }).catch(function () {
+    show('Couldn\u2019t load the draft', 'Check your connection and reopen the link. The draft is still waiting in Gmail.');
+  });
+
+  var sending = false;
+  $('send').addEventListener('click', function () {
+    if (sending) return;
+    var text = $('body').value;
+    if (!text.trim()) { $('err').textContent = 'The reply is empty.'; $('err').hidden = false; return; }
+    sending = true; $('err').hidden = true;
+    var b = $('send'); b.disabled = true; b.textContent = 'Sending\u2026';
+    // No automatic retry on Send; once a reply goes out its link is used up, so a repeat tap can't send twice.
+    call({ url: app, method: 'POST', body: JSON.stringify({ t: token, body: text }) }, 1).then(function (r) {
+      if (r && r.state !== 'error') { show(r.title, r.sub); return; }
+      sending = false; b.disabled = false; b.textContent = 'Send reply';
+      $('err').textContent = (r && r.sub) || 'Not sent. Try again.'; $('err').hidden = false;
+    }).catch(function () {
+      sending = false; b.disabled = false; b.textContent = 'Send reply';
+      $('err').textContent = 'Couldn\u2019t reach the server, so it may not have sent. Tap Send again; it will not send twice.';
+      $('err').hidden = false;
+    });
+  });
+})();
+</script>
+</body>
+</html>
