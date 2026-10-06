@@ -17,6 +17,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;mar
 .card{background:#fff;border-radius:14px;padding:16px;max-width:640px;margin:0 auto;box-shadow:0 1px 4px rgba(0,0,0,.08)}
 h1{font-size:18px;margin:0 0 2px}.sub{color:#666;font-size:13px;margin:0 0 12px}
 textarea{width:100%;box-sizing:border-box;min-height:330px;font-size:16px;line-height:1.45;padding:12px;border:1px solid #ccc;border-radius:10px;-webkit-appearance:none;resize:vertical;font-family:inherit}
+label{display:block;font-size:13px;font-weight:600;color:#444;margin:0 0 4px}
+#subject{width:100%;box-sizing:border-box;font-size:16px;padding:10px 12px;border:1px solid #ccc;border-radius:10px;-webkit-appearance:none;font-family:inherit}
+.hint{color:#999;font-size:12px;margin:4px 0 12px}
 button{width:100%;margin-top:12px;padding:15px;font-size:17px;font-weight:600;color:#fff;background:#0aa06e;border:0;border-radius:12px}
 button:active{background:#088a5e}button:disabled{background:#8a8f98}
 .err{color:#b3261e;font-size:14px;margin:10px 0 0;text-align:center}
@@ -32,6 +35,9 @@ button:active{background:#088a5e}button:disabled{background:#8a8f98}
     <h1 id="heading"></h1>
     <p class="sub" id="situation" hidden><strong id="situationText"></strong></p>
     <p class="sub">Read it over, edit anything you want, then tap Send. It goes to the couple from Blue Avenue Groove.</p>
+    <label for="subject">Subject</label>
+    <input id="subject" type="text" maxlength="200" autocomplete="off">
+    <p class="hint">Changing the subject can start a new email thread.</p>
     <textarea id="body" spellcheck="true" aria-label="Reply"></textarea>
     <button id="send" type="button">Send reply</button>
     <p class="err" id="err" hidden></p>
@@ -69,6 +75,7 @@ button:active{background:#088a5e}button:disabled{background:#8a8f98}
     document.title = 'Reply to ' + v.couple;
     $('heading').textContent = 'Reply to ' + v.couple;
     if (v.sub) { $('situationText').textContent = v.sub; $('situation').hidden = false; }
+    $('subject').value = v.subject || '';
     $('body').value = v.body || '';
     $('msg').hidden = true; $('review').hidden = false;
   }).catch(function () {
@@ -83,7 +90,7 @@ button:active{background:#088a5e}button:disabled{background:#8a8f98}
     sending = true; $('err').hidden = true;
     var b = $('send'); b.disabled = true; b.textContent = 'Sending\u2026';
     // No automatic retry on Send; once a reply goes out its link is used up, so a repeat tap can't send twice.
-    call({ url: app, method: 'POST', body: JSON.stringify({ t: token, body: text }) }, 1).then(function (r) {
+    call({ url: app, method: 'POST', body: JSON.stringify({ t: token, body: text, subject: $('subject').value }) }, 1).then(function (r) {
       if (r && r.state !== 'error') { show(r.title, r.sub); return; }
       sending = false; b.disabled = false; b.textContent = 'Send reply';
       $('err').textContent = (r && r.sub) || 'Not sent. Try again.'; $('err').hidden = false;
