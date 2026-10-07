@@ -20,8 +20,7 @@ const videos = [
 export default function Media() {
   return (
     <>
-      <h1 className="major">Media</h1>
-      <span className="image main"></span>
+      <h1 className="major">Wedding Band Videos &amp; Live Performances</h1>
       <h2>Check out our sound</h2>
       <br />
       <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
@@ -48,7 +47,7 @@ export default function Media() {
       <br />
       <img
         src={getImageSrc(OldGuy)}
-        alt="Guy dancing at NYC wedding"
+        alt="Wedding guest dancing at an NYC reception"
         width={OldGuy.width}
         height={OldGuy.height}
         loading="lazy"
@@ -68,7 +67,7 @@ export default function Media() {
       <br />
       <img
         src={getImageSrc(Pam)}
-        alt="Pam"
+        alt="Pam Steebler, vocalist"
         width={Pam.width}
         height={Pam.height}
         loading="lazy"

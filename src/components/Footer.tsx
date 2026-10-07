@@ -56,7 +56,7 @@ export default function Footer() {
         />
       </div>
       <div style={{ textAlign: 'center', marginTop: '0.4rem', fontSize: '0.62rem', letterSpacing: '0.12rem', textTransform: 'uppercase', opacity: 0.85 }}>
-        As seen at The Plaza &middot; Gotham Hall &middot; Lighthouse at Chelsea Piers
+        As seen at The Plaza &middot; Gotham Hall &middot; The Met Museum &middot; Mandarin Oriental &middot; New York Botanical Garden &middot; Lighthouse at Chelsea Piers &middot; The Rockleigh
       </div>
       <div style={{ textAlign: 'center', marginTop: '0.4rem' }}>
         &nbsp;&nbsp;&nbsp;&nbsp;

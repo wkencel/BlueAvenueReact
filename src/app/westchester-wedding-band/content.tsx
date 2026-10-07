@@ -86,7 +86,7 @@ export default function WestchesterContent() {
           Tell us about your venue, your guest count, the vibe you&apos;re
           after, and any songs you can&apos;t live without. We&apos;ll build a
           custom package: ceremony through last call, or just the
-          reception, whatever fits. Our 5 to 12 piece band comes with pro
+          reception, whatever fits. Our 6 to 12 piece band comes with pro
           audio, MC services, and cocktail hour music.{' '}
           <Link href="/wedding-event-services">See the full list of what we offer.</Link>
         </p>

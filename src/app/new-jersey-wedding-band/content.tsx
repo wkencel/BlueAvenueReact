@@ -75,7 +75,7 @@ export default function NewJerseyContent() {
         <p>
           Tell us your date, your venue, and the vibe you&apos;re going for.
           We&apos;ll put together a custom package: ceremony through last call,
-          just the reception, or anything in between. Our 5 to 12 piece band
+          just the reception, or anything in between. Our 6 to 12 piece band
           includes pro audio, MC services, and cocktail hour music.{' '}
           <Link href="/wedding-event-services">Here&apos;s everything we offer.</Link>
         </p>

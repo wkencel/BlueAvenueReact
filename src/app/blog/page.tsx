@@ -15,6 +15,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    title: 'How Much Does a Wedding Band Cost in NYC? (2026 Pricing Guide)',
+    excerpt:
+      'Reception packages start at $8,000 and most NYC weddings land between $10,000 and $14,000. Here\'s an honest breakdown of what moves the price, a band-size price table, and why booking the band directly beats a corporate agency.',
+    imageUrl: '/images/weddingPhotos/nyc-wedding-reception-1.jpeg',
+    blogUrl: '/how-much-does-a-wedding-band-cost-nyc',
+  },
+  {
     title: 'How to Choose a Wedding Band in NYC',
     excerpt:
       'New York has more wedding bands than any city in the country. Here\'s what actually matters when you\'re making this decision, from watching demos to asking the right questions to knowing what to budget.',

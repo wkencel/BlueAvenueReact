@@ -1,6 +1,22 @@
 import React from 'react'
 import Link from 'next/link'
 import ContactUs from '@/components/ContactUs'
+import { FaqStructuredData } from '@/components/StructuredData'
+
+const localFaqs = [
+  {
+    q: 'How much does a Long Island wedding band cost?',
+    a: 'Reception packages start at $8,000, with most Long Island weddings landing between $10,000 and $14,000 depending on band size, add-on sets and travel to the East End. You get the starting price up front.',
+  },
+  {
+    q: 'Do you travel to the East End, the Hamptons and the North Fork?',
+    a: 'Yes. We regularly play vineyard weddings on the North Fork and estates and ballrooms across Nassau and Suffolk. Tell us the venue and we will get there.',
+  },
+  {
+    q: 'Can you fill a 300-person Long Island ballroom?',
+    a: 'That is exactly what a 10 to 12 piece lineup with a full horn section is built for. We also scale down to 6 pieces for a more intimate room.',
+  },
+]
 
 export default function LongIslandContent() {
   return (
@@ -40,7 +56,7 @@ export default function LongIslandContent() {
           setting demands.
         </p>
         <p>
-          Our band scales from 5 to 12 pieces with a full horn section.
+          Our band scales from 6 to 12 pieces with a full horn section.
           Ceremony music, cocktail hour, pro audio, MC services.
           We cover your entire night.{' '}
           <Link href="/wedding-event-services">See everything we bring.</Link>
@@ -76,6 +92,17 @@ export default function LongIslandContent() {
           <Link href="/wedding-bands-nyc">See all the areas we serve.</Link>
         </p>
       </div>
+      <br />
+      <h2>Frequently Asked Questions</h2>
+      <div style={{ marginLeft: '2%' }}>
+        {localFaqs.map((f) => (
+          <details key={f.q} style={{ marginBottom: '0.75rem' }}>
+            <summary style={{ cursor: 'pointer', fontWeight: 600 }}>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </div>
+      <FaqStructuredData faqs={localFaqs} />
       <br />
       <h2>Book Blue Avenue Groove for Your Long Island Wedding</h2>
       <p>

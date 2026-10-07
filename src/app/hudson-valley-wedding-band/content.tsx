@@ -78,7 +78,7 @@ export default function HudsonValleyContent() {
           Hudson Valley weddings often include outdoor ceremonies, which means
           thinking about sound differently than an indoor reception. We handle
           both. A smaller acoustic setup for the ceremony, then the full
-          band for the reception. Our 5 to 12 piece lineup comes with pro
+          band for the reception. Our 6 to 12 piece lineup comes with pro
           audio, MC services, and cocktail hour music.{' '}
           <Link href="/wedding-event-services">See the full rundown of what we offer.</Link>
         </p>

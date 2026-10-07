@@ -4,6 +4,8 @@ import React, { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { trackLead } from '@/lib/analytics'
 import { getImageSrc } from '@/lib/image'
+import { FaqStructuredData } from '@/components/StructuredData'
+import { homepageFaqs } from '@/data/faqs'
 import GirlDancing from '@/optimized-images/girl-dancing-nyc-wedding.webp'
 import GuestDancing from '@/optimized-images/guest-dancing-wedding.webp'
 import Band from '@/optimized-images/blue-avenue-groove-band.webp'
@@ -51,7 +53,7 @@ const reasons = [
     body: 'From the three-year-old nephew to the grandparents, nobody stays in their seat.',
   },
   {
-    title: '10+ years · 6× WeddingWire winners',
+    title: '10+ years · 5× WeddingWire winners',
     body: 'Played The Plaza, Gotham Hall, Lighthouse at Chelsea Piers and lofts across all five boroughs.',
   },
 ]
@@ -178,6 +180,14 @@ export default function HomeV2() {
           <Link href="/" className={styles.brand}>Blue Avenue Groove</Link>
           <nav className={styles.navLinks}>{navLinks}</nav>
           <Link href="/contact" className={styles.navCta}>Check Your Date</Link>
+          <a
+            href="tel:8572047853"
+            className={styles.navCall}
+            aria-label="Call Blue Avenue Groove"
+            onClick={() => trackLead('phone_click')}
+          >
+            <span aria-hidden="true">✆</span> Call
+          </a>
           <button
             className={styles.hamburger}
             aria-label="Menu"
@@ -194,6 +204,16 @@ export default function HomeV2() {
             <Link href="/contact" className={styles.mobileCta} onClick={() => setMenuOpen(false)}>
               Check Your Date
             </Link>
+            <a
+              href="tel:8572047853"
+              className={styles.mobileCall}
+              onClick={() => {
+                setMenuOpen(false)
+                trackLead('phone_click')
+              }}
+            >
+              ✆ Call (857) 204-7853
+            </a>
           </nav>
         )}
       </header>
@@ -211,7 +231,7 @@ export default function HomeV2() {
             muted
             loop
             playsInline
-            preload="auto"
+            preload="metadata"
             poster="/videos/hero-poster.jpg"
           >
             <source src="/videos/hero.mp4" type="video/mp4" />
@@ -219,7 +239,7 @@ export default function HomeV2() {
         </div>
         <div className={styles.heroOverlay} />
         <div className={styles.heroInner}>
-          <p className={styles.eyebrow}>★★★★★ &nbsp;6× WeddingWire Couples’ Choice</p>
+          <p className={styles.eyebrow}>★★★★★ &nbsp;5× WeddingWire Couples’ Choice</p>
           <h1>The NYC wedding band your guests won’t stop talking about</h1>
           <p className={styles.heroSub}>
             Live funk, soul &amp; Motown from a 6–12 piece band with male &amp;
@@ -246,7 +266,10 @@ export default function HomeV2() {
         </div>
         <p className={styles.venues}>
           As seen at <strong>The Plaza</strong> · <strong>Gotham Hall</strong> ·{' '}
-          <strong>Lighthouse at Chelsea Piers</strong> · Brooklyn’s top lofts
+          <strong>The Met Museum</strong> · <strong>Mandarin Oriental</strong> ·{' '}
+          <strong>New York Botanical Garden</strong> ·{' '}
+          <strong>Lighthouse at Chelsea Piers</strong> ·{' '}
+          <strong>The Rockleigh</strong>
         </p>
       </section>
 
@@ -376,6 +399,23 @@ export default function HomeV2() {
             <Link href="/contact" className={styles.btnOutline}>Build an instant estimate</Link>
           </div>
         </div>
+      </section>
+
+      {/* FAQ */}
+      <section id="faq" className={styles.faq}>
+        <div className={styles.sectionHead}>
+          <span className={styles.kicker}>Questions couples ask</span>
+          <h2>What to know before you book</h2>
+        </div>
+        <div className={styles.faqList}>
+          {homepageFaqs.map((f) => (
+            <details key={f.q} className={styles.faqItem}>
+              <summary>{f.q}</summary>
+              <p>{f.a}</p>
+            </details>
+          ))}
+        </div>
+        <FaqStructuredData faqs={homepageFaqs} />
       </section>
 
       {/* FINAL CTA */}

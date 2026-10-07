@@ -20,9 +20,16 @@ export default function ReviewsPage() {
       <ReviewsStructuredData />
       <PageNav current="/reviews" />
       <main className="page-panel">
-        <h1 className="major">Reviews</h1>
+        <h1 className="major">NYC Wedding Band Reviews</h1>
+        <p style={{ opacity: 0.85, marginTop: '-0.5rem' }}>
+          Real reviews from real NYC couples. Rated 5.0 on WeddingWire, The Knot and Google.
+        </p>
         <Reviews />
-        <Link href="/" className="button" style={{ float: 'right', marginTop: '4px' }}>Back to Home</Link>
+        <div style={{ marginTop: '1.5rem' }}>
+          <Link href="/contact" className="button special">Check Your Date</Link>
+          &nbsp;&nbsp;
+          <Link href="/">Back to Home</Link>
+        </div>
       </main>
       <SiteFooter />
     </div>

@@ -5,3 +5,11 @@ node_modules
 .next/
 out/
 .playwright-mcp/
+
+# local-only / private (do not publish)
+.DS_Store
+*.tsbuildinfo
+package-lock.json
+__pycache__/
+docs/marketing/
+automation/

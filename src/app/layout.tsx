@@ -3,7 +3,7 @@ import Script from 'next/script'
 import { Source_Sans_3 } from 'next/font/google'
 import { siteMetadata } from '@/lib/siteMetadata'
 import { BusinessStructuredData } from '@/components/StructuredData'
-import { GTAG_ID } from '@/lib/analytics'
+import { GTAG_IDS } from '@/lib/analytics'
 import { Providers } from './providers'
 import '@/assets/scss/main.scss'
 
@@ -55,14 +55,16 @@ export default function RootLayout({
   return (
     <html lang="en" className={sourceSans.variable}>
       <body>
-        {GTAG_ID && (
+        {GTAG_IDS.length > 0 && (
           <>
             <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${GTAG_ID}`}
+              src={`https://www.googletagmanager.com/gtag/js?id=${GTAG_IDS[0]}`}
               strategy="afterInteractive"
             />
             <Script id="gtag-init" strategy="afterInteractive">
-              {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GTAG_ID}');`}
+              {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());${GTAG_IDS.map(
+                (id) => `gtag('config','${id}');`
+              ).join('')}`}
             </Script>
           </>
         )}

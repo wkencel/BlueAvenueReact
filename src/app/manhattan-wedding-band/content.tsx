@@ -1,6 +1,22 @@
 import React from 'react'
 import Link from 'next/link'
 import ContactUs from '@/components/ContactUs'
+import { FaqStructuredData } from '@/components/StructuredData'
+
+const localFaqs = [
+  {
+    q: 'How much does a Manhattan wedding band cost?',
+    a: 'Reception packages start at $8,000, and most Manhattan weddings land between $10,000 and $14,000 depending on band size and whether you add ceremony and cocktail-hour sets. We give you the starting number up front instead of a mystery quote.',
+  },
+  {
+    q: 'Can you handle strict Manhattan venue load-ins and timelines?',
+    a: 'Yes. We are used to service-elevator load-ins, tight timelines and noise rules that change block by block, from Midtown ballrooms to SoHo lofts to rooftops over the park. We arrive early and plan the run of show with your venue.',
+  },
+  {
+    q: 'How big is the band, and can you cover the ceremony too?',
+    a: 'We scale from 6 to 12 pieces with male and female lead vocals and a full horn section. We can also play a trio for your ceremony and a jazz set for cocktail hour so the music stays live all night.',
+  },
+]
 
 export default function ManhattanContent() {
   return (
@@ -74,7 +90,7 @@ export default function ManhattanContent() {
       <h2>What We Bring to Your Night</h2>
       <div style={{ marginLeft: '2%' }}>
         <p>
-          Our band scales from a 5-piece to a full 12-piece ensemble with
+          Our band scales from a 6-piece to a full 12-piece ensemble with
           a horn section. We cover your entire night, from ceremony music
           and cocktail hour through reception and last call, with pro audio
           and MC services included. Funk, Soul, Motown, Pop, Rock,
@@ -95,6 +111,17 @@ export default function ManhattanContent() {
           <Link href="/wedding-bands-nyc">See all the areas we serve.</Link>
         </p>
       </div>
+      <br />
+      <h2>Frequently Asked Questions</h2>
+      <div style={{ marginLeft: '2%' }}>
+        {localFaqs.map((f) => (
+          <details key={f.q} style={{ marginBottom: '0.75rem' }}>
+            <summary style={{ cursor: 'pointer', fontWeight: 600 }}>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </div>
+      <FaqStructuredData faqs={localFaqs} />
       <br />
       <h2>Book Blue Avenue Groove for Your Manhattan Wedding</h2>
       <p>

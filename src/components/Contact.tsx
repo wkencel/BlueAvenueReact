@@ -20,7 +20,7 @@ export default function ContactForm() {
               <h3>See how much it costs</h3>
               <li>
                 <button onClick={() => setShowCalculator(!showCalculator)}>
-                  Price Calculator
+                  See what it costs
                 </button>
               </li>
               <br />
@@ -31,7 +31,7 @@ export default function ContactForm() {
                 <button
                   onClick={() => setShowPurchaseRequest(!showPurchaseRequest)}
                 >
-                  Purchase Request
+                  Request to Book
                 </button>
               </li>
             </ul>

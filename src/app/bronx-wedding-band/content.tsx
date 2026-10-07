@@ -40,7 +40,7 @@ export default function BronxContent() {
           different approach because each one sounds and feels different.
         </p>
         <p>
-          Our 5 to 12 piece band covers everything from ceremony to last call.
+          Our 6 to 12 piece band covers everything from ceremony to last call.
           Pro audio, MC services, cocktail hour, all included.{' '}
           <Link href="/wedding-event-services">Full details on our services page.</Link>
         </p>

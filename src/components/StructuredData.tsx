@@ -12,6 +12,7 @@ export function BusinessStructuredData() {
     image: 'https://www.blueavenuegroove.com/images/blue-avenue-groove-band.webp',
     email: 'info@blueavenuegroove.com',
     telephone: '857-204-7853',
+    priceRange: '$$$',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'New York',
@@ -23,6 +24,24 @@ export function BusinessStructuredData() {
       '@type': 'GeoCoordinates',
       latitude: 40.7128,
       longitude: -74.006,
+    },
+    areaServed: [
+      'New York City',
+      'Manhattan',
+      'Brooklyn',
+      'Queens',
+      'The Bronx',
+      'Staten Island',
+      'Westchester',
+      'Long Island',
+      'Hudson Valley',
+      'New Jersey',
+    ].map((name) => ({ '@type': 'Place', name })),
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5.0',
+      bestRating: '5',
+      ratingCount: reviews.length,
     },
     sameAs: [
       'https://www.instagram.com/blueavenuegroove',
@@ -122,6 +141,32 @@ export function ArticleStructuredData({
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(articleData) }}
+    />
+  )
+}
+
+export function FaqStructuredData({
+  faqs,
+}: {
+  faqs: { q: string; a: string }[]
+}) {
+  const faqData = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: f.a,
+      },
+    })),
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
     />
   )
 }

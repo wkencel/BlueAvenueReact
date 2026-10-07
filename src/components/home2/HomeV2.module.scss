@@ -144,6 +144,17 @@
       background: var(--gold-d);
     }
   }
+  .navCall {
+    display: none;
+    align-items: center;
+    gap: 0.3rem;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    padding: 0.5rem 0.9rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
   .hamburger {
     display: none;
     flex-direction: column;
@@ -176,6 +187,13 @@
       padding: 0.8rem;
       border-radius: 999px;
       font-weight: 600;
+    }
+    .mobileCall {
+      text-align: center;
+      padding: 0.8rem;
+      border-radius: 999px;
+      font-weight: 600;
+      border: 1px solid rgba(255, 255, 255, 0.55);
     }
   }
 
@@ -326,8 +344,9 @@
   .videoCard {
     p {
       margin: 0.75rem 0 0;
-      font-size: 0.95rem;
-      color: var(--muted);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--ink);
       text-align: center;
     }
   }
@@ -551,6 +570,55 @@
     justify-content: center;
   }
 
+  // ---------- FAQ ----------
+  .faq {
+    padding: 4.5rem 1.5rem 5rem;
+    background: var(--paper-2);
+    color: var(--ink);
+  }
+  .faqList {
+    max-width: 780px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .faqItem {
+    background: var(--paper);
+    border: 1px solid rgba(16, 26, 43, 0.1);
+    border-radius: 12px;
+    padding: 1.1rem 1.35rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1.05rem;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      &::-webkit-details-marker {
+        display: none;
+      }
+      &::after {
+        content: '+';
+        color: var(--gold-d);
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 1;
+      }
+    }
+    &[open] summary::after {
+      content: '–';
+    }
+    p {
+      margin: 0.85rem 0 0;
+      color: rgba(16, 26, 43, 0.82);
+      line-height: 1.6;
+    }
+  }
+
   // ---------- Final CTA ----------
   .finalCta {
     padding: 5.5rem 1.5rem;
@@ -615,6 +683,9 @@
     .navLinks,
     .navCta {
       display: none;
+    }
+    .navCall {
+      display: inline-flex;
     }
     .hamburger {
       display: flex;

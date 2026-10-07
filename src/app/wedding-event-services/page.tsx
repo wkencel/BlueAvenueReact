@@ -19,7 +19,7 @@ export default function ServicesPage() {
       <PageNav current="/wedding-event-services" />
       <main className="page-panel">
         <EventServices />
-        <Link href="/" className="button">Back to Home</Link>
+        <p style={{ marginTop: '1rem' }}><Link href="/">Back to Home</Link></p>
       </main>
       <SiteFooter />
     </div>

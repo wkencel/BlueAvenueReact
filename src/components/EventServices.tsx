@@ -6,7 +6,7 @@ import { getImageSrc } from '@/lib/image'
 export default function EventServices() {
   return (
     <>
-      <h1 className="major">Event Services</h1>
+      <h1 className="major">NYC Wedding &amp; Event Services</h1>
       <img
         src={getImageSrc(BrideAndGroom)}
         alt="Happy Bride and Groom"
@@ -16,9 +16,10 @@ export default function EventServices() {
         style={{ width: '100%', height: 'auto', borderRadius: '10px' }}
       />
       <p>
-        We're not just here to play, we're here to make your night unforgettable. As one of NYC's premier
-        wedding bands, we bring the energy that gets your guests moving and keeps them on the dance
-        floor from the ceremony to the last song of the night.
+        We&apos;re not just here to play. We&apos;re here to give you the night your guests
+        keep talking about. As one of NYC&apos;s top wedding bands, we bring the energy that
+        gets people up and keeps the dance floor packed from the ceremony to the last song
+        of the night.
       </p>
 
       <h2 className="major">Reception</h2>
@@ -61,7 +62,6 @@ export default function EventServices() {
         Song List
       </Link>
       <hr />
-      <p><em>List of booked dates coming soon &mdash; please inquire about dates directly.</em></p>
       <p>
         <Link href="/contact" className="button special">Contact Us for Pricing &amp; Booking</Link>
       </p>

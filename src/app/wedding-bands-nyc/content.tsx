@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import ContactUs from '@/components/ContactUs'
+import { FaqStructuredData } from '@/components/StructuredData'
+import { homepageFaqs } from '@/data/faqs'
 
 export default function NYCWeddingsContent() {
   return (
@@ -8,10 +10,10 @@ export default function NYCWeddingsContent() {
       <h1>NYC&apos;s Live Wedding Band</h1>
       <div style={{ marginLeft: '2%' }}>
         <p>
-          From The MET Museum to Chelsea Piers to intimate rooftops across
+          From The Met Museum to Chelsea Piers to intimate rooftops across
           all five boroughs, Blue Avenue Groove has been the band behind
           over a decade of New York City weddings. Our musicians have toured
-          with major recording artists, performed at international events, and recorded on hit albums, and they bring every bit of
+          with major recording artists, played internationally as far as Tulum, Mexico, and recorded on hit albums, and they bring every bit of
           that experience to your night.
         </p>
       </div>
@@ -39,11 +41,19 @@ export default function NYCWeddingsContent() {
           best.
         </p>
         <p>
-          Our 5 to 12 piece band brings world-class live music to your
+          Our 6 to 12 piece band brings world-class live music to your
           reception, with pro audio, MC services, and a setlist built
           around your night. We also cover cocktail hour and ceremony
           music.{' '}
           <Link href="/wedding-event-services">See the full breakdown on our services page.</Link>
+        </p>
+        <p>
+          Wondering what a live band runs in the city? Our{' '}
+          <Link href="/how-much-does-a-wedding-band-cost-nyc">
+            2026 NYC wedding band cost guide
+          </Link>{' '}
+          breaks down pricing by band size, from a $8,000 6-piece to a full
+          12-piece with horns.
         </p>
       </div>
       <br />
@@ -95,6 +105,20 @@ export default function NYCWeddingsContent() {
           <Link href="/new-jersey-wedding-band">New Jersey</Link>.
         </p>
       </div>
+      <br />
+      <br />
+      <h2>Frequently Asked Questions</h2>
+      <div style={{ marginLeft: '2%' }}>
+        {homepageFaqs.map((f) => (
+          <details key={f.q} style={{ marginBottom: '0.75rem' }}>
+            <summary style={{ cursor: 'pointer', fontWeight: 600 }}>
+              {f.q}
+            </summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </div>
+      <FaqStructuredData faqs={homepageFaqs} />
       <br />
       <h2>Book Blue Avenue Groove for Your NYC Wedding</h2>
       <p>

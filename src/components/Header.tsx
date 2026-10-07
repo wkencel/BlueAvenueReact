@@ -18,7 +18,7 @@ export default function Header() {
         <div className="inner">
           <h1>Blue Avenue Groove</h1>
           <p>NYC&apos;s not-your-typical live wedding band</p>
-          <p>6&times; WeddingWire winners &middot; funk, soul &amp; Motown</p>
+          <p>5&times; WeddingWire winners &middot; funk, soul &amp; Motown</p>
           <ul className="actions">
             <li>
               <Link href="/contact" className="button special">

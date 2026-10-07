@@ -10,21 +10,30 @@ import { getImageSrc } from '@/lib/image'
 export default function WhoWeAre() {
   return (
     <>
-      <h1 className="major">Celebrating Your Story in Sound</h1>
+      <h1 className="major">Meet the band behind Blue Avenue Groove</h1>
       <p>
-        We believe in weddings without the cheese. With over 10 years of
-        experience and a catalog of more than 200 songs spanning Pop, Soul,
-        Top 40, Motown, Rock and Jazz, Blue Avenue Groove has something for
-        every couple&apos;s special day. Our energy is dedicated to matching you
-        and your guests&apos; vibe on the dance floor for a wedding that&apos;ll
-        be talked about for ages.
+        We are a funk, soul and Motown band built for one job: keeping a
+        wedding dance floor full from the first song to the last. Ten years in,
+        with more than 200 songs across Soul, Motown, Pop, R&amp;B, rock and
+        jazz, we have played everything from ballrooms at The Plaza and Gotham
+        Hall to the Met Museum and the New York Botanical Garden, from lofts
+        and tents across all five boroughs to an international stage in Tulum,
+        Mexico.
       </p>
       <p>
-        Like anything we do, we strive not to &quot;go through the motions&quot;
-        with each song, but to bring real energy and heart to every song. We&apos;re building a better
-        version of what it means to be a &quot;wedding band&quot;: filled with
-        music from the soul, bringing friends and family together for the
-        experience of a lifetime.
+        Out front are our two lead vocalists, Jonathan and Sami Stevens. One
+        couple summed it up in their review: &quot;their two lead singers
+        Jonathan and Sami are nothing short of amazing.&quot; Another spent the
+        whole night fielding the same question about Sami: &quot;where in the
+        world did you find that girl? Her voice is unbelievable.&quot; Behind
+        them is a horn-driven rhythm section with sax, trumpet and trombone
+        that scales from 6 to 12 pieces to fit your room and your budget.
+      </p>
+      <p>
+        We don&apos;t go through the motions. Every song gets real energy and a
+        read on the room, so a five-year-old and a grandparent end up dancing
+        at the same time. That is the band people mean when they call us
+        &quot;not your typical wedding band.&quot;
       </p>
       <img
         src={getImageSrc(BandPhoto)}
@@ -47,26 +56,30 @@ export default function WhoWeAre() {
       </div>
 
       <h2 className="major" style={{ marginTop: '2.5rem' }}>
-        Leadership
+        Who you&apos;ll work with
       </h2>
+      <p>
+        Book us and you work directly with the band, not a corporate agency
+        booking desk. That is the whole point, and it&apos;s the thing couples
+        tell us made the difference.
+      </p>
 
       <div className="leader-card">
-        <img src={getImageSrc(Pam1)} alt="Pam Steebler" loading="lazy" />
-        <h3>COO - Pam Steebler</h3>
+        <img src={getImageSrc(Will1)} alt="Will Kencel, bandleader and bassist" loading="lazy" />
+        <h3>Will Kencel · Bandleader &amp; bassist</h3>
         <p>
-          Dedicated to providing the best user experience from the time you
-          inquire to the time we make your wedding a blast
+          Your point of contact from the first email to the last dance. Will
+          builds the setlist around your night, learns your special requests,
+          and runs the show so you never have to think about the music.
         </p>
       </div>
 
       <div className="leader-card">
-        <a href="https://willkencelhome.io" aria-label="Visit Will Kencel's personal website">
-          <img src={getImageSrc(Will1)} alt="Will Kencel" loading="lazy" />
-        </a>
-        <h3>CTO - Will Kencel</h3>
+        <img src={getImageSrc(Pam1)} alt="Pam Steebler" loading="lazy" />
+        <h3>Pam Steebler · Planning &amp; logistics</h3>
         <p>
-          Original founder and bassist. Guiding Blue Avenue into the next decade
-          by integrating tech to create an incredible user experience
+          Keeps the details on track from the moment you inquire, so the run of
+          show is dialed in long before you walk down the aisle.
         </p>
       </div>
     </>

@@ -1,6 +1,22 @@
 import React from 'react'
 import Link from 'next/link'
 import ContactUs from '@/components/ContactUs'
+import { FaqStructuredData } from '@/components/StructuredData'
+
+const localFaqs = [
+  {
+    q: 'How much does a Brooklyn wedding band cost?',
+    a: 'Reception packages start at $8,000, with most Brooklyn weddings landing between $10,000 and $14,000 once you factor in band size and any ceremony or cocktail-hour sets. The starting price is on the site so you can plan without chasing a quote.',
+  },
+  {
+    q: 'Which Brooklyn venues have you played?',
+    a: 'We have played The Green Building, 501 Union, Liberty Warehouse and W Loft, plus lofts and rooftops across Williamsburg, DUMBO, Greenpoint, Park Slope and Red Hook.',
+  },
+  {
+    q: 'How big is the band?',
+    a: 'We scale from 6 to 12 pieces with male and female lead vocals and a full horn section, so we fit a tight Greenpoint loft or a grand hall in Park Slope.',
+  },
+]
 
 export default function BrooklynWeddingsContent() {
   return (
@@ -36,7 +52,7 @@ export default function BrooklynWeddingsContent() {
           steel beams one weekend, waterfront sunsets the next. We&apos;ve
           played The Green Building, 501 Union, Liberty Warehouse, W Loft,
           and dozens of other spaces across the borough. Our lineup scales
-          to fit any room, from a tight five-piece for an intimate Greenpoint
+          to fit any room, from a tight six-piece for an intimate Greenpoint
           loft to a full horn section for a grand hall in Park Slope.
         </p>
         <p>
@@ -110,6 +126,17 @@ export default function BrooklynWeddingsContent() {
           <Link href="/wedding-bands-nyc">See all the areas we serve.</Link>
         </p>
       </div>
+      <br />
+      <h2>Frequently Asked Questions</h2>
+      <div style={{ marginLeft: '2%' }}>
+        {localFaqs.map((f) => (
+          <details key={f.q} style={{ marginBottom: '0.75rem' }}>
+            <summary style={{ cursor: 'pointer', fontWeight: 600 }}>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </div>
+      <FaqStructuredData faqs={localFaqs} />
       <br />
       <h2>Book Blue Avenue Groove for Your Brooklyn Wedding</h2>
       <p>

@@ -19,7 +19,11 @@ export default function MediaPage() {
       <PageNav current="/media" />
       <main className="page-panel">
         <MediaContent />
-        <Link href="/" className="button" style={{ marginTop: '1rem' }}>Back to Home</Link>
+        <div style={{ marginTop: '1.5rem' }}>
+          <Link href="/contact" className="button special">Check Your Date</Link>
+          &nbsp;&nbsp;
+          <Link href="/">Back to Home</Link>
+        </div>
       </main>
       <SiteFooter />
     </div>

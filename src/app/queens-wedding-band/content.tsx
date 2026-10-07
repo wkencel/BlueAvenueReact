@@ -1,6 +1,22 @@
 import React from 'react'
 import Link from 'next/link'
 import ContactUs from '@/components/ContactUs'
+import { FaqStructuredData } from '@/components/StructuredData'
+
+const localFaqs = [
+  {
+    q: 'How much does a Queens wedding band cost?',
+    a: 'Reception packages start at $8,000, and most weddings land between $10,000 and $14,000 depending on band size and whether you add ceremony and cocktail-hour sets. We put the starting number right on the site.',
+  },
+  {
+    q: 'What parts of Queens do you cover?',
+    a: 'All of it, from Astoria and Long Island City to Flushing and Bayside. We bring pro audio and MC services to banquet halls, lofts and backyard celebrations across the borough.',
+  },
+  {
+    q: 'How big is the band, and do you take song requests?',
+    a: 'We scale from 6 to 12 pieces with male and female vocals and a full horn section, and we build the setlist around your night, including your first dance and must-play songs.',
+  },
+]
 
 export default function QueensContent() {
   return (
@@ -41,7 +57,7 @@ export default function QueensContent() {
           approach for every room.
         </p>
         <p>
-          Our band ranges from 5 to 12 pieces. We bring pro audio, MC
+          Our band ranges from 6 to 12 pieces. We bring pro audio, MC
           services, and ceremony and cocktail hour music. Everything
           you need for the full night.{' '}
           <Link href="/wedding-event-services">See what we offer.</Link>
@@ -78,6 +94,17 @@ export default function QueensContent() {
           <Link href="/wedding-bands-nyc">See all the areas we serve.</Link>
         </p>
       </div>
+      <br />
+      <h2>Frequently Asked Questions</h2>
+      <div style={{ marginLeft: '2%' }}>
+        {localFaqs.map((f) => (
+          <details key={f.q} style={{ marginBottom: '0.75rem' }}>
+            <summary style={{ cursor: 'pointer', fontWeight: 600 }}>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </div>
+      <FaqStructuredData faqs={localFaqs} />
       <br />
       <h2>Book Blue Avenue Groove for Your Queens Wedding</h2>
       <p>

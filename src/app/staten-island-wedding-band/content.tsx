@@ -74,7 +74,7 @@ export default function StatenIslandContent() {
       <h2>Everything You Need for the Night</h2>
       <div style={{ marginLeft: '2%' }}>
         <p>
-          Our band scales from 5 to 12 pieces with a full horn section.
+          Our band scales from 6 to 12 pieces with a full horn section.
           We handle ceremony music, cocktail hour, and the full reception with
           pro audio and MC services.{' '}
           <Link href="/wedding-event-services">See everything we bring to your wedding.</Link>

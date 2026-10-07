@@ -4,17 +4,29 @@
 // NOT secret — they ship in the page HTML — so they live as constants here and
 // can be overridden per build via env vars.
 //
-// To disable tracking entirely, set NEXT_PUBLIC_GTAG_ID='' (empty). Then nothing
-// loads and no data is sent.
+// To disable tracking entirely, set both NEXT_PUBLIC_GTAG_ID='' and
+// NEXT_PUBLIC_GA4_ID='' (empty). Then nothing loads and no data is sent.
 
 // Google Ads Conversion ID (also serves as the base Google tag). GA4 'G-…' also works.
 export const GTAG_ID: string = process.env.NEXT_PUBLIC_GTAG_ID ?? 'AW-18456227136'
+
+// GA4 Measurement ID — powers the traffic/visitors dashboard at analytics.google.com.
+export const GA4_ID: string = process.env.NEXT_PUBLIC_GA4_ID ?? 'G-3QGDSP9X45'
+
+// Every destination the single Google tag should load and configure (deduped, non-empty).
+export const GTAG_IDS: string[] = [GTAG_ID, GA4_ID].filter(
+  (id, i, arr) => Boolean(id) && arr.indexOf(id) === i
+)
 
 // Google Ads conversion "send_to" values (Conversion ID / label) per lead source.
 // A source with no entry (or an empty value) simply doesn't report an Ads conversion.
 const ADS_CONVERSION_BY_SOURCE: Record<string, string> = {
   contact_form:
     process.env.NEXT_PUBLIC_ADS_CONVERSION_CONTACT ?? 'AW-18456227136/zwsVCJqqtPocEMDazuBE',
+  // Phone-tap conversion. Create a "Phone call" conversion action in Google Ads,
+  // then set NEXT_PUBLIC_ADS_CONVERSION_PHONE to its 'AW-…/label'. Until then the
+  // empty default reports no Ads conversion (GA4 generate_lead still fires).
+  phone_click: process.env.NEXT_PUBLIC_ADS_CONVERSION_PHONE ?? '',
 }
 
 type GtagParams = Record<string, unknown>
